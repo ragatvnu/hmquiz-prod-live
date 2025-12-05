@@ -1,0 +1,2210 @@
+/* === HOME PAGE HERO & BUTTONS ==================================== */
+
+.page-id-37 .inside-article {
+  max-width: 900px;
+  margin: 2.5rem auto 3rem auto;
+  padding: 2rem 2.5rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Make the main heading feel like a hero */
+.page-id-37 .entry-content h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraph spacing */
+.page-id-37 .entry-content p {
+  margin-bottom: 0.75rem;
+}
+
+/* CTA buttons */
+.page-id-37 .hmqz-btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.page-id-37 .hmqz-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.page-id-37 .hmqz-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.page-id-37 .hmqz-btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.page-id-37 .hmqz-btn-secondary:hover {
+  background: #d4d4d8;
+}
+
+/* Hide sidebar on home to keep focus on hero */
+.page-id-37 .sidebar,
+.page-id-37 .widget-area {
+  display: none;
+}
+
+/* Let content use full width when sidebar is hidden */
+.page-id-37 .content-area {
+  width: 100%;
+}
+
+/* === (optional) BASIC QUIZ/PAGE CARD POLISH – safe to keep here === */
+
+.page-id-19 .inside-article,
+.page-id-8  .inside-article {
+  max-width: 900px;
+  margin: 2.5rem auto 3rem auto;
+}
+/* ========== HMQUIZ HOME LAYOUT ========== */
+
+.hmqz-home {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 2rem 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .hmqz-home {
+    padding: 3rem 1.5rem 4rem;
+  }
+}
+
+.hmqz-home .hmqz-hero,
+.hmqz-home .hmqz-section {
+  max-width: 960px;
+  margin: 0 auto 2.5rem;
+}
+
+/* Hero layout */
+
+.hmqz-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (min-width: 900px) {
+  .hmqz-hero {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+.hmqz-hero-text {
+  flex: 1 1 0;
+}
+
+.hmqz-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0 0 0.5rem;
+}
+
+.hmqz-hero h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: #0f172a;
+}
+
+@media (min-width: 768px) {
+  .hmqz-hero h1 {
+    font-size: 2.1rem;
+  }
+}
+
+.hmqz-hero-lead {
+  margin: 0 0 1.25rem;
+  color: #334155;
+  font-size: 0.98rem;
+}
+
+.hmqz-hero-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Buttons reused across site */
+
+.hmqz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.hmqz-btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 10px 18px rgba(37, 99, 235, 0.25);
+}
+
+.hmqz-btn-primary:hover,
+.hmqz-btn-primary:focus-visible {
+  background-color: #1d4ed8;
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.3);
+}
+
+.hmqz-btn-ghost {
+  background-color: #ffffff;
+  color: #1e293b;
+  border-color: #cbd5e1;
+}
+
+.hmqz-btn-ghost:hover,
+.hmqz-btn-ghost:focus-visible {
+  background-color: #e2e8f0;
+}
+
+/* Hero button group */
+
+.hmqz-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Hero sample card */
+
+.hmqz-hero-card {
+  flex: 0 0 320px;
+  max-width: 360px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 1.25rem 1.2rem 1.1rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
+}
+
+.hmqz-hero-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.hmqz-pill,
+.hmqz-level-pill {
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.hmqz-pill {
+  background: rgba(148, 163, 184, 0.25);
+  color: #e2e8f0;
+}
+
+.hmqz-level-pill {
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 600;
+}
+
+.hmqz-hero-card-body {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 0.9rem;
+  padding: 0.85rem 0.9rem;
+}
+
+.hmqz-hero-q {
+  font-size: 0.95rem;
+  margin: 0 0 0.7rem;
+}
+
+.hmqz-hero-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.hmqz-hero-options li {
+  font-size: 0.86rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.hmqz-hero-option-correct {
+  background: rgba(22, 163, 74, 0.18);
+  border-color: rgba(52, 211, 153, 0.9);
+}
+
+.hmqz-hero-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+/* Generic sections */
+
+.hmqz-section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 0.4rem;
+  color: #0f172a;
+}
+
+.hmqz-section-lead {
+  margin: 0 0 1.2rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* Card grid */
+
+.hmqz-card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hmqz-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.hmqz-card {
+  background: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1rem 1rem 1.05rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.02);
+}
+
+.hmqz-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.hmqz-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+/* Link buttons inside cards */
+
+.hmqz-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.hmqz-link-btn::after {
+  content: "›";
+  font-size: 0.95em;
+}
+
+.hmqz-link-btn:hover,
+.hmqz-link-btn:focus-visible {
+  text-decoration: underline;
+}
+
+/* Steps special layout (still mobile-first) */
+
+.hmqz-steps-grid .hmqz-card {
+  position: relative;
+}
+
+.hmqz-steps-grid .hmqz-card h3 {
+  font-size: 0.98rem;
+}
+
+/* CTA band */
+
+.hmqz-section-cta {
+  margin-top: 0;
+}
+
+.hmqz-cta-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.4rem 1.2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #e5f0ff;
+  text-align: center;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.35);
+}
+
+.hmqz-cta-inner h2 {
+  color: inherit;
+  margin-bottom: 0.35rem;
+}
+
+.hmqz-cta-inner p {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+}
+
+.hmqz-cta-inner .hmqz-btn-primary {
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.4);
+}
+
+/* Small adjustments for dark backgrounds (if any) */
+
+body .hmqz-home a {
+  text-decoration-thickness: 1px;
+}
+
+/* ========== HMQUIZ QUIZ PAGE ========== */
+
+.hmqz-quiz-page {
+  padding: 2rem 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .hmqz-quiz-page {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+}
+
+.hmqz-quiz-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hmqz-quiz-layout {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .hmqz-quiz-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+}
+
+.hmqz-quiz-main {
+  flex: 2 1 0;
+}
+
+.hmqz-quiz-aside {
+  flex: 1 1 0;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .hmqz-quiz-aside {
+    margin-top: 0;
+  }
+}
+
+/* Selector card that wraps [hmquiz] output */
+.hmqz-quiz-selector {
+  margin-top: 1rem;
+  background: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+}
+
+/* Give some basic structure to the form inside [hmquiz] */
+.hmqz-quiz-selector form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 600px) {
+  .hmqz-quiz-selector form {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: flex-end;
+  }
+}
+
+.hmqz-quiz-selector label {
+  font-size: 0.85rem;
+  color: #475569;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.hmqz-quiz-selector select,
+.hmqz-quiz-selector input[type="text"],
+.hmqz-quiz-selector input[type="number"] {
+  width: 100%;
+  max-width: 260px;
+  padding: 0.45rem 0.55rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  font-size: 0.9rem;
+}
+
+/* Make any submit button match the site style a bit better */
+.hmqz-quiz-selector button,
+.hmqz-quiz-selector input[type="submit"] {
+  font-size: 0.9rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hmqz-quiz-selector button:hover,
+.hmqz-quiz-selector input[type="submit"]:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 10px 18px rgba(37, 99, 235, 0.25);
+}
+
+/* Bullet lists in side cards */
+.hmqz-bullet-list {
+  margin: 0.3rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.hmqz-bullet-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* ========== HMQUIZ PLAY PAGE ========== */
+
+.hmqz-play-page {
+  padding: 2rem 1.25rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .hmqz-play-page {
+    padding: 2.5rem 1.5rem 3.5rem;
+  }
+}
+
+.hmqz-play-layout {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .hmqz-play-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.75rem;
+  }
+}
+
+.hmqz-play-main {
+  flex: 2 1 0;
+}
+
+.hmqz-play-aside {
+  flex: 1 1 0;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .hmqz-play-aside {
+    margin-top: 0;
+  }
+}
+
+/* Progress strip above the runner */
+.hmqz-play-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.hmqz-play-tag {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.hmqz-play-hint {
+  color: #64748b;
+}
+
+/* Card that wraps [hmqz_play] */
+.hmqz-play-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.hmqz-play-card h2,
+.hmqz-play-card h3 {
+  margin-top: 0;
+}
+
+/* ========== HMQUIZ BLOG INTRO ========== */
+
+.hmqz-blog-intro {
+  background: #f8fafc;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 1.75rem;
+}
+
+.hmqz-blog-intro h1 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 1.6rem;
+}
+
+.hmqz-blog-intro p {
+  margin: 0.15rem 0;
+  color: #4b5563;
+}
+
+/* ========== HMQUIZ BLOG INTRO ========== */
+
+.hmqz-blog-intro {
+  background: #f8fafc;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  border: 1.5px solid #e2e8f0;
+  margin-bottom: 1.75rem;
+}
+
+.hmqz-blog-intro h1 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 1.6rem;
+}
+
+.hmqz-blog-intro p {
+  margin: 0.15rem 0;
+  color: #4b5563;
+}
+
+/* ========== HMQUIZ HOME: FROM THE BLOG ========== */
+
+.hmqz-home-blog {
+  margin-top: 2.5rem;
+}
+
+.hmqz-home-blog-inner {
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.hmqz-home-blog-header h2 {
+  margin: 0.35rem 0 0.9rem;
+  font-size: 1.5rem;
+}
+
+.hmqz-home-blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Two-column layout on wider screens */
+@media (min-width: 768px) {
+  .hmqz-home-blog-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hmqz-home-blog-item h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.hmqz-home-blog-item h3 a {
+  text-decoration: none;
+}
+
+.hmqz-home-blog-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-home-blog-meta {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.hmqz-home-blog-excerpt {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Home: "From the blog" strip */
+.hmqz-home-blog {
+  border-top: 1px solid #eee;
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.hmqz-home-blog-header h2 {
+  margin-bottom: 8px;
+}
+
+.hmqz-home-blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.hmqz-home-blog-item h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+/* Home: "From the blog" strip */
+.hmqz-home-blog {
+  border-top: 1px solid #eee;
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+}
+
+.hmqz-home-blog-header h2 {
+  margin-bottom: 8px;
+}
+
+.hmqz-home-blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.hmqz-home-blog-item h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+/* === Quiz page layout (/quiz) === */
+
+.hmqz-quiz-page {
+  /* Keep it consistent with Home content width */
+}
+
+.hmqz-quiz-header {
+  margin-bottom: 24px;
+}
+
+.hmqz-quiz-header h1 {
+  margin-bottom: 8px;
+}
+
+.hmqz-quiz-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  column-gap: 32px;
+  align-items: flex-start;
+}
+
+.hmqz-quiz-main p {
+  margin-bottom: 8px;
+}
+
+/* Box around the [hmquiz] selector */
+.hmqz-quiz-selector {
+  margin-top: 16px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Make sure any inner wrapper from the plugin doesn’t add extra margins */
+.hmqz-quiz-selector > .hmqz-wrapper {
+  margin: 0;
+}
+
+/* Right-hand info cards */
+.hmqz-quiz-aside .hmqz-card + .hmqz-card {
+  margin-top: 12px;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 768px) {
+  .hmqz-quiz-layout {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+/* === Play page layout (/play) === */
+
+.hmqz-play-header {
+  margin-bottom: 24px;
+}
+
+.hmqz-play-header h1 {
+  margin-bottom: 8px;
+}
+
+/* Two-column layout: quiz on left, tips on right */
+.hmqz-play-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.2fr);
+  column-gap: 32px;
+  align-items: flex-start;
+}
+
+/* Progress strip above the quiz card */
+.hmqz-play-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+/* Little pill “Live quiz” tag */
+.hmqz-play-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef5ff;
+  color: #1c4d9e;
+}
+
+.hmqz-play-hint {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Container for the quiz runner */
+.hmqz-play-card {
+  margin-top: 8px;
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Right-hand help cards */
+.hmqz-play-aside .hmqz-card + .hmqz-card {
+  margin-top: 12px;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 768px) {
+  .hmqz-play-layout {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+
+  .hmqz-play-progress {
+    align-items: flex-start;
+  }
+}
+
+/* ========= HMQUIZ – Play view polish (grammar quizzes) ========= */
+
+/* Make the main play card a bit tighter and more “card-like” */
+.hmqz-play-page .hmqz-play-card {
+  max-width: 520px;
+  margin: 0 auto 3rem;
+  padding: 1.75rem 1.75rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+}
+
+/* Meta details (timer, topic, quiz path) – smaller & calmer */
+.hmqz-play-card .hmqz-q-meta,
+.hmqz-play-card .hmqz-q-topic,
+.hmqz-play-card .hmqz-q-path {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 0.25rem;
+}
+
+/* Question text – slightly larger and with more breathing room */
+.hmqz-play-card .hmqz-q-text,
+.hmqz-play-card .hmqz-question {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0.75rem 0 1.25rem;
+}
+
+/* Stack answer choices vertically with full-width buttons */
+.hmqz-play-card .hmqz-options,
+.hmqz-play-card .hmqz-answers {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* Generic button styling inside the play card (fits current HTML) */
+.hmqz-play-card .hmqz-options button,
+.hmqz-play-card .hmqz-answers button,
+.hmqz-play-card button.hmqz-option {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 15px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+/* Hover / focus state – blue highlight */
+.hmqz-play-card .hmqz-options button:hover,
+.hmqz-play-card .hmqz-options button:focus-visible,
+.hmqz-play-card .hmqz-answers button:hover,
+.hmqz-play-card .hmqz-answers button:focus-visible,
+.hmqz-play-card button.hmqz-option:hover,
+.hmqz-play-card button.hmqz-option:focus-visible {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* When an option is “selected” (if your JS adds a class) */
+.hmqz-play-card .hmqz-option--selected {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* =========================================================
+   HMQUIZ – Play view deep polish (applies to /play page)
+   ========================================================= */
+
+/* Make the main play card more prominent and centered */
+.hmqz-play-page .hmqz-play-card {
+  max-width: 520px;
+  margin: 1.5rem auto 3rem;
+  padding: 1.5rem 1.5rem 2rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+/* Slightly calmer meta text (timer / topic / quiz name) */
+.hmqz-play-card,
+.hmqz-play-card p,
+.hmqz-play-card span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Try to give the question line a bit more weight */
+.hmqz-play-card strong,
+.hmqz-play-card .hmqz-question,
+.hmqz-play-card .hmqz-q-text {
+  font-size: 17px;
+}
+
+/* STACK ANSWER OPTIONS VERTICALLY WITH BIG TAPPABLE BUTTONS
+   We don't know the exact inner classes, so we style any
+   button inside the play card. */
+.hmqz-play-card button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  margin: 0 0 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 15px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+/* Hover / focus state – blue highlight, white text */
+.hmqz-play-card button:hover,
+.hmqz-play-card button:focus-visible {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* If the JS marks a selected option with a class later */
+.hmqz-play-card .hmqz-option--selected {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* =========================================================
+   HMQUIZ – /play page polish
+   Smaller logo, nicer header, timer at bottom of card
+   ========================================================= */
+
+/* 1) PLAY HEADER – soft card with eyebrow + lead text */
+.hmqz-play-page .hmqz-play-header {
+  max-width: 900px;
+  margin: 0 auto 1.75rem;
+  padding: 1.25rem 1.75rem 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #eff6ff, #eef2ff);
+  border: 1px solid #dbeafe;
+}
+
+.hmqz-play-page .hmqz-play-header .hmqz-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4f46e5;
+  margin: 0 0 0.4rem;
+}
+
+.hmqz-play-page .hmqz-play-header h1 {
+  margin: 0 0 0.45rem;
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.hmqz-play-page .hmqz-play-header .hmqz-section-lead {
+  margin: 0;
+  max-width: 560px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* 2) MAIN PLAY CARD – stronger, centred, column layout */
+.hmqz-play-page .hmqz-play-card {
+  max-width: 520px;
+  margin: 1.25rem auto 3rem;
+  padding: 1.5rem 1.5rem 2rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+
+  /* Make inner content stack so we can push the timer to bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 540px;
+}
+
+/* Logo: smaller and with breathing room */
+.hmqz-play-card img {
+  display: block;
+  max-width: 220px;
+  margin: 0 auto 1rem;
+}
+
+/* General text sizing inside the card */
+.hmqz-play-card,
+.hmqz-play-card p,
+.hmqz-play-card span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Question text a bit larger */
+.hmqz-play-card strong,
+.hmqz-play-card .hmqz-question,
+.hmqz-play-card .hmqz-q-text {
+  font-size: 17px;
+}
+
+/* 3) ANSWER OPTIONS – full-width, vertical pill buttons */
+.hmqz-play-card button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  margin: 0 0 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 15px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.hmqz-play-card button:hover,
+.hmqz-play-card button:focus-visible {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* If the JS adds a "selected" class, make it match the hover style */
+.hmqz-play-card .hmqz-option--selected {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+/* 4) TIMER / LEVEL BLOCK – visually anchored at the bottom
+
+   We don't know the internal class names, so we push the
+   last direct child of the card down and style it as a footer.
+*/
+.hmqz-play-card > *:last-child {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Make any progress bar inside that footer breathe a bit */
+.hmqz-play-card > *:last-child progress,
+.hmqz-play-card > *:last-child [role="progressbar"],
+.hmqz-play-card > *:last-child .hmqz-progress {
+  display: block;
+  margin-top: 0.45rem;
+}
+
+/* ==========================================================
+   PLAY PAGE – polished layout & smaller logo (v2)
+   ========================================================== */
+
+/* Overall /play page container */
+.hmqz-play-page {
+  max-width: 1120px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem 4rem;
+}
+
+/* Softer, more “hero-style” header */
+.hmqz-play-header {
+  margin: 1.5rem 0 1.75rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 18px;
+  background: #f5f7ff;
+  border: 1px solid #e1e6ff;
+}
+
+.hmqz-play-header .hmqz-eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #64748b;
+  margin: 0 0 0.35rem;
+}
+
+.hmqz-play-header h1 {
+  font-size: 1.55rem;
+  line-height: 1.35;
+  margin: 0 0 0.35rem;
+  color: #0f172a;
+}
+
+.hmqz-play-header .hmqz-section-lead {
+  margin: 0;
+  max-width: 38rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Two-column layout: card + tips */
+.hmqz-play-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+/* Left column wrapper */
+.hmqz-play-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+/* “Live quiz” strip – subtle, above the card */
+.hmqz-play-progress {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.hmqz-play-progress .hmqz-play-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #15803d;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.hmqz-play-progress .hmqz-play-hint {
+  font-size: 0.8rem;
+}
+
+/* MAIN QUIZ CARD CONTAINER */
+.hmqz-play-card {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* 1) Make the HMQUIZ logo a small thumbnail
+   2) Keep it centered and add breathing room */
+.hmqz-play-card img[alt="HMQUIZ"],
+.hmqz-play-card img[src*="hmquiz"],
+.hmqz-play-card img[src*="HMQUIZ"] {
+  display: block;
+  margin: 14px auto 6px;
+  max-height: 90px;        /* <— thumbnail size */
+  width: auto;
+}
+
+/* Slightly tighter card */
+.hmqz-play-card > div,
+.hmqz-play-card .hmqa-card {
+  border-radius: 22px;
+}
+
+/* If the internal card uses a max-width, make sure it doesn’t grow huge */
+.hmqz-play-card > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right-hand tips column */
+.hmqz-play-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hmqz-play-aside .hmqz-card {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.hmqz-play-aside h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 0.98rem;
+}
+
+.hmqz-play-aside .hmqz-bullet-list {
+  margin: 0;
+  padding-left: 1.05rem;
+  font-size: 0.84rem;
+  color: #4b5563;
+}
+
+/* Make the timer text feel lighter (visual “bottom”) */
+.hmqz-play-card p {
+  font-size: 0.8rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  .hmqz-play-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hmqz-play-progress {
+    margin-bottom: 0.25rem;
+  }
+
+  .hmqz-play-card {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================
+   HMQUIZ PLAY PAGE – fresh card design
+   ========================================================== */
+
+/* Make the background feel more like an app canvas on /play */
+.page-id-8 .site-content,
+.page-id-8 .inside-article {
+  background: radial-gradient(circle at top left, #f5f7ff 0, #f9fafb 40%, #ffffff 100%);
+}
+
+/* Main play grid */
+.hmqz-play-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 2fr);
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+
+/* Left column (card) */
+.hmqz-play-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+/* Status strip above the card */
+.hmqz-play-progress {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.02);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.hmqz-play-progress .hmqz-play-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #15803d;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* --------- CARD SHELL --------- */
+
+.hmqz-play-card {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+}
+
+/* Tighten the white card and make it feel like a device frame */
+.hmqz-play-card > div,
+.hmqz-play-card .hmqa-card {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 1.6rem 1.7rem !important;
+  border-radius: 26px !important;
+  border: 1px solid rgba(148, 163, 184, 0.25) !important;
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.08),
+    0 0 0 1px rgba(148, 163, 184, 0.05);
+}
+
+/* --------- LOGO AS SMALL BADGE --------- */
+
+.hmqz-play-card img[alt="HMQUIZ"],
+.hmqz-play-card img[src*="hmquiz"],
+.hmqz-play-card img[src*="HMQUIZ"] {
+  display: block;
+  margin: 0 auto 0.5rem;
+  max-height: 56px;            /* thumbnail size */
+  width: auto;
+  filter: drop-shadow(0 4px 10px rgba(37, 99, 235, 0.25));
+}
+
+/* Add a faint divider under the logo to separate meta from question */
+.hmqz-play-card img[alt="HMQUIZ"] + * {
+  margin-top: 0.2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+/* --------- META + QUESTION --------- */
+
+/* General text tone inside the card */
+.hmqz-play-card p {
+  margin: 0.15rem 0;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Category / quiz name line – slightly stronger */
+.hmqz-play-card p strong,
+.hmqz-play-card a {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Try to “promote” the actual question text visually */
+.hmqz-play-card p:nth-of-type(4),
+.hmqz-play-card .hmqa-question,
+.hmqz-play-card .question-text {
+  margin-top: 0.7rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: #111827;
+}
+
+/* Progress bar – a bit thicker + pill style */
+.hmqz-play-card .progress,
+.hmqz-play-card .hmqa-progress {
+  border-radius: 999px !important;
+  overflow: hidden;
+}
+
+.hmqz-play-card .progress-bar,
+.hmqz-play-card .hmqa-progress-bar {
+  border-radius: 999px !important;
+}
+
+/* “Per-question timer…” line – make it quiet */
+.hmqz-play-card p:contains("Per-question timer"),
+.hmqz-play-card p:contains("Per question timer") {
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+/* --------- OPTIONS / BUTTONS --------- */
+
+.hmqz-play-card button,
+.hmqz-play-card .hmqa-option,
+.hmqz-play-card .answer-option {
+  display: block;
+  width: 100%;
+  margin: 0.35rem 0;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  text-align: left;
+  font-size: 0.94rem;
+  line-height: 1.3;
+  color: #111827;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.05s ease,
+    box-shadow 0.15s ease;
+}
+
+.hmqz-play-card button:hover,
+.hmqz-play-card .hmqa-option:hover,
+.hmqz-play-card .answer-option:hover {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.18);
+  transform: translateY(-1px);
+}
+
+/* Selected / correct / wrong states (if plugin adds classes) */
+.hmqz-play-card .is-selected,
+.hmqz-play-card .is-active {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+
+.hmqz-play-card .is-correct {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+
+.hmqz-play-card .is-wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+/* --------- ASIDE CARDS (HOW TO PLAY / KEEP IT LIGHT) --------- */
+
+.hmqz-play-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hmqz-play-aside .hmqz-card {
+  border-radius: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: #ffffff;
+  padding: 1.05rem 1.15rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+}
+
+.hmqz-play-aside h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.96rem;
+  color: #0f172a;
+}
+
+.hmqz-play-aside .hmqz-bullet-list {
+  margin: 0;
+  padding-left: 1.05rem;
+  font-size: 0.82rem;
+  color: #4b5563;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media (max-width: 900px) {
+  .hmqz-play-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hmqz-play-main {
+    order: 1;
+  }
+
+  .hmqz-play-aside {
+    order: 2;
+  }
+
+  .hmqz-play-card {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================
+   HMQUIZ PLAY – compact header + 2×2 option grid
+   ========================================================== */
+
+/* Make the play card a bit wider and more prominent */
+.page-id-8 .hmqz-play-card {
+  width: 100%;
+  max-width: 440px;
+}
+
+/* Use CSS grid inside the core quiz card */
+.page-id-8 .hmqz-play-card .hmqa-card,
+.page-id-8 .hmqz-play-card > div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-auto-rows: auto;
+  row-gap: 0.4rem;
+}
+
+/* --- HEADER LAYOUT -------------------------------------------------- */
+
+/* Logo as small badge in the top-left corner */
+.page-id-8 .hmqz-play-card img[alt="HMQUIZ"],
+.page-id-8 .hmqz-play-card img[src*="hmquiz"] {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  max-height: 40px;
+  width: auto;
+  margin: 0;
+}
+
+/* Level line – small, under logo */
+.page-id-8 .hmqz-play-card p:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 0.72rem;
+  color: #9ca3af;
+}
+
+/* Timer line – top-right */
+.page-id-8 .hmqz-play-card p:nth-of-type(2) {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: start;
+  text-align: right;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+/* Topic + Category (center, two lines) */
+.page-id-8 .hmqz-play-card p:nth-of-type(3),
+.page-id-8 .hmqz-play-card p:nth-of-type(4) {
+  grid-column: 2;
+  text-align: left;
+  font-size: 0.86rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Progress bar spans full width under header */
+.page-id-8 .hmqz-play-card .progress,
+.page-id-8 .hmqz-play-card .hmqa-progress {
+  grid-column: 1 / 4;
+  margin-top: 0.4rem;
+}
+
+/* Question text: full width, slightly larger */
+.page-id-8 .hmqz-play-card p:nth-of-type(n + 5),
+.page-id-8 .hmqz-play-card .hmqa-question,
+.page-id-8 .hmqz-play-card .question-text {
+  grid-column: 1 / 4;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: #111827;
+}
+
+/* --- 2×2 OPTIONS GRID ----------------------------------------------- */
+
+/* Container for answer options: 2 columns */
+.page-id-8 .hmqz-play-card .hmqa-options,
+.page-id-8 .hmqz-play-card .answers,
+.page-id-8 .hmqz-play-card form {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+/* Each option fills a grid cell */
+.page-id-8 .hmqz-play-card .hmqa-options > *,
+.page-id-8 .hmqz-play-card .answers > *,
+.page-id-8 .hmqz-play-card form > button {
+  width: 100%;
+  margin: 0;
+}
+
+/* Styling for option buttons (re-using previous styling, but grid-friendly) */
+.page-id-8 .hmqz-play-card button,
+.page-id-8 .hmqz-play-card .hmqa-option,
+.page-id-8 .hmqz-play-card .answer-option {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  font-size: 0.94rem;
+  color: #111827;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.05s ease,
+    box-shadow 0.15s ease;
+}
+
+.page-id-8 .hmqz-play-card button:hover,
+.page-id-8 .hmqz-play-card .hmqa-option:hover,
+.page-id-8 .hmqz-play-card .answer-option:hover {
+  background: #eff6ff;
+  border-color: #60a5fa;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.18);
+  transform: translateY(-1px);
+}
+
+/* Selected / correct / wrong states – keep from previous pass */
+.page-id-8 .hmqz-play-card .is-selected,
+.page-id-8 .hmqz-play-card .is-active {
+  background: #dbeafe;
+  border-color: #2563eb;
+}
+.page-id-8 .hmqz-play-card .is-correct {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+.page-id-8 .hmqz-play-card .is-wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+/* --- RESPONSIVE: on very small screens go back to 1 column options --- */
+@media (max-width: 500px) {
+  .page-id-8 .hmqz-play-card .hmqa-options,
+  .page-id-8 .hmqz-play-card .answers,
+  .page-id-8 .hmqz-play-card form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* === HMQUIZ Play card v2: base sizing (inspired by local app.css) === */
+
+.hmqz-play-page .hmqz-play-card {
+  max-width: 720px;
+  margin: 32px auto 64px;
+  padding: 8px 16px;
+}
+
+.hmqz-play-page .hmqz-play-card-inner,
+.hmqz-play-page .hmqz-play-card > div {
+  /* outer white card from the play engine */
+  border: 1px solid #dde4f0;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 18px 20px 22px;
+  box-shadow: 0 18px 45px rgba(15, 35, 52, 0.08);
+}
+
+/* Question text & general typography */
+.hmqz-play-page .hmqz-question-text {
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin: 0 0 12px;
+  color: #1f2933;
+}
+/* === Header: logo | topic/category | timer === */
+
+/* Wrap the top meta row in a flex/ grid layout. You may need to adjust
+   the selectors below once you inspect the DOM. */
+
+.hmqz-play-page .hmqz-meta-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px 16px;
+  margin-bottom: 10px;
+}
+
+/* Logo on the left – make it a thumbnail */
+.hmqz-play-page .hmqz-meta-logo img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+/* Middle: topic + category (2 lines) */
+.hmqz-play-page .hmqz-meta-text {
+  line-height: 1.3;
+}
+
+.hmqz-play-page .hmqz-meta-topic {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #22324b;
+}
+
+.hmqz-play-page .hmqz-meta-category {
+  font-size: 0.84rem;
+  color: #6b7a90;
+}
+
+/* Right: timer pill */
+.hmqz-play-page .hmqz-meta-timer {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f4f6ff;
+  color: #3043af;
+  white-space: nowrap;
+}
+
+/* ==========================================================
+   HMQUIZ PLAY – new card layout (shortcode [hmqz_play])
+   2025-11-18
+   - Header: logo left, topic/title center, timer + Q meta right
+   - Body: question + 2×2 options grid (1-col on mobile)
+   - Footer: level + difficulty + Next button
+   ========================================================== */
+
+/* Outer wrapper from hmquiz-plugin.php shortcode */
+.hmqz-play-page-inner {
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Make sure the card uses full width but stays centered */
+.hmqz-play-page-inner .hmqz-play-card {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Inner white card shell (the one we added around the engine output) */
+.hmqz-play-card-inner {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ================= HEADER ================= */
+
+.hmqz-play-card-inner .hmqz-play-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hmqz-play-header-left {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small thumbnail logo */
+.hmqz-play-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: contain;
+}
+
+/* Fallback text logo */
+.hmqz-play-logo-text {
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.hmqz-play-header-center {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hmqz-play-topic {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hmqz-play-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.35;
+}
+
+.hmqz-play-header-right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+
+/* Timer pill */
+.hmqz-play-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-weight: 600;
+}
+
+.hmqz-play-timer-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.65rem;
+  opacity: 0.9;
+}
+
+.hmqz-play-timer-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.hmqz-play-qmeta {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ================= PROGRESS BAR ================= */
+
+.hmqz-play-progress {
+  margin-top: 0.25rem;
+}
+
+.hmqz-play-progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.hmqz-play-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  border-radius: 999px;
+  transition: width 0.25s ease-out;
+}
+
+/* ================= BODY ================= */
+
+.hmqz-play-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hmqz-play-question {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: #111827;
+}
+
+/* 2×2 options grid on desktop */
+.hmqz-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+/* Stack options on smaller screens */
+@media (max-width: 640px) {
+  .hmqz-play-card-inner {
+    padding: 1.25rem 1.25rem 1.4rem;
+    border-radius: 12px;
+  }
+
+  .hmqz-play-card-inner .hmqz-play-header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hmqz-play-header-right {
+    align-items: flex-end;
+  }
+
+  .hmqz-options-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ================= OPTION TILES ================= */
+
+/* Override any older generic ".hmqz-play-card button" rules specifically for this tile */
+.hmqz-play-card button.hmqz-option-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    box-shadow 0.15s ease-out,
+    transform 0.08s ease-out;
+  margin: 0; /* remove any old vertical margin */
+}
+
+.hmqz-play-card button.hmqz-option-tile:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(148, 163, 184, 0.25);
+  transform: translateY(-1px);
+}
+
+.hmqz-play-card button.hmqz-option-tile:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(148, 163, 184, 0.25);
+}
+
+.hmqz-play-card button.hmqz-option-tile:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Letter badge (A, B, C, D) */
+.hmqz-option-key {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.hmqz-option-text {
+  flex: 1 1 auto;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* JS state helper classes */
+.hmqz-option-tile.is-selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.hmqz-option-tile.is-correct {
+  border-color: #16a34a;
+  background: #ecfdf3;
+}
+
+.hmqz-option-tile.is-wrong {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+
+/* ================= FOOTER ================= */
+
+.hmqz-play-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.hmqz-play-footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Level / difficulty pills */
+.hmqz-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hmqz-pill-difficulty {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* Next button – reuse primary button style but refine */
+.hmqz-btn-primary {
+  border: none;
+  cursor: pointer;
+}
+
+.hmqz-btn-primary:disabled,
+.hmqz-btn-primary[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.hmqz-btn-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding-inline: 1.2rem;
+  padding-block: 0.55rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-next-arrow {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Footer stacking on small screens */
+@media (max-width: 640px) {
+  .hmqz-play-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hmqz-play-footer-meta {
+    justify-content: space-between;
+  }
+
+  .hmqz-play-footer .hmqz-btn-next {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================
+   HMQUIZ PLAY card v3 – header + 2×2 options
+   (applies on the /play/ page, ID 8)
+   ========================================================== */
+
+.page-id-8 .hmqz-play-card-inner {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  padding: 1.4rem 1.6rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Header bar inside card */
+.page-id-8 .hmqz-play-header-bar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 0.4rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page-id-8 .hmqz-play-header-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-id-8 .hmqz-play-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  object-fit: contain;
+}
+
+.page-id-8 .hmqz-play-logo-text {
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.page-id-8 .hmqz-play-header-center {
+  min-width: 0;
+}
+
+.page-id-8 .hmqz-play-topic {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.page-id-8 .hmqz-play-title {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.page-id-8 .hmqz-play-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+}
+
+.page-id-8 .hmqz-play-timer-pill {
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.page-id-8 .hmqz-play-qmeta {
+  color: #6b7280;
+}
+
+/* Body: let the engine output flow */
+.page-id-8 .hmqz-play-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+/* 2×2 options grid on desktop */
+.page-id-8 .hmqz-play-card-inner .hmqa-options,
+.page-id-8 .hmqz-play-card-inner .answers,
+.page-id-8 .hmqz-play-card-inner form .hmqa-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem 0.9rem;
+}
+
+/* Make each option tile fill its grid cell */
+.page-id-8 .hmqz-play-card-inner .hmqa-option,
+.page-id-8 .hmqz-play-card-inner .answer-option,
+.page-id-8 .hmqz-play-card-inner button.hmq-option {
+  width: 100%;
+}
+
+/* Footer inside card */
+.page-id-8 .hmqz-play-footer {
+  margin-top: 0.4rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+/* Mobile: collapse options to 1 column and stack header */
+@media (max-width: 640px) {
+  .page-id-8 .hmqz-play-card-inner .hmqa-options,
+  .page-id-8 .hmqz-play-card-inner .answers,
+  .page-id-8 .hmqz-play-card-inner form .hmqa-options {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-id-8 .hmqz-play-header-bar {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.5rem;
+  }
+
+  .page-id-8 .hmqz-play-header-right {
+    align-items: flex-start;
+  }
+}
+

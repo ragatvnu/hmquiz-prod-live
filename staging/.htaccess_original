@@ -1,0 +1,18 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /staging/
+RewriteRule ^index\.php$ - [L]
+# Pass existing files/dirs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Front controller
+RewriteRule . /staging/index.php [L]
+</IfModule>
+# END WordPress
+
+# Keep your HMQZ headers below
+<IfModule mod_headers.c>
+  Header set X-HTACCESS-OK "yes"
+  Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+</IfModule>

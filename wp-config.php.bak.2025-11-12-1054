@@ -1,0 +1,119 @@
+<?php
+define( 'WP_CACHE', true );
+
+/**
+ * The base configuration for WordPress
+ *
+ * The wp-config.php creation script uses this file during the installation.
+ * You don't have to use the web site, you can copy this file to "wp-config.php"
+ * and fill in the values.
+ *
+ * This file contains the following configurations:
+ *
+ * * Database settings
+ * * Secret keys
+ * * Database table prefix
+ * * Localized language
+ * * ABSPATH
+ *
+ * @link https://wordpress.org/support/article/editing-wp-config-php/
+ *
+ * @package WordPress
+ */
+
+// ** Database settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'u290655997_9skQI' );
+
+/** Database username */
+define( 'DB_USER', 'u290655997_pysiu' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'dj1HEgEBK5' );
+
+/** Database hostname */
+define( 'DB_HOST', '127.0.0.1' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Authentication unique keys and salts.
+ *
+ * Change these to different unique phrases! You can generate these using
+ * the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}.
+ *
+ * You can change these at any point in time to invalidate all existing cookies.
+ * This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define( 'AUTH_KEY',          ':>:c~^Dvq5gJA/+L*5xK(rmyq|FdWp- K!%#pfBClanbNtS<Z{E4S$n;zY=Kc!)/' );
+define( 'SECURE_AUTH_KEY',   'eIx[$IMQwF)OCvSoJ7k}(!oSLNAZ?Z0N+`Ue[5#uU.s#&H!+1CJ/N;+*CqPJ[|`@' );
+define( 'LOGGED_IN_KEY',     'xD?*SHiuqt+XhXM}WS?lk?0W|`9%U%-Qs8/:WCYo_JIGhtsd9C>SHB<JT5]=zN_u' );
+define( 'NONCE_KEY',         '6!8om~&t@8[AB3>*0.IgV|+X%-|=n81qJ_}Azx)+P8kJ[u/2Qy~E(|#ZS)P:SJf#' );
+define( 'AUTH_SALT',         ']$>u7b~}9-nd>8o<+= `*Ho:_K5$@^k*Q#&cq`o-ChV_$Qm@|%*lmOT(AMEFlW-G' );
+define( 'SECURE_AUTH_SALT',  ']9k@pM_REKc&k]3m0)fR]]gBK#$DKWca b@Ov|E/-I,mf&e(gzy!}KeGfI{N)t$~' );
+define( 'LOGGED_IN_SALT',    ' Y%*t-bX$dY[QfN9p.mF*wk0eVjk?;1AGX.th#%Kte<N?5AHPLA&z0a;XfoV}V>}' );
+define( 'NONCE_SALT',        '.ae)CM}H,:bh~$<T[7hN2H}qP~|l6<XI/@KR0/Bl]ic2b0B%H3Kkw~r#:$T NXzo' );
+define( 'WP_CACHE_KEY_SALT', '/TtZ-tgl3fu1NG84=[2PrK[p88#)D>=W|hidP?)2L}<p{W= )vGyhwRz3U(-rG>,' );
+
+
+/**#@-*/
+
+/**
+ * WordPress database table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'wp_';
+
+
+/* Add any custom values between this line and the "stop editing" line. */
+
+
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the documentation.
+ *
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ */
+if ( ! defined( 'WP_DEBUG' ) ) {
+	define( 'WP_DEBUG', false );
+}
+
+define( 'FS_METHOD', 'direct' );
+define( 'COOKIEHASH', '8260fc708e7d9ef850bbabc89a0520e5' );
+define( 'WP_AUTO_UPDATE_CORE', 'minor' );
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';
+
+// === HMQUIZ env (keep before "That's all" line) ===
+if (!getenv('HMQZ_ENV')) putenv('HMQZ_ENV=production');           // staging | production | local
+if (!getenv('GA_MEASUREMENT_ID')) putenv('GA_MEASUREMENT_ID=G-REPLACE_WITH_YOUR_PROD_ID');
+if (!getenv('CACHE_PUBLIC_MAXAGE')) putenv('CACHE_PUBLIC_MAXAGE=604800'); // 7 days
+// ================================================
+
+// === HMQUIZ env (keep before "That's all" line) ===
+if (!getenv('HMQZ_ENV')) putenv('HMQZ_ENV=production');           // staging | production | local
+if (!getenv('GA_MEASUREMENT_ID')) putenv('G-6BN7XLRJMZ');
+if (!getenv('CACHE_PUBLIC_MAXAGE')) putenv('CACHE_PUBLIC_MAXAGE=604800'); // 7 days
+// ================================================

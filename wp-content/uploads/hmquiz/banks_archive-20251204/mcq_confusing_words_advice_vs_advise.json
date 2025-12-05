@@ -1,0 +1,291 @@
+{
+  "title": "Advice vs Advise",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: My teacher gave me good ___.",
+      "options": [
+        "advice",
+        "advise",
+        "advices",
+        "advises"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: I would ___ you to start early.",
+      "options": [
+        "advice",
+        "advise",
+        "advised",
+        "advising"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'advice' correctly.",
+      "options": [
+        "Can you advice me on this problem?",
+        "She gave me some useful advise.",
+        "I appreciate your advice.",
+        "They will advice you later."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'advise' correctly.",
+      "options": [
+        "He advice me to be patient.",
+        "He advised me to be patient.",
+        "He gives me good advises.",
+        "He gave me a good advise."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with the error.",
+      "options": [
+        "I need your advice on this decision.",
+        "They advise clients on financial matters.",
+        "Her parents gave her some excellent advice.",
+        "She offered me a helpful advise."
+      ],
+      "answer": 3,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'My lawyer will ___ me, and I will follow his ___.'",
+      "options": [
+        "advice / advise",
+        "advise / advice",
+        "advise / advise",
+        "advice / advice"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best option: 'If you want my ___, I would ___ you to apologize.'",
+      "options": [
+        "advice / advise",
+        "advise / advice",
+        "advice / advice",
+        "advise / advise"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which explanation correctly describes 'advice' and 'advise'?",
+      "options": [
+        "'Advice' is a verb and 'advise' is a noun.",
+        "'Advice' is a noun and 'advise' is a verb.",
+        "They are both nouns.",
+        "They are both verbs."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: She asked her friend for ___.",
+      "options": [
+        "advice",
+        "advise",
+        "advises",
+        "advices"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: I strongly ___ you to read the instructions carefully.",
+      "options": [
+        "advice",
+        "advise",
+        "advised",
+        "advises"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence that is completely correct.",
+      "options": [
+        "Let me give you a good advice.",
+        "Let me give you some advice.",
+        "Let me advice you some advice.",
+        "Let me advise you some advices."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence with the mistake.",
+      "options": [
+        "The doctor advised him to rest.",
+        "His advice helped me make a better choice.",
+        "They are seeking legal advise.",
+        "She often asks her mentor for advice."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'Our manager will ___ us, but we don't have to follow his ___.'",
+      "options": [
+        "advice / advise",
+        "advise / advice",
+        "advise / advise",
+        "advice / advice"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "Their lawyer's advise was very helpful.",
+        "Their lawyer's advice was very helpful.",
+        "Their lawyer's advices were very helpful.",
+        "Their lawyer's advising was very helpful advice."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "Please advice me on what to do.",
+        "Please advise me on what to do.",
+        "Please give me an advise on what to do.",
+        "Please give me many advices on what to do."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: 'One piece of ___ I often hear is to get enough sleep.'",
+      "options": [
+        "advise",
+        "advice",
+        "advises",
+        "advices"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with two errors.",
+      "options": [
+        "She gave me a very good advise that I still remember.",
+        "She gave me very good advice that I still remember.",
+        "She advised me to follow her advice.",
+        "She has always given me good advice."
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the sentence 'I would advise you to listen to his advice', what part of speech is 'advise'?",
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the same sentence, what part of speech is 'advice'?",
+      "options": [
+        "Noun",
+        "Verb",
+        "Adjective",
+        "Adverb"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_advice_vs_advise",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    }
+  ]
+}

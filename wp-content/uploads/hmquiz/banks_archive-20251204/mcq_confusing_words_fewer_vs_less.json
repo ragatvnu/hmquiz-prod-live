@@ -1,0 +1,306 @@
+{
+  "title": "Fewer vs Less",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: There are ___ students in class today than yesterday.",
+      "options": [
+        "less",
+        "fewer",
+        "few",
+        "little"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: I need to drink ___ sugar in my tea.",
+      "options": [
+        "fewer",
+        "less",
+        "few",
+        "little"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'fewer' correctly.",
+      "options": [
+        "I have fewer free time this week.",
+        "We made fewer mistakes on the second test.",
+        "There is fewer water in the bottle.",
+        "She has fewer patience today."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'less' correctly.",
+      "options": [
+        "There are less cars on the road today.",
+        "He made less errors than before.",
+        "We have less time to finish the project.",
+        "I have less books than you."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with the error.",
+      "options": [
+        "Fewer people attended the meeting this week.",
+        "We need less noise in the library.",
+        "She has fewer responsibilities in her new job.",
+        "There are less chairs in this room than before."
+      ],
+      "answer": 3,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'We want ___ interruptions and ___ emails each day.'",
+      "options": [
+        "less / fewer",
+        "fewer / less",
+        "less / less",
+        "fewer / fewer"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best option: 'If we make ___ mistakes, we will have ___ problems.'",
+      "options": [
+        "less / fewer",
+        "fewer / less",
+        "fewer / fewer",
+        "less / less"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which explanation correctly describes 'fewer' vs 'less'?",
+      "options": [
+        "'Fewer' is for uncountable nouns; 'less' is for countable nouns.",
+        "'Fewer' is for countable nouns; 'less' is for uncountable nouns.",
+        "They are fully interchangeable.",
+        "'Less' is more formal and always preferred."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: There is ___ water in the glass than before.",
+      "options": [
+        "fewer",
+        "less",
+        "few",
+        "little"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: We saw ___ tourists this year than last year.",
+      "options": [
+        "less",
+        "fewer",
+        "few",
+        "little"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence that is completely correct.",
+      "options": [
+        "We had less people at the event this time.",
+        "We had fewer people and less noise at the event this time.",
+        "We had fewer people and fewer noise at the event this time.",
+        "We had less people and fewer noise at the event this time."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence with the mistake.",
+      "options": [
+        "I spend less money on snacks now.",
+        "We faced fewer problems than expected.",
+        "There is less pollution in this area.",
+        "He has fewer experience than his colleague."
+      ],
+      "answer": 3,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'The new system uses ___ energy and causes ___ errors.'",
+      "options": [
+        "less / fewer",
+        "fewer / less",
+        "less / less",
+        "fewer / fewer"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that follows the traditional rule.",
+      "options": [
+        "There were less than ten students in the room.",
+        "She ate fewer than half the cake.",
+        "He has fewer than five years of experience.",
+        "We waited for fewer than an hour."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "We have less than an hour to finish.",
+        "We have fewer than an hour to finish.",
+        "We have fewer time left.",
+        "We have fewer homework tonight."
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence that is completely correct.",
+      "options": [
+        "There are fewer cars and less traffic today.",
+        "There are less cars and fewer traffic today.",
+        "There are fewer cars and fewer traffic today.",
+        "There are less cars and less traffic today."
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: 'We need to spend ___ time arguing and ___ time working.'",
+      "options": [
+        "fewer / less",
+        "less / fewer",
+        "less / less",
+        "fewer / fewer"
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which guideline is most accurate in careful written English?",
+      "options": [
+        "Always use 'less' for anything involving numbers.",
+        "Use 'fewer' with things you can count and 'less' with things you cannot easily count.",
+        "Use 'fewer' only in formal writing.",
+        "Use 'less' only with time and money."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the sentence 'We saw fewer stars because there was less light pollution', which word modifies a countable noun?",
+      "options": [
+        "fewer",
+        "less",
+        "both",
+        "neither"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the same sentence, which word modifies an uncountable noun?",
+      "options": [
+        "fewer",
+        "less",
+        "both",
+        "neither"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_fewer_vs_less",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    }
+  ]
+}

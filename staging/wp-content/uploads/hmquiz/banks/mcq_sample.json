@@ -1,0 +1,7 @@
+[
+  {"q":"Capital of France?","options":["Paris","Lyon","Marseille","Nice"],"answer":0},
+  {"q":"2 + 2 = ?","options":["3","4","5","22"],"answer":1},
+  {"q":"Color of the sky (clear day)?","options":["Blue","Green","Red","Pink"],"answer":0},
+  {"q":"Largest planet?","options":["Earth","Venus","Jupiter","Mars"],"answer":2},
+  {"q":"HTTP stands for?","options":["HyperText Transfer Protocol","HighText Transfer Protocol","Hyperlink Transfer Program","Home Tool Transfer Protocol"],"answer":0}
+]

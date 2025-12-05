@@ -1,0 +1,291 @@
+{
+  "title": "Verb Tenses",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: She usually ___ breakfast at 7 a.m.",
+      "options": [
+        "eat",
+        "eats",
+        "ate",
+        "eaten"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: They ___ a movie last night.",
+      "options": [
+        "watch",
+        "watched",
+        "are watching",
+        "have watched"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence in the present continuous tense.",
+      "options": [
+        "She reads a book every day.",
+        "She is reading a book now.",
+        "She read a book yesterday.",
+        "She has read that book."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence in the simple future tense.",
+      "options": [
+        "She will call you later.",
+        "She called you already.",
+        "She is calling you now.",
+        "She has called you."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: Right now, they ___ for their exam.",
+      "options": [
+        "study",
+        "are studying",
+        "studied",
+        "have studied"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: By this time yesterday, we ___ at the restaurant.",
+      "options": [
+        "are",
+        "were",
+        "will be",
+        "have been"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that correctly uses the simple past tense.",
+      "options": [
+        "I am finishing my work yesterday.",
+        "I finish my work yesterday.",
+        "I finished my work yesterday.",
+        "I have finishing my work yesterday."
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Identify the sentence in the present perfect tense.",
+      "options": [
+        "She has visited London twice.",
+        "She visited London twice last year.",
+        "She is visiting London now.",
+        "She visits London every year."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: Tomorrow at noon, I ___ my presentation.",
+      "options": [
+        "give",
+        "gave",
+        "will be giving",
+        "have given"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that correctly mixes tenses.",
+      "options": [
+        "When I will arrive, I call you.",
+        "When I arrive, I will call you.",
+        "When I will arrive, I will call you.",
+        "When I arrived, I will call you."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: By next week, they ___ the project.",
+      "options": [
+        "will finish",
+        "will have finished",
+        "finished",
+        "have finished"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Identify the sentence using the past perfect tense.",
+      "options": [
+        "She had already left when I arrived.",
+        "She already left when I arrive.",
+        "She has already left when I arrived.",
+        "She already leaves when I arrived."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence in the simple present tense.",
+      "options": [
+        "He is playing football.",
+        "He played football yesterday.",
+        "He will play football tomorrow.",
+        "He plays football every weekend."
+      ],
+      "answer": 3,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: Look at the clouds! It ___ soon.",
+      "options": [
+        "rains",
+        "is going to rain",
+        "has rained",
+        "rained"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence in the past continuous tense.",
+      "options": [
+        "They were watching TV when I called.",
+        "They watched TV when I call.",
+        "They have watched TV when I called.",
+        "They watch TV when I called."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: She ___ in this company since 2015.",
+      "options": [
+        "worked",
+        "has worked",
+        "is working",
+        "was working"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Identify the incorrect tense use.",
+      "options": [
+        "I have known her for many years.",
+        "I am knowing her for many years.",
+        "I knew her when we were children.",
+        "I met her a long time ago."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: While he ___ dinner, the phone rang.",
+      "options": [
+        "cooked",
+        "was cooking",
+        "has cooked",
+        "cooks"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the best tense to complete the sentence: 'I ___ my keys. I can't find them anywhere.'",
+      "options": [
+        "lose",
+        "lost",
+        "have lost",
+        "had lost"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_verb_tenses",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    }
+  ]
+}

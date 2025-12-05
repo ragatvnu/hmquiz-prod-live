@@ -1,0 +1,64 @@
+<?php
+/** HMQZ: set after guards **/if (PHP_SAPI === 'cli' || (defined('WP_CLI') && WP_CLI) || (defined('WP_INSTALLING') && WP_INSTALLING)) return;define('HMQZ_OB_BOOTSTRAPPED', true); /* after guards */
+@header('X-HMQZ-OB: yes');
+/** HMQUIZ Output Buffer (staging) */
+if (defined('HMQZ_OB_BOOTSTRAPPED')) return;
+@header('X-HMQZ-OB: yes');
+// HMQZ: moved define below guards
+
+if (PHP_SAPI === 'cli' || (defined('WP_CLI') && WP_CLI) || (defined('WP_INSTALLING') && WP_INSTALLING)) return;
+$host = strtolower($_SERVER['HTTP_HOST'] ?? '');
+$uri  = (string)($_SERVER['REQUEST_URI'] ?? '');
+$path = strtolower(parse_url($uri, PHP_URL_PATH) ?: '');
+
+$force = getenv('HMQZ_OB_FORCE'); $disable = getenv('HMQZ_OB_DISABLE');
+$truthy = static function($v){ $v=is_string($v)?strtolower(trim($v)):$v; return in_array($v,['1','true','on','yes'],true); };
+if ($disable!==false && $truthy($disable)) return;
+if (!($force!==false && $truthy($force))) {
+  if (strpos($host,'staging') === false) return;
+  if ($path && (str_starts_with($path,'/wp-json') || str_starts_with($path,'/wp-admin') || str_starts_with($path,'/wp-login') || str_starts_with($path,'/feed'))) return;
+  if (!empty($_GET['rest_route'])) return;
+}
+
+$nonce = (function(){
+  try { $b = random_bytes(12); } catch (\Throwable $e) { $b = uniqid('hmqz',true); }
+  $t = rtrim(strtr(base64_encode($b),'+/','-_'),'=');
+  return substr($t,0,22);
+})();
+
+@header_remove('Content-Security-Policy');
+@header_remove('Content-Security-Policy-Report-Only');
+@header("Content-Security-Policy-Report-Only: ".
+  "default-src 'self'; ".
+  "script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com 'nonce-{$nonce}' 'report-sample'; ".
+  "style-src 'self' https://fonts.googleapis.com 'unsafe-inline' 'report-sample'; ".
+  "img-src 'self' data: https://www.google-analytics.com https://stats.g.doubleclick.net; ".
+  "font-src 'self' https://fonts.gstatic.com data:; ".
+  "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net; ".
+  "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; ".
+  "object-src 'none'; base-uri 'self'; upgrade-insecure-requests"
+);
+
+ob_start(function($html) use($nonce){
+  if (!is_string($html) || $html==='') return $html;
+  $peek = ltrim(substr($html,0,200));
+  $is_html = (stripos($html,'<html')!==false || stripos($html,'<!doctype')!==false || stripos($html,'<script')!==false) && !in_array(substr($peek,0,1),['{','['],true);
+  if (!$is_html) return $html;
+
+  // 1) Strip UA analytics.js (async tag variants)
+  $html = preg_replace([
+    '#<script\b[^>]*\bsrc=["\'](?:https?:)?//www\.google-analytics\.com/analytics\.js(?:\?[^"\']*)?["\'][^>]*>\s*</script>#i',
+    '#<script\b[^>]*\bsrc=["\'](?:https?:)?//www\.google-analytics\.com/analytics\.js["\'][^>]*>#i',
+    '#<script\b[^>]*>\s*\(function\s*\(i,s,o,g,r,a,m\).*?analytics\.js.*?</script>#is',
+  ], '', (string)$html);
+
+  // 2) Add nonce to any remaining <script> without one
+  $html = preg_replace('/<script(?![^>]*\bnonce=)([^>]*)>/i', '<script nonce="'.$nonce.'"$1>', (string)$html);
+
+  // 3) Visible marker near </head> (or </body>)
+  $marker = "\n<!-- HMQZ-OB-NONCE: {$nonce} -->\n".
+            '<script nonce="'.$nonce.'">window.HMQZ_OB_NONCE="'.$nonce.'";</script>'."\n";
+  if (stripos($html,'</head>')!==false) return preg_replace('/<\/head>/i', $marker.'</head>', (string)$html, 1);
+  if (stripos($html,'</body>')!==false) return preg_replace('/<\/body>/i', $marker.'</body>', (string)$html, 1);
+  return $html.$marker;
+});

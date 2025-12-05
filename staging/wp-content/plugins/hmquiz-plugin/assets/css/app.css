@@ -1,0 +1,23 @@
+.hmqz-leaderboard {
+    margin: 2em 0;
+}
+
+.hmqz-leaderboard h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.hmqz-leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hmqz-leaderboard th, .hmqz-leaderboard td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.hmqz-leaderboard th {
+    background-color: #f7f7f7;
+}

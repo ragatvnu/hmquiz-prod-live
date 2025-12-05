@@ -1,0 +1,156 @@
+{
+  "title": "Dangling Modifiers – Grammar Quiz",
+  "created_at": "2025-11-19T17:56:15Z",
+  "items": [
+    {
+      "q": "Identify the sentence with a dangling modifier.",
+      "options": [
+        "Having finished the assignment, the teacher graded it.",
+        "After finishing the assignment, the student submitted it.",
+        "To pass the course, you must study diligently.",
+        "While running down the street, I tripped over a curb."
+      ],
+      "answer": 0,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "Which sentence correctly revises the dangling modifier: Exhausted from the marathon, the bed was a welcome sight.",
+      "options": [
+        "The bed was a welcome sight, exhausted from the marathon.",
+        "Exhausted from the marathon, the runner found the bed a welcome sight.",
+        "The bed was a welcome sight for the exhausted runner.",
+        "Both B and C are correct revisions."
+      ],
+      "answer": 3,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "The modifying phrase Having studied all night, should correctly modify which subject?",
+      "options": [
+        "The exam",
+        "The professor",
+        "The student",
+        "The textbook"
+      ],
+      "answer": 2,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "Which sentence is grammatically correct?",
+      "options": [
+        "To start the car, the keys must be in the ignition.",
+        "To start the car, the ignition must have the keys.",
+        "To start the car, you must put the keys in the ignition.",
+        "To start the car, the engine turns over."
+      ],
+      "answer": 2,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "The sentence Walking across the street, a bus nearly hit him. is incorrect because:",
+      "options": [
+        "The sentence uses too many commas.",
+        "The verb 'hit' is in the past tense.",
+        "The modifier 'Walking across the street' modifies the bus.",
+        "The modifier should be placed at the end of the sentence."
+      ],
+      "answer": 2,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "To fix the dangling modifier in Running late, the clock was checked repeatedly, which word should be the subject of the main clause?",
+      "options": [
+        "The clock",
+        "The time",
+        "The person who was running",
+        "The speed"
+      ],
+      "answer": 2,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "Choose the correct sentence:",
+      "options": [
+        "Covered in mud, the dog's owner washed him.",
+        "Covered in mud, the owner washed the dog.",
+        "The dog, covered in mud, was washed by the owner.",
+        "Both B and C."
+      ],
+      "answer": 3,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "The error in While eating dinner, a sudden noise distracted me. is that the phrase \"While eating dinner\" modifies:",
+      "options": [
+        "the noise.",
+        "me.",
+        "the dinner.",
+        "the distraction."
+      ],
+      "answer": 0,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "Which sentence avoids a dangling modifier?",
+      "options": [
+        "Tired and hungry, the pizza tasted delicious.",
+        "After cleaning the house, a nap was needed.",
+        "Having read the book, I understood the movie.",
+        "To earn an A, hard work is required."
+      ],
+      "answer": 2,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    },
+    {
+      "q": "A dangling modifier is a phrase or clause that:",
+      "options": [
+        "is placed too far from the word it modifies.",
+        "incorrectly modifies a word that cannot logically perform the action.",
+        "is a fragment and not a complete sentence.",
+        "is missing punctuation."
+      ],
+      "answer": 1,
+      "topic": "mcq_modifiers_dangling",
+      "category": "Grammar",
+      "meta": {
+        "category": "Grammar"
+      }
+    }
+  ]
+}

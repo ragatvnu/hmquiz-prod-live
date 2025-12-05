@@ -1,0 +1,606 @@
+{
+  "title": "HMQUIZ English Grammar Bank",
+  "created_at": "2025-11-17T17:44:36Z",
+  "items": [
+    {
+      "q": "Which sentence is grammatically correct?",
+      "options": [
+        "She don't like cold weather.",
+        "She doesn't likes cold weather.",
+        "She doesn't like cold weather.",
+        "She not like cold weather."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct article: He is ___ honest person.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which option best completes the sentence? If I ___ more time, I would learn another language.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "am having"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Pick the correct sentence.",
+      "options": [
+        "I didn't saw her yesterday.",
+        "I haven't saw her yesterday.",
+        "I didn't see her yesterday.",
+        "I don't saw her yesterday."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which word correctly completes the sentence? She has worked here ___ 2019.",
+      "options": [
+        "for",
+        "since",
+        "from",
+        "during"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct form: By this time tomorrow, we ___ the report.",
+      "options": [
+        "finished",
+        "will be finished",
+        "will have finished",
+        "are finished"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence uses the passive voice?",
+      "options": [
+        "The manager approved the request.",
+        "The request was approved by the manager.",
+        "The manager will approve the request.",
+        "The manager is approving the request."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct pronoun: Neither of the students did ___ homework.",
+      "options": [
+        "their",
+        "his",
+        "her",
+        "their or his/her"
+      ],
+      "answer": 3,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Pick the best option: She drove more carefully ___ she was tired.",
+      "options": [
+        "because",
+        "although",
+        "so",
+        "and"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence is punctuated correctly?",
+      "options": [
+        "I bought apples oranges, and bananas.",
+        "I bought apples, oranges and, bananas.",
+        "I bought apples, oranges, and bananas.",
+        "I bought, apples, oranges and bananas."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct verb: The news ___ really surprising.",
+      "options": [
+        "were",
+        "are",
+        "is",
+        "be"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence uses the correct comparative form?",
+      "options": [
+        "This exercise is more easy than the last one.",
+        "This exercise is easier than the last one.",
+        "This exercise is more easier than the last one.",
+        "This exercise is easyer than the last one."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Select the best option: I look forward ___ from you soon.",
+      "options": [
+        "to hear",
+        "hearing",
+        "to hearing",
+        "for hearing"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct word: She didn't ___ to upset anyone.",
+      "options": [
+        "intend",
+        "intends",
+        "intended",
+        "intending"
+      ],
+      "answer": 0,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence is correct?",
+      "options": [
+        "Its a good idea to check your work.",
+        "It's a good idea to check your work.",
+        "Its' a good idea to check your work.",
+        "It is' a good idea to check your work."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct preposition: She apologized ___ the mistake.",
+      "options": [
+        "of",
+        "for",
+        "about",
+        "on"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Pick the correct option: By the time we arrived, the film ___.",
+      "options": [
+        "has started",
+        "had started",
+        "was started",
+        "would started"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence uses parallel structure correctly?",
+      "options": [
+        "He likes reading, to swim, and jogging.",
+        "He likes to read, to swim, and jogging.",
+        "He likes reading, swimming, and jogging.",
+        "He likes to reading, to swimming, and to jogging."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Select the best option: If I had known about the meeting, I ___ there.",
+      "options": [
+        "will go",
+        "would go",
+        "would have gone",
+        "had gone"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "options": [
+        "There is less people in the office today.",
+        "There are fewer people in the office today.",
+        "There are less people in the office today.",
+        "There is fewer people in the office today."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which word completes the sentence? She is responsible ___ managing the team.",
+      "options": [
+        "to",
+        "for",
+        "of",
+        "about"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Pick the correct option: I suggested that he ___ a break.",
+      "options": [
+        "take",
+        "takes",
+        "took",
+        "will take"
+      ],
+      "answer": 0,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the best sentence.",
+      "options": [
+        "Each of the players have a locker.",
+        "Each of the players has a locker.",
+        "Each of the player has a locker.",
+        "Each of players has a locker."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence uses a correct conditional form?",
+      "options": [
+        "If it will rain, we will stay inside.",
+        "If it rains, we will stay inside.",
+        "If it rained, we will stay inside.",
+        "If it will raining, we stay inside."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct option: She is the person ___ opinion I trust most.",
+      "options": [
+        "whose",
+        "who's",
+        "who",
+        "whom"
+      ],
+      "answer": 0,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Pick the correct verb form: Mathematics ___ my favorite subject at school.",
+      "options": [
+        "were",
+        "are",
+        "is",
+        "be"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which sentence is punctuated correctly?",
+      "options": [
+        "He said \"I'll call you tomorrow\".",
+        "He said, \"I'll call you tomorrow.\"",
+        "He said \"I'll call you tomorrow.\"",
+        "He said, \"I'll call you tomorrow\"."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the best word: The instructions were not very ___; I still don't know what to do.",
+      "options": [
+        "clear",
+        "clarity",
+        "clearly",
+        "clears"
+      ],
+      "answer": 0,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Select the correct sentence.",
+      "options": [
+        "I'm used to wake up early.",
+        "I used to waking up early.",
+        "I'm used to waking up early.",
+        "I used to am waking up early."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "options": [
+        "Their going to start the quiz now.",
+        "There going to start the quiz now.",
+        "They're going to start the quiz now.",
+        "Theyre going to start the quiz now."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Ultimate Grammar Test",
+      "meta": {
+        "category": "Ultimate Grammar Test"
+      }
+    },
+    {
+      "q": "Which word completes the sentence? The new policy will likely ___ employee morale.",
+      "options": [
+        "affect",
+        "effect",
+        "effects",
+        "be effecting"
+      ],
+      "answer": 0,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Choose the correct word: We don't yet know the long-term ___ of the medication.",
+      "options": [
+        "affect",
+        "affects",
+        "effect",
+        "to affect"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Which word best completes the sentence? The cloudy weather always seems to ___ my mood.",
+      "options": [
+        "effect",
+        "affect",
+        "have effect",
+        "be effect"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Which sentence is written correctly?",
+      "options": [
+        "The new schedule had a positive affect on productivity.",
+        "The new schedule had a positive effect on productivity.",
+        "The new schedule effected positively on productivity.",
+        "The new schedule was affect productivity."
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Choose the correct word: The doctor explained the possible side ___ of the treatment.",
+      "options": [
+        "affect",
+        "effect",
+        "affecting",
+        "to affect"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Which word completes the sentence? Her speech deeply ___ the audience.",
+      "options": [
+        "effected",
+        "was effect",
+        "affected",
+        "effect"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Pick the best option: They wanted to ___ real change in the community.",
+      "options": [
+        "affect",
+        "have affect",
+        "effect",
+        "be affect"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Which sentence is correct?",
+      "options": [
+        "Lack of sleep can effect your concentration.",
+        "Lack of sleep can have a negative affect on your concentration.",
+        "Lack of sleep can affect your concentration.",
+        "Lack of sleep has many affects on concentration."
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Choose the correct word: The new law came into ___ on January 1st.",
+      "options": [
+        "affect",
+        "affects",
+        "effect",
+        "affecting"
+      ],
+      "answer": 2,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    },
+    {
+      "q": "Which word best completes the sentence? We measured the ___ of noise on students' test scores.",
+      "options": [
+        "affect",
+        "effect",
+        "to affect",
+        "affecting"
+      ],
+      "answer": 1,
+      "topic": "English Grammar",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect"
+      }
+    }
+  ]
+}

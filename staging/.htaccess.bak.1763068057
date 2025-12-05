@@ -1,0 +1,36 @@
+# Production .htaccess — allow public traffic
+# --- HMQZ: staging noindex ---
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>
+# -----------------------------
+# --- HMQZ: CSP Report-Only for STAGING (telemetry only) ---
+<IfModule mod_headers.c>
+  # Ensure no enforcing CSP on staging
+  Header always unset Content-Security-Policy
+
+  # Reporting endpoints (JSON must be on ONE line; quotes escaped)
+
+  # Report-Only CSP (ONE line, no backslashes/newlines)
+</IfModule>
+# --- /HMQZ ---
+
+# HMQZ: Staging marker (single line)
+<IfModule mod_headers.c>
+  Header always set X-HMQZ-Env "staging"
+</IfModule>
+# HMQZ: legacy CSP report-uri for older browsers
+<IfModule mod_headers.c>
+</IfModule>
+  # HMQZ STAGING reporting (same-origin)
+
+  # Report-Only CSP (staging): styles tolerant; inline scripts still *reported*; same-origin reporting
+  # HMQZ STAGING reporting via env-expansion (avoids nested quotes)
+  SetEnvIfNoCase Request_URI "^/" HMQZ_REPORT_TO={"group":"csp-endpoint","max_age":10886400,"endpoints":[{"url":"https://staging.hmquiz.com/csp-collector.php"}]}
+  SetEnvIfNoCase Request_URI "^/" HMQZ_REPORTING_EP=csp-endpoint="https://staging.hmquiz.com/csp-collector.php"
+
+  Header always set Report-To "%{HMQZ_REPORT_TO}e"
+  Header always set Reporting-Endpoints "%{HMQZ_REPORTING_EP}e"
+
+  # Report-Only CSP (styles tolerant; inline scripts reported)
+  Header always set Reporting-Endpoints "%{HMQZ_REPORTING_EP}e"

@@ -1,0 +1,306 @@
+{
+  "title": "Weather vs Whether",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: The ___ is expected to be sunny tomorrow.",
+      "options": [
+        "weather",
+        "whether",
+        "wether",
+        "wheater"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: I can't decide ___ to go out or stay home.",
+      "options": [
+        "weather",
+        "whether",
+        "wether",
+        "whenever"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'weather' correctly.",
+      "options": [
+        "I don't know weather she will come.",
+        "The weather turned cold suddenly.",
+        "Weather you like it or not, we must leave.",
+        "She asked me weather I was ready."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'whether' correctly.",
+      "options": [
+        "The whether here changes quickly.",
+        "We will go for a walk, weather it rains or not.",
+        "I haven't decided whether I will attend the meeting.",
+        "The weatherman said whether will improve."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with the error in 'weather' or 'whether'.",
+      "options": [
+        "The weather in this region is very humid.",
+        "I am not sure whether he understood the instructions.",
+        "We will play outside weather it rains or shines.",
+        "They checked the weather before leaving."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'We need to check the ___ to see ___ it is safe to travel.'",
+      "options": [
+        "weather / whether",
+        "whether / weather",
+        "weather / weather",
+        "whether / whether"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best option: 'She asked me ___ I could cover her shift, depending on the ___.'",
+      "options": [
+        "weather / whether",
+        "whether / weather",
+        "whether / whether",
+        "weather / weather"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which sentence correctly uses both words?",
+      "options": [
+        "The whether report will tell us weather it will snow.",
+        "The weather report will tell us whether it will snow.",
+        "The weather report will tell us weather it will snow.",
+        "The whether report will tell us whether it will snow."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: Bad ___ can make driving dangerous.",
+      "options": [
+        "whether",
+        "weather",
+        "wether",
+        "wheater"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: I'm not sure ___ we'll have enough time.",
+      "options": [
+        "weather",
+        "whether",
+        "wether",
+        "whenever"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "We canceled the picnic because of the whether.",
+        "I checked the weather to see whether it would rain.",
+        "I checked the whether to see weather it would rain.",
+        "I checked whether to see the weather."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with the mistake.",
+      "options": [
+        "They postponed the trip because of the bad weather.",
+        "I'm wondering whether I should call her now.",
+        "I'll go for a run, whether it's raining or not.",
+        "The weather changed suddenly, whether we liked it or not."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which explanation best describes 'weather' and 'whether'?",
+      "options": [
+        "'Weather' means 'if' or 'that', and 'whether' means 'rain or sunshine'.",
+        "'Weather' refers to climate conditions; 'whether' introduces alternatives or possibilities.",
+        "Both can be used for climate conditions.",
+        "'Whether' is the plural of 'weather'."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: '___ you like it or not, the ___ will still change.'",
+      "options": [
+        "Weather / whether",
+        "Whether / weather",
+        "Weather / weather",
+        "Whether / whether"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best completion: 'The forecast said the ___ would be stormy all weekend.'",
+      "options": [
+        "whether",
+        "weather",
+        "wether",
+        "whither"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best completion: 'She couldn't decide ___ to stay in or go out in such bad ___.'",
+      "options": [
+        "weather / weather",
+        "whether / weather",
+        "whether / whether",
+        "weather / whether"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence that is completely correct.",
+      "options": [
+        "We don't know weather the match will be canceled due to whether.",
+        "We don't know whether the match will be canceled due to weather.",
+        "We don't know whether the match will be canceled due to whether.",
+        "We don't know weather the match will be canceled due to weather."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the sentence 'Whether we go or not depends on the weather', what role does 'whether' play?",
+      "options": [
+        "It is a noun.",
+        "It is a conjunction introducing a possibility.",
+        "It is an adjective.",
+        "It is a verb."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the same sentence, what does 'weather' refer to?",
+      "options": [
+        "An emotional state.",
+        "A decision.",
+        "Atmospheric conditions.",
+        "Time of day."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "The weather will decide whether we leave early.",
+        "The whether will decide weather we leave early.",
+        "The weather will decide weather we leave early.",
+        "The whether will decide whether we leave early."
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_weather_vs_whether",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+# --- HMQZ CSP Reporting (optional) ---
+<IfModule mod_headers.c>
+  Header set Report-To "{\"group\":\"csp\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://example.com/csp-endpoint\"}]}" env=HTTPS
+  Header set Reporting-Endpoints "csp=\"https://example.com/csp-endpoint\"" env=HTTPS
+</IfModule>
+# -------------------------------------
+
+# --- HMQZ Cache: Static assets ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # 1 year for static with file hashing (safe to mark immutable)
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/png  "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif  "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css   "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:avif|webp|png|jpg|jpeg|gif|svg|css|js|woff2)$">
+    Header merge Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # HTML: keep short (LSCache will manage page caching)
+  <FilesMatch "\.(?:html|htm|php)$">
+    Header merge Cache-Control "private, no-transform"
+  </FilesMatch>
+</IfModule>
+# --------------------------------
+
+# --- HMQZ Security Headers ---
+<IfModule mod_headers.c>
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), clipboard-read=(), clipboard-write=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+  # X-Frame-Options is superseded by CSP frame-ancestors, but harmless here:
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+# -----------------------------
+
+# --- HMQZ HSTS (Prod only) ---
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+# ------------------------------
+
+# --- HMQZ CSP (Enforcing) ---
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy "\
+default-src 'self'; \
+script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; \
+style-src  'self' 'unsafe-inline' https://fonts.googleapis.com; \
+img-src    'self' data: https://www.google-analytics.com https://stats.g.doubleclick.net; \
+font-src   'self' https://fonts.gstatic.com data:; \
+connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://www.google.com; \
+frame-src  'self' https://www.youtube.com https://www.youtube-nocookie.com; \
+upgrade-insecure-requests"
+</IfModule>
+# ------------------------------
+
+
+# ==== HMQZ SECURITY & CANONICAL (BEGIN) ====
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# Canonicalize host: force www -> apex
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.hmquiz\.com$ [NC]
+RewriteRule ^(.*)$ https://hmquiz.com/$1 [R=301,L]
+# ==== HMQZ SECURITY & CANONICAL (END) ====
+
+# Production .htaccess — allow public traffic
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# --- HMQZ CSP (Report-Only shadow) ---
+<IfModule mod_headers.c>
+  Header add Content-Security-Policy-Report-Only "\
+default-src 'self'; \
+script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; \
+style-src  'self' https://fonts.googleapis.com; \
+img-src    'self' data: https://www.google-analytics.com https://stats.g.doubleclick.net; \
+font-src   'self' https://fonts.gstatic.com data:; \
+connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://www.google.com; \
+frame-src  'self' https://www.youtube.com https://www.youtube-nocookie.com"
+</IfModule>
+# ------------------------------

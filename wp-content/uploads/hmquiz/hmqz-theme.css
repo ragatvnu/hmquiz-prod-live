@@ -1,0 +1,2679 @@
+/* HMQUIZ custom theme overrides */
+:root {
+  --hmqz-surface: #ffffff;
+  --hmqz-panel: #f8f9ff;
+  --hmqz-border: rgba(15, 23, 42, 0.08);
+  --hmqz-blue: #2563eb;
+  --hmqz-blue-dark: #1d4ed8;
+  --hmqz-indigo: #4c1d95;
+  --hmqz-slate: #0f172a;
+  --hmqz-muted: #64748b;
+}
+
+body.hmqz-modal-open {
+  overflow: hidden;
+}
+
+/* ---------- Play page shell ---------- */
+.page-id-8 .site-content,
+.page-id-8 .inside-article {
+  background: radial-gradient(circle at top, #eef2ff 0%, #f9fafb 55%, #ffffff 100%);
+}
+
+.page-id-8 .hmqz-play-page {
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.page-id-8 .hmqz-play-card {
+  margin: 0 auto;
+  padding: 0.175rem;
+  border-radius: 36px;
+  background: linear-gradient(135deg, rgba(37,99,235,0.35), rgba(13,148,136,0.3));
+  box-shadow: 0 35px 120px rgba(15, 23, 42, 0.18);
+}
+
+.page-id-8 .hmqz-play-card-inner {
+  background: var(--hmqz-surface);
+  border-radius: 34px;
+  padding: 2.25rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: clamp(720px, 80vh, 920px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.page-id-8 .hmqz-card-hero {
+  background: linear-gradient(130deg, #f4f6ff 0%, #faf8ff 60%, #ffffff 100%);
+  border-radius: 28px;
+  padding: 1.75rem 2rem 1.5rem;
+  border: 1px solid rgba(99,102,241,0.25);
+  box-shadow: 0 25px 55px rgba(79,70,229,0.14);
+}
+
+.page-id-8 .hmqz-card-head {
+  display: flex;
+  align-items: stretch;
+  gap: 1.75rem;
+}
+
+.page-id-8 .hmqz-card-title-wrap {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.page-id-8 .hmqz-card-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #6366f1;
+  margin-bottom: 0.4rem;
+}
+
+.page-id-8 .hmqz-card-title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--hmqz-slate);
+}
+
+.page-id-8 .hmqz-card-lead {
+  margin: 0;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.page-id-8 .hmqz-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.page-id-8 .hmqz-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #312e81;
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.3);
+}
+
+.hmqz-inline-group {
+  margin: 24px auto 8px;
+  max-width: 980px;
+  padding: 0 20px;
+}
+
+.page-id-8 .hmqz-card-meta-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  min-width: 190px;
+  align-self: stretch;
+}
+
+.page-id-8 .hmqz-card-meta {
+  text-align: center;
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(148,163,184,0.45);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.page-id-8 .hmqz-card-meta dt,
+.page-id-8 .hmqz-card-meta dd {
+  margin: 0;
+}
+
+.page-id-8 .hmqz-card-meta-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #94a3b8;
+  margin-bottom: 0.15rem;
+}
+
+.page-id-8 .hmqz-card-meta-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--hmqz-slate);
+}
+
+.page-id-8 .hmqz-card-progress {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(148,163,184,0.35);
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+
+.page-id-8 .hmqz-card-progress-fill {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  transition: width 0.25s ease;
+}
+
+.hmqz-play-progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(148,163,184,0.35);
+  overflow: hidden;
+}
+
+.hmqz-play-progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #2563eb, #22c55e);
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}
+
+.page-id-8 .hmqz-play-body {
+  flex: 1 1 auto;
+}
+
+.page-id-8 .hmqz-runner-shell {
+  width: 100%;
+}
+
+.page-id-8 .hmqz-wrapper {
+  width: 100%;
+}
+
+.page-id-8 #hmqz-app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-id-8 #hmqz-app .hmqz-legacy-hero,
+.page-id-8 #hmqz-app .hmqz-hero-top,
+.page-id-8 #hmqz-app .hmqz-hero-logo,
+.page-id-8 #hmqz-app .hmqz-legacy-title,
+.page-id-8 #hmqz-app .hmqz-hero-chips,
+.page-id-8 #hmqz-app .hmqz-head-timer,
+.page-id-8 #hmqz-app .hmqz-level-pill,
+.page-id-8 #hmqz-app .hmqz-timer-label,
+.page-id-8 #hmqz-app .hmqz-timer-pill,
+.page-id-8 #hmqz-app .hmqz-timeup-badge,
+.page-id-8 #hmqz-app .hmqz-progress {
+  display: none !important;
+}
+
+.page-id-8 #hmqz-app .hmqz-legacy-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 1.75rem 1.85rem 2rem;
+  border-radius: 28px;
+  border: 1px solid rgba(148,163,184,0.35);
+  background: linear-gradient(170deg, #ffffff 0%, #f5f7fb 100%);
+  box-shadow:
+    0 18px 45px rgba(15,23,42,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  min-height: 520px;
+  transition: min-height 0.2s ease;
+}
+
+.page-id-8 #hmqz-app .hmqz-legacy-card.hmqz-card-low {
+  border-color: #fb923c;
+  box-shadow: 0 20px 40px rgba(251,146,60,0.35);
+}
+
+.page-id-8 #hmqz-app .hmqz-legacy-card.hmqz-card-timeup {
+  border-color: #ef4444;
+  box-shadow: 0 20px 50px rgba(239,68,68,0.35);
+}
+
+.page-id-8 #hmqz-app .hmqz-qtext {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.page-id-8 #hmqz-app .hmqz-grid-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.page-id-8 #hmqz-app .hmqz-choice-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.85rem 1.15rem;
+  border-radius: 22px;
+  border: 1px solid rgba(148,163,184,0.45);
+  background: #f9fafb;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: #0f172a;
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.page-id-8 #hmqz-app .hmqz-choice-btn:hover,
+.page-id-8 #hmqz-app .hmqz-choice-btn:focus-visible {
+  background: #eef2ff;
+  border-color: #6366f1;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 25px rgba(99,102,241,0.25);
+}
+
+.page-id-8 #hmqz-app .hmqz-choice-btn.is-correct {
+  background: linear-gradient(120deg, #ecfdf5, #d1fae5);
+  border-color: #34d399;
+  color: #064e3b;
+}
+
+.page-id-8 #hmqz-app .hmqz-choice-btn.is-wrong {
+  background: linear-gradient(120deg, #fef2f2, #fee2e2);
+  border-color: #f87171;
+  color: #991b1b;
+}
+
+.page-id-8 #hmqz-app .hmqz-next-hint {
+  font-size: 0.88rem;
+  text-align: center;
+  color: #94a3b8;
+}
+
+/* ---------- Buttons & utilities ---------- */
+.hmqz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hmqz-btn.primary {
+  background: var(--hmqz-blue);
+  color: #fff;
+  box-shadow: 0 18px 30px rgba(37,99,235,0.35);
+}
+
+.hmqz-btn.primary:hover { background: var(--hmqz-blue-dark); }
+
+.hmqz-btn.secondary {
+  background: #eef2ff;
+  color: #312e81;
+  border-color: rgba(99,102,241,0.4);
+}
+
+.hmqz-btn.secondary:hover {
+  background: #e0e7ff;
+}
+
+.hmqz-btn.ghost {
+  background: #fff;
+  border-color: rgba(148,163,184,0.5);
+  color: #0f172a;
+}
+
+.hmqz-btn.tertiary {
+  background: transparent;
+  border-color: rgba(148,163,184,0.4);
+  color: #475569;
+}
+
+.hmqz-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ---------- Modal & overlay ---------- */
+.hmqz-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 9999;
+}
+
+.hmqz-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hmqz-modal {
+  width: min(680px, 100%);
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 30px;
+  padding: 2rem;
+  box-shadow: 0 40px 90px rgba(15,23,42,0.35);
+}
+
+.hmqz-modal-head {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-modal-emoji {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.hmqz-modal-sub {
+  margin: 0.2rem 0 0;
+  color: #475569;
+}
+
+.hmqz-sharewrap {
+  margin-bottom: 1.25rem;
+}
+
+.hmqz-review-panel {
+  margin-top: 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(148,163,184,0.3);
+  padding: 1rem;
+  background: #f8fafc;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.hmqz-review-item + .hmqz-review-item {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(148,163,184,0.3);
+}
+
+.hmqz-review-q {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+}
+
+.hmqz-review-choices {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.hmqz-review-choice {
+  padding: 0.55rem 0.75rem;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(148,163,184,0.4);
+}
+
+.hmqz-review-choice.is-correct {
+  border-color: #22c55e;
+  background: #ecfdf5;
+}
+
+.hmqz-review-choice.is-picked {
+  border-color: #f97316;
+  background: #fff7ed;
+}
+
+.hmqz-review-choice.is-picked-correct {
+  border-color: #2563eb;
+  background: #dbeafe;
+}
+
+/* ---------- Email + score overlay ---------- */
+.hmqz-emailbox {
+  width: 100%;
+}
+
+.hmqz-emailbox-inline .hmqz-emailbox-card {
+  border-radius: 22px;
+}
+
+.hmqz-emailbox-card {
+  border-radius: 24px;
+  border: 1px solid rgba(148,163,184,0.35);
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(15,23,42,0.15);
+}
+
+.hmqz-score-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.hmqz-score-pill {
+  padding: 0.85rem 1rem;
+  border-radius: 18px;
+  background: #f1f5f9;
+  border: 1px solid rgba(148,163,184,0.35);
+  text-align: center;
+}
+
+.hmqz-score-label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: #94a3b8;
+}
+
+.hmqz-score-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hmqz-email-fields {
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.hmqz-input {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(148,163,184,0.5);
+  background: #f8fafc;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+}
+
+.hmqz-email-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.hmqz-email-note {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.hmqz-share-buttons {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-share-btn {
+  flex: 1 1 140px;
+  min-width: 140px;
+  padding: 0.65rem 0.9rem;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+  text-align: center;
+}
+
+.hmqz-share-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.25);
+}
+
+.hmqz-share-btn.facebook { background: #1877f2; }
+.hmqz-share-btn.twitter  { background: #0f172a; }
+.hmqz-share-btn.whatsapp { background: #16a34a; }
+
+/* Inline fallback variant */
+.hmqz-emailbox-inline {
+  margin-top: 1.5rem;
+}
+
+.hmqz-emailbox-inline .hmqz-emailbox-card {
+  background: #f8fafc;
+}
+
+/* ---------- Final summary ---------- */
+.page-id-8 .hmqz-legacy-summary {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 26px;
+  border: 1px solid rgba(148,163,184,0.35);
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  box-shadow: 0 25px 60px rgba(15,23,42,0.18);
+}
+
+.page-id-8 .hmqz-legacy-summary h3 {
+  margin-top: 0;
+}
+
+.page-id-8 .hmqz-final-history {
+  list-style: none;
+  margin: 1.2rem 0 1.5rem;
+  padding: 0;
+}
+
+.page-id-8 .hmqz-final-history li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(148,163,184,0.35);
+  font-size: 0.92rem;
+}
+
+/* ---------- Confetti ---------- */
+.hmqz-confetti {
+  position: absolute;
+  top: -10px;
+  width: 10px;
+  height: 16px;
+  background: var(--cf, #2563eb);
+  animation: hmqz-confetti-fall 1.2s ease-in forwards;
+  border-radius: 3px;
+  opacity: 0;
+}
+
+@keyframes hmqz-confetti-fall {
+  from { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  50% { opacity: 1; }
+  to { transform: translateY(80px) rotate(160deg); opacity: 0; }
+}
+
+/* ---------- Email modal overlay variant ---------- */
+.page-id-8 .hmqz-emailbox:not(.hmqz-emailbox-inline) .hmqz-emailbox-card {
+  background: linear-gradient(160deg, #ffffff 0%, #f7faff 100%);
+}
+
+/* ---------- Printable scorecard styles ---------- */
+@page {
+  size: A4 portrait;
+  margin: 16mm;
+}
+
+body.hmqz-printing {
+  background: #f5f7fb;
+}
+
+body.hmqz-printing > *:not(.hmqz-print-sheet) {
+  display: none !important;
+}
+
+.hmqz-print-sheet {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #0f172a;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 56px;
+  background: linear-gradient(165deg, #ffffff 0%, #f4f7ff 100%);
+  border-radius: 32px;
+  box-shadow:
+    0 40px 80px rgba(15, 23, 42, 0.16),
+    0 0 0 2px rgba(148, 163, 184, 0.15);
+  page-break-inside: avoid;
+}
+
+.hmqz-print-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px solid rgba(148, 163, 184, 0.3);
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+.hmqz-print-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hmqz-print-logo,
+.hmqz-print-logo-img {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  background: #1d4ed8;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 15px 35px rgba(29, 78, 216, 0.3);
+}
+
+.hmqz-print-logo-img {
+  width: 92px;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hmqz-print-tag {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #ecfeff;
+  color: #0e7490;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.hmqz-print-quiz-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.hmqz-print-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.hmqz-print-metric {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 18px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hmqz-print-metric-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.hmqz-print-metric-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hmqz-print-table-card {
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 22px 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.hmqz-print-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.hmqz-print-table th,
+.hmqz-print-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  vertical-align: top;
+}
+
+.hmqz-print-signature {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: center;
+}
+
+.hmqz-sign-line {
+  width: 220px;
+  border-bottom: 2px solid #94a3b8;
+  height: 1px;
+}
+
+.hmqz-sign-label {
+  font-weight: 600;
+  color: #334155;
+}
+
+@media (max-width: 1024px) {
+  .page-id-8 .hmqz-play-card {
+    border-radius: 32px;
+  }
+
+  .page-id-8 .hmqz-play-card-inner {
+    padding: 2rem 1.75rem;
+    border-radius: 30px;
+    min-height: clamp(620px, 85vh, 820px);
+  }
+
+  .page-id-8 .hmqz-card-hero {
+    padding: 1.5rem 1.6rem;
+  }
+
+  .page-id-8 .hmqz-card-meta-stack {
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-id-8 .hmqz-play-page {
+    padding: 2rem 1rem 3.5rem;
+  }
+
+  .page-id-8 .hmqz-play-card {
+    margin: 0 0.75rem 2rem;
+  }
+
+  .page-id-8 .hmqz-card-title {
+    font-size: clamp(1.6rem, 6vw, 2.1rem);
+  }
+
+  .page-id-8 .hmqz-card-head {
+    flex-direction: column;
+  }
+
+  .page-id-8 .hmqz-card-meta-stack {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+    margin-top: 0.6rem;
+    gap: 0.6rem;
+  }
+
+  .page-id-8 .hmqz-card-meta {
+    flex: 1 1 160px;
+  }
+
+  .page-id-8 #hmqz-app {
+    justify-content: stretch;
+  }
+
+  .page-id-8 #hmqz-app .hmqz-legacy-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-id-8 .hmqz-play-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .page-id-8 .hmqz-play-card {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .page-id-8 .hmqz-play-card-inner {
+    gap: 1.5rem;
+    min-height: auto;
+    padding: 1.35rem 1rem 1.75rem;
+    border-radius: 0;
+  }
+
+  .page-id-8 .hmqz-card-hero {
+    padding: 1.15rem 1rem;
+    border-radius: 20px;
+    background: linear-gradient(150deg, #f6f8ff 0%, #ffffff 80%);
+  }
+
+  .page-id-8 .hmqz-card-head {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .page-id-8 .hmqz-card-meta-stack {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .page-id-8 .hmqz-card-meta {
+    flex: 1 1 0;
+    padding: 0.5rem 0.55rem;
+    border-radius: 14px;
+    width: auto;
+    max-width: none;
+    min-height: auto;
+    margin: 0;
+  }
+
+  .page-id-8 #hmqz-app .hmqz-legacy-card {
+    padding: 1.4rem 0.9rem 1.45rem;
+    border-radius: 20px;
+    min-height: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page-id-8 #hmqz-app .hmqz-choice-btn {
+    padding: 0.75rem 0.95rem;
+    border-radius: 18px;
+  }
+
+  .hmqz-card-title {
+    font-size: 1.6rem;
+  }
+
+.hmqz-chip {
+    font-size: 0.76rem;
+    padding: 0.16rem 0.65rem;
+}
+
+.hmqz-btn,
+.hmqz-cta .hmqz-btn {
+  width: 100%;
+}
+
+.hmqz-cta {
+  flex-direction: column;
+}
+
+.hmqz-modal {
+  padding: 1.4rem;
+  border-radius: 24px;
+}
+
+.hmqz-overlay {
+  padding: 0.75rem;
+}
+
+.hmqz-email-fields {
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 480px) {
+  .page-id-8 .hmqz-card-hero {
+    padding: 1rem 0.9rem;
+  }
+
+  .page-id-8 .hmqz-card-title {
+    font-size: 1.45rem;
+  }
+
+  .page-id-8 .hmqz-card-meta-stack {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .page-id-8 .hmqz-card-meta {
+    width: 100%;
+    margin: 0;
+  }
+
+  .page-id-8 .hmqz-card-meta-label {
+    font-size: 0.57rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.03rem;
+  }
+
+  .page-id-8 .hmqz-card-meta-value {
+    font-size: 0.85rem;
+  }
+
+  .page-id-8 #hmqz-app .hmqz-legacy-card {
+    padding: 1.15rem 1rem 1.25rem;
+  }
+
+  .hmqz-emailbox-card {
+    padding: 1.1rem;
+  }
+
+  .hmqz-score-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Quiz Hub layout */
+.hmqz-hub-wrapper {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.hmqz-hub-empty {
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* Mobile-first card grid */
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .hmqz-hub-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .hmqz-hub-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.hmqz-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem 1.1rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.hmqz-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.hmqz-card-topic {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.hmqz-card-badge {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Difficulty color accents (you can tweak) */
+.hmqz-badge-diff-easy {
+  background: #e8f7e9;
+}
+
+.hmqz-badge-diff-medium {
+  background: #fff4e5;
+}
+
+.hmqz-badge-diff-hard {
+  background: #ffe5e5;
+}
+
+.hmqz-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hmqz-card-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.hmqz-card-meta {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.hmqz-card-meta-item + .hmqz-card-meta-item {
+  margin-left: 0.5rem;
+}
+
+.hmqz-card-actions {
+  margin-top: 0.7rem;
+}
+
+.hmqz-card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #111827;
+  color: #ffffff;
+}
+
+.hmqz-card-button:hover {
+  background: #0b1220;
+}
+
+/* Optional: dim non-live cards if you ever use status="all" */
+.hmqz-card-status-draft {
+  opacity: 0.6;
+}
+/* HMQUIZ – quiz hub layout */
+.hmqz-hub {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hmqz-hub-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.hmqz-hub-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hmqz-hub-hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  border: 1px solid #f0f0f0;
+}
+
+.hmqz-hub-card h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.hmqz-hub-card ul {
+  margin: 0 0 0.75rem;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.hmqz-hub-card a.hmqz-btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.hmqz-hub-footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+}
+
+/* HMQUIZ: global buttons */
+.hmqz-btn-primary,
+.hmqz-btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.hmqz-btn-primary {
+  background: #1f73ff;
+  color: #fff;
+  border: 1px solid #1f73ff;
+}
+
+.hmqz-btn-primary:hover {
+  opacity: 0.9;
+}
+
+.hmqz-btn-secondary {
+  background: #ffffff;
+  color: #111;
+  border: 1px solid #111;
+}
+
+/* Card style for sections on English Grammar hub */
+.hmqz-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+/* --- HMQUIZ play shell: simple layout --- */
+.hmqz-play-shell--simple {
+  padding: 24px 0 40px;
+  background: #f5f7fb;
+}
+
+.hmqz-play-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hmqz-play-header-simple {
+  margin-bottom: 24px;
+}
+
+.hmqz-play-breadcrumb {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.hmqz-play-title {
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #111827;
+}
+
+.hmqz-play-subtitle {
+  margin: 0 0 12px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.hmqz-play-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hmqz-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #e5edff;
+  color: #1d4ed8;
+}
+
+.hmqz-play-engine {
+  margin-top: 8px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 12px;
+}
+
+/* Mobile tweak */
+@media (max-width: 640px) {
+  .hmqz-play-shell--simple {
+    padding: 16px 0 28px;
+  }
+
+  .hmqz-play-title {
+    font-size: 22px;
+  }
+}
+
+/* ===================================================================
+   HMQUIZ play page cleanup – 2025-11-22
+   Use simple shell header and hide inner hero/logo/timers.
+   =================================================================== */
+
+/* Hide the built–in hero header inside the JS app */
+#hmqz-app .hmqz-legacy-hero,
+#hmqz-app .hmqz-hero-top,
+#hmqz-app .hmqz-hero-logo,
+#hmqz-app .hmqz-legacy-title,
+#hmqz-app .hmqz-hero-chips,
+#hmqz-app .hmqz-head-timer,
+#hmqz-app .hmqz-level-pill,
+#hmqz-app .hmqz-timer-label,
+#hmqz-app .hmqz-timer-pill,
+#hmqz-app .hmqz-timeup-badge,
+#hmqz-app .hmqz-progress {
+  display: none !important;
+}
+
+/* Give the inner quiz card a clean, centered look */
+#hmqz-app .hmqz-legacy-card {
+  width: 100%;
+  max-width: 540px;
+  padding: 1.75rem 1.85rem 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: linear-gradient(170deg, #ffffff 0%, #f5f7fb 100%);
+  box-shadow:
+    0 18px 45px rgba(15,23,42,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0 auto;
+}
+
+/* Make sure the quiz container follows our page shell width */
+.hmqz-play-shell--simple {
+  padding: 32px 0 40px;
+  background: radial-gradient(circle at top, #eef2ff 0%, #f9fafb 55%, #ffffff 100%);
+}
+
+.hmqz-play-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Tighter top header */
+.hmqz-play-header-simple {
+  margin-bottom: 18px;
+}
+
+.hmqz-play-breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+
+.hmqz-play-title {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.hmqz-play-subtitle {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.hmqz-play-engine {
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 14px 10px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .hmqz-play-shell--simple {
+    padding: 18px 0 28px;
+  }
+
+  .hmqz-play-title {
+    font-size: 20px;
+  }
+
+  #hmqz-app .hmqz-legacy-card {
+    max-width: 100%;
+    border-radius: 18px;
+    padding: 1.35rem 1rem 1.5rem;
+  }
+}
+
+/* =========================================================
+   HMQUIZ Play page – simple shell (v2)
+   ========================================================= */
+
+.hmqz-play-page--simple {
+  padding: 32px 0 40px;
+  background: radial-gradient(circle at top, #eef2ff 0%, #f9fafb 55%, #ffffff 100%);
+}
+
+.hmqz-play-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hmqz-play-header-simple {
+  margin-bottom: 18px;
+}
+
+.hmqz-play-breadcrumb {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #6b7280;
+  margin-bottom: 2px;
+}
+
+.hmqz-play-title {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #111827;
+}
+
+.hmqz-play-subtitle {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.hmqz-play-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hmqz-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #e5edff;
+  color: #1d4ed8;
+}
+
+/* The container that holds the JS quiz card */
+.hmqz-play-engine {
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 14px 10px;
+}
+
+/* Make sure any old giant hero bits stay hidden on /play/ */
+.hmqz-play-page--simple .hmqz-play-card,
+.hmqz-play-page--simple .hmqz-play-card-inner,
+.hmqz-play-page--simple .hmqz-card-hero {
+  display: none !important;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  .hmqz-play-page--simple {
+    padding: 18px 0 28px;
+  }
+
+  .hmqz-play-title {
+    font-size: 20px;
+  }
+}
+
+/* ============================================================
+   HMQUIZ Full Play Cleanup – remove old internal hero layout
+   ============================================================ */
+
+/* Hide internal HMQUIZ engine header blocks */
+#hmqz-app .hmqz-hero,
+#hmqz-app .hmqz-hero-top,
+#hmqz-app .hmqz-legacy-hero,
+#hmqz-app .hmqz-header,
+#hmqz-app .hmqz-head,
+#hmqz-app .hmqz-subhead,
+#hmqz-app .hmqz-meta,
+#hmqz-app .hmqz-titlebar,
+#hmqz-app .hmqz-breadcrumb,
+#hmqz-app .hmqz-intro,
+#hmqz-app .hmqz-intro-card,
+#hmqz-app .hmqz-card-hero,
+#hmqz-app .hmqz-level-pill,
+#hmqz-app .hmqz-timer-pill,
+#hmqz-app .hmqz-timer-label {
+  display: none !important;
+}
+
+/* Hide internal footer blocks: “How to play”, “Keep it light” */
+#hmqz-app .hmqz-section-howto,
+#hmqz-app .hmqz-section-tips,
+#hmqz-app .hmqz-section-footer,
+#hmqz-app .hmqz-footer-card {
+  display: none !important;
+}
+
+/* Remove old gradient background behind the quiz card */
+#hmqz-app .hmqz-legacy-card-wrap,
+#hmqz-app .hmqz-legacy-bg {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Make quiz card clean and centered */
+#hmqz-app .hmqz-legacy-card {
+  max-width: 520px !important;
+  margin: 0 auto !important;
+  border-radius: 20px !important;
+  background: #ffffff !important;
+  padding: 24px 20px !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* Improve header spacing */
+.hmqz-play-header-simple {
+  margin-bottom: 32px;
+}
+
+/* Center content */
+.hmqz-play-inner {
+  text-align: center;
+}
+
+/* ============================
+   HMQUIZ play page polish
+   ============================ */
+
+/* Make the main play area a soft gradient panel */
+body.page-id-8 .site-content {
+  background: radial-gradient(circle at top, #eef2ff 0%, #f9fafb 55%, #ffffff 100%);
+}
+
+/* Center the quiz app and control its width */
+#hmqz-app {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 16px;
+}
+
+/* Quiz card: slightly larger, softer shadow */
+#hmqz-app .hmqz-legacy-card {
+  max-width: 560px;
+  margin: 0 auto;
+  border-radius: 22px;
+  background: #ffffff;
+  padding: 24px 22px 28px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* Reduce extra white space above the question title bar */
+#hmqz-app .hmqz-legacy-card > *:first-child {
+  margin-top: 0;
+}
+
+/* Footer bar (contact + copyright) stays on plain background */
+body.page-id-8 .site-footer {
+  background: #f9fafb;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  #hmqz-app {
+    margin: 24px auto 40px;
+    padding: 0 10px;
+  }
+
+  #hmqz-app .hmqz-legacy-card {
+    max-width: 100%;
+    border-radius: 18px;
+    padding: 18px 14px 22px;
+  }
+}
+
+/* =====================================================
+   HMQUIZ play page – layout polish v2
+   ===================================================== */
+
+/* Outer app: slightly narrower and closer to top */
+#hmqz-app {
+  max-width: 860px;
+  margin: 32px auto 56px;
+  padding: 0 16px;
+}
+
+/* Outer panel behind the question card */
+#hmqz-app .hmqz-legacy-card {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 22px 22px 26px;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+}
+
+/* Header text inside the panel (quiz title + meta) */
+#hmqz-app .hmqz-legacy-card h1,
+#hmqz-app .hmqz-legacy-card h2,
+#hmqz-app .hmqz-legacy-card h3 {
+  margin-top: 0;
+}
+
+/* Question text: slightly larger and with more line-height */
+#hmqz-app .hmqz-legacy-card .hmqz-question,
+#hmqz-app .hmqz-legacy-card .hmqz-question-text {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Answer options: taller and easier to tap */
+#hmqz-app .hmqz-legacy-card .hmqz-option,
+#hmqz-app .hmqz-legacy-card button,
+#hmqz-app .hmqz-legacy-card .hmqz-choice {
+  min-height: 44px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Slightly reduce shadow on very large screens so it feels lighter */
+@media (min-width: 1100px) {
+  #hmqz-app .hmqz-legacy-card {
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.09);
+  }
+}
+
+/* ================= Mobile tweaks ================= */
+@media (max-width: 640px) {
+  #hmqz-app {
+    max-width: 100%;
+    margin: 18px auto 40px;
+    padding: 0 10px;
+  }
+
+  #hmqz-app .hmqz-legacy-card {
+    max-width: 100%;
+    padding: 16px 12px 20px;
+    border-radius: 18px;
+  }
+
+  #hmqz-app .hmqz-legacy-card .hmqz-question,
+  #hmqz-app .hmqz-legacy-card .hmqz-question-text {
+    font-size: 14px;
+  }
+
+  #hmqz-app .hmqz-legacy-card .hmqz-option,
+  #hmqz-app .hmqz-legacy-card button,
+  #hmqz-app .hmqz-legacy-card .hmqz-choice {
+    font-size: 13px;
+    min-height: 42px;
+  }
+}
+
+/* === HMQUIZ Confusing Words Hub Grid === */
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hmqz-hub-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.hmqz-hub-card-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.9rem;
+}
+
+.hmqz-hub-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Pill buttons */
+.hmqz-btn,
+.hmqz-btn--ghost {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  line-height: 1.2;
+  border: 1px solid #1d3557;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.08s ease, color 0.08s ease;
+}
+
+.hmqz-btn {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+.hmqz-btn--ghost {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-btn:hover,
+.hmqz-btn--ghost:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* === HMQUIZ Quiz Rating Widget === */
+.hmqz-rating {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.hmqz-rating-label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.hmqz-rating-stars {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.hmqz-star {
+  cursor: pointer;
+  opacity: 0.35;
+  margin-right: 0.15rem;
+  user-select: none;
+}
+
+.hmqz-star--active {
+  opacity: 1;
+}
+
+.hmqz-rating-summary {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.hmqz-rating-message {
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+  color: #1d3557;
+}
+/* Yellow stars for rating widget */
+.hmqz-rating-stars {
+  color: #f5c518; /* base yellow color */
+}
+
+.hmqz-star {
+  color: #f5c518;
+  opacity: 0.3;
+}
+
+.hmqz-star--active {
+  opacity: 1;
+}
+/* Tiny average rating badge next to quiz title */
+.hmqz-rating-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #fff3c4;
+  color: #7b4b00;
+  font-size: 0.8rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+/* Confusing Words hub grid */
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 38rem;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.hmqz-hub-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card__desc {
+  margin: 0 0 0.7rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #1d3557;
+}
+
+.hmqz-hub-link--rule {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-hub-link--quiz {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+/* Inline rating badge on hub cards */
+.hmqz-rating-inline-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #fff3c4;
+  color: #7b4b00;
+  font-size: 0.75rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.hmqz-rating-inline-badge--new {
+  background: #e5f2ff;
+  color: #1d3557;
+}
+/* Confusing Words hub grid cards */
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.hmqz-hub-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card__title a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.hmqz-hub-card__title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-card__desc {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #1d3557;
+}
+
+.hmqz-hub-link--rule {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-hub-link--quiz {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+/* Inline rating badge on hub cards */
+.hmqz-rating-inline-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #fff3c4;
+  color: #7b4b00;
+  font-size: 0.75rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.hmqz-rating-inline-badge--new {
+  background: #e5f2ff;
+  color: #1d3557;
+}
+/* Confusing Words hub grid cards */
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.hmqz-hub-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card__title a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.hmqz-hub-card__title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-card__desc {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #1d3557;
+}
+
+.hmqz-hub-link--rule {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-hub-link--quiz {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+/* Inline rating badge on hub cards */
+.hmqz-rating-inline-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #ffeb99; /* soft yellow */
+  color: #7b4b00;
+  font-size: 0.75rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.hmqz-rating-inline-badge--new {
+  background: #e5f2ff;
+  color: #1d3557;
+}
+/* Confusing Words hub grid cards */
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.hmqz-hub-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card__title a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.hmqz-hub-card__title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-card__desc {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #1d3557;
+}
+
+.hmqz-hub-link--rule {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-hub-link--quiz {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+/* Inline rating badge on hub cards */
+.hmqz-rating-inline-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #ffeb99;
+  color: #7b4b00;
+  font-size: 0.75rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.hmqz-rating-inline-badge--new {
+  background: #e5f2ff;
+  color: #1d3557;
+}
+
+/* ===== Confusing Words hub cards ===== */
+
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.hmqz-hub-card__title {
+  font-size: 1.05rem;
+  margin: 0 0 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hmqz-hub-card__title a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.hmqz-hub-card__title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-card__desc {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #1d3557;
+}
+
+.hmqz-hub-link--rule {
+  background: #ffffff;
+  color: #1d3557;
+}
+
+.hmqz-hub-link--quiz {
+  background: #1d3557;
+  color: #ffffff;
+}
+
+/* Inline rating badge on hub cards */
+.hmqz-rating-inline-badge {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #ffeb99;
+  color: #7b4b00;
+  font-size: 0.75rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.hmqz-rating-inline-badge--new {
+  background: #e5f2ff;
+  color: #1d3557;
+}
+
+/* === Confusing Words Hub – Card Layout === */
+.hmqz-hub-section--confusing-words {
+  margin-top: 2rem;
+}
+
+.hmqz-hub-header {
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-title {
+  margin-bottom: 0.25rem;
+}
+
+.hmqz-hub-intro {
+  max-width: 640px;
+}
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  border: 1px solid #e5ecf5;
+}
+
+.hmqz-hub-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hmqz-hub-card-title {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.hmqz-hub-card-title a {
+  text-decoration: none;
+}
+
+.hmqz-hub-card-title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-card-badge {
+  font-size: 0.85rem;
+  background: #fff7cc;
+  color: #b8860b;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.hmqz-hub-card-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #e3f5ff;
+  color: #0066b3;
+}
+
+.hmqz-hub-card-desc {
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.hmqz-hub-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hmqz-hub-link {
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-link--rule {
+  font-weight: 500;
+}
+
+.hmqz-hub-link--quiz {
+  font-weight: 600;
+}
+/* === Confusing Words Hub – Card Grid === */
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  border: 1px solid #e5edf5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.hmqz-hub-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border-color: #1d3557;
+}
+
+.hmqz-hub-title {
+  margin: 0 0 6px;
+}
+
+.hmqz-hub-title a {
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.hmqz-hub-title a:hover {
+  text-decoration: underline;
+}
+
+/* Rating line under title */
+.hmqz-hub-rating {
+  margin: 4px 0 14px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f4a300; /* star colour */
+}
+
+.hmqz-hub-rating span {
+  color: #334155; /* 5/5 text */
+  font-weight: 500;
+}
+
+/* Take Quiz button */
+.hmqz-hub-button {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #1d3557;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}
+
+.hmqz-hub-button:hover {
+  background: #0b223d;
+  color: #ffffff;
+}
+
+/* === Confusing Words Hub cards === */
+
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.hmqz-hub-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.hmqz-hub-card-title {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.hmqz-hub-card-title a {
+  text-decoration: none;
+}
+
+.hmqz-hub-card-title a:hover {
+  text-decoration: underline;
+}
+
+.hmqz-hub-rating-badge {
+  font-size: 0.85rem;
+  background: #fff7cc;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hmqz-hub-rating-votes {
+  opacity: 0.7;
+  margin-left: 0.25rem;
+}
+
+.hmqz-hub-card-text {
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0.8rem;
+}
+
+.hmqz-hub-card-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hmqz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hmqz-btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.hmqz-btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.hmqz-btn-outline {
+  background: #ffffff;
+  color: #2563eb;
+  border-color: #cbd5f5;
+}
+
+.hmqz-btn-outline:hover {
+  background: #eff4ff;
+  border-color: #2563eb;
+}
+
+/* Confusing Words Hub – layout */
+.hmqz-hub {
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  padding: 1rem 1.25rem 2rem;
+}
+
+.hmqz-hub-header {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.hmqz-hub-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 0.4rem;
+}
+
+.hmqz-hub-subtitle {
+  font-size: 0.98rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive grid */
+.hmqz-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Cards */
+.hmqz-hub-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.15s ease-out,
+    box-shadow 0.15s ease-out,
+    border-color 0.15s ease-out;
+}
+
+.hmqz-hub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+  border-color: rgba(0, 166, 251, 0.4); /* match hmquiz accent */
+}
+
+/* Card top */
+.hmqz-hub-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+/* Topic pill */
+.hmqz-hub-pill {
+  background: rgba(0, 166, 251, 0.08);
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hmqz-hub-pill-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #00a6fb;
+}
+
+/* Meta */
+.hmqz-hub-meta {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.hmqz-hub-level {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(29, 53, 87, 0.05);
+  color: #1d3557;
+}
+
+.hmqz-hub-rating {
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(255, 183, 3, 0.1);
+  color: #b46a00;
+  font-weight: 600;
+}
+
+/* Title & tagline */
+.hmqz-hub-card-title {
+  font-size: 1.2rem;
+  margin: 0.3rem 0 0.25rem;
+}
+
+.hmqz-hub-card-tagline {
+  font-size: 0.92rem;
+  color: #444;
+  margin: 0 0 0.7rem;
+}
+
+/* Footer */
+.hmqz-hub-card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hmqz-hub-questions {
+  font-size: 0.82rem;
+  color: #666;
+}
+
+/* Buttons */
+.hmqz-hub-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.hmqz-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.hmqz-btn-primary {
+  background: #00a6fb;
+  color: #ffffff;
+  border-color: #00a6fb;
+}
+
+.hmqz-btn-primary:hover {
+  background: #0181c1;
+  border-color: #0181c1;
+  color: #ffffff;
+}
+
+.hmqz-btn-ghost {
+  background: #ffffff;
+  color: #1d3557;
+  border-color: rgba(29, 53, 87, 0.18);
+}
+
+.hmqz-btn-ghost:hover {
+  background: rgba(29, 53, 87, 0.04);
+  border-color: rgba(29, 53, 87, 0.4);
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  .hmqz-hub {
+    padding: 0.75rem 0.5rem 2rem;
+  }
+
+  .hmqz-hub-title {
+    font-size: 1.6rem;
+  }
+
+  .hmqz-hub-card {
+    padding: 0.9rem 0.9rem 0.95rem;
+  }
+
+  .hmqz-hub-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hmqz-hub-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+

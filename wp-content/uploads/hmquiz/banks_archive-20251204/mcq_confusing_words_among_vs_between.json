@@ -1,0 +1,291 @@
+{
+  "title": "Among vs Between",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: The teacher distributed the books ___ the students.",
+      "options": [
+        "between",
+        "among",
+        "amid",
+        "along"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: The money was divided ___ the two winners.",
+      "options": [
+        "among",
+        "between",
+        "amid",
+        "within"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'among' correctly.",
+      "options": [
+        "She divided the cake between all her friends.",
+        "She divided the cake among all her friends.",
+        "She sat between the crowd.",
+        "She walked between the forest."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'between' correctly.",
+      "options": [
+        "They shared the prize among John and Sarah.",
+        "They shared the prize between John and Sarah.",
+        "They shared the prize between John and Sarah and Maria.",
+        "They shared the prize amid John and Sarah."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with the error.",
+      "options": [
+        "There was a feeling of excitement among the crowd.",
+        "He sat between his two best friends.",
+        "The secret was kept between the three of us.",
+        "She hid the letter among the books on the shelf."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'We need to choose ___ these options and then discuss it ___ the team.'",
+      "options": [
+        "among / between",
+        "between / among",
+        "between / between",
+        "among / among"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the best option: 'Trust must exist ___ all members of the group.'",
+      "options": [
+        "between",
+        "among",
+        "amid",
+        "within"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Which explanation best matches modern usage?",
+      "options": [
+        "'Between' is only for two; 'among' is only for three or more, with no exceptions.",
+        "'Between' is generally used for distinct items (often two), 'among' for things not seen separately or within a group.",
+        "They are always interchangeable.",
+        "'Among' can never be used with people."
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: She felt nervous ___ strangers at the party.",
+      "options": [
+        "between",
+        "among",
+        "amid",
+        "within"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: The road runs ___ the two villages.",
+      "options": [
+        "among",
+        "between",
+        "amid",
+        "within"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence that is completely correct.",
+      "options": [
+        "They sat among each other in silence.",
+        "They sat between themselves in silence.",
+        "They sat between the two trees in silence.",
+        "They sat among the two trees in silence."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence with the mistake.",
+      "options": [
+        "He divided his time between work and family.",
+        "There was disagreement among the committee members.",
+        "She shared the secret among you and me.",
+        "They walked between the tall buildings."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blanks: 'The negotiations ___ the three companies took place ___ closed doors.'",
+      "options": [
+        "among / among",
+        "between / behind",
+        "between / among",
+        "among / behind"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that contrasts the two correctly.",
+      "options": [
+        "She walked among the two trees and sat between the crowd.",
+        "She walked between the crowd and sat among the two trees.",
+        "She walked between the trees and sat among her friends.",
+        "She walked among the trees and sat between her many friends."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Choose the sentence that is completely correct.",
+      "options": [
+        "The responsibility is shared among all team members.",
+        "The responsibility is shared between all team members.",
+        "The responsibility is shared amid all team members.",
+        "The responsibility is shared within all team members."
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Identify the sentence with two errors.",
+      "options": [
+        "The secrets were kept among you and me.",
+        "The secrets were kept between you and me.",
+        "The secrets were kept between the group.",
+        "The secrets were kept among the group."
+      ],
+      "answer": 2,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "Fill in the blank: 'They argued ___ themselves about who should lead.'",
+      "options": [
+        "between",
+        "among",
+        "amid",
+        "within"
+      ],
+      "answer": 0,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the sentence 'There was tension among the players', what does 'among' suggest?",
+      "options": [
+        "Physical location",
+        "Distribution within the group",
+        "Only two players were involved",
+        "Time of day"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    },
+    {
+      "q": "In the sentence 'He stood between his two best friends', what does 'between' describe?",
+      "options": [
+        "A group relation",
+        "A physical position with one on each side",
+        "A time period",
+        "A type of feeling"
+      ],
+      "answer": 1,
+      "topic": "mcq_confusing_words_among_vs_between",
+      "category": "Confusing Words",
+      "meta": {
+        "category": "Confusing Words"
+      }
+    }
+  ]
+}

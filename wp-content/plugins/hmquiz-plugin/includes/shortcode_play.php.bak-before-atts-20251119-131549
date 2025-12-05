@@ -1,0 +1,103 @@
+<?php
+// Play shortcode/page for HMQUIZ.
+// Renders a polished play card shell around the existing [hmquiz] engine.
+if (!defined('ABSPATH')) exit;
+
+function hmqz_render_play_shortcode($atts = []) {
+  $bank       = isset($_GET['bank']) ? sanitize_text_field(wp_unslash($_GET['bank'])) : '';
+  $topics     = isset($_GET['topics']) ? sanitize_text_field(wp_unslash($_GET['topics'])) : '';
+  $categories = isset($_GET['categories']) ? sanitize_text_field(wp_unslash($_GET['categories'])) : '';
+  $per        = isset($_GET['per']) ? intval($_GET['per']) : 0;
+  $level      = isset($_GET['level']) ? intval($_GET['level']) : 1;
+  $levels     = isset($_GET['levels']) ? intval($_GET['levels']) : 1;
+  $difficulty = isset($_GET['difficulty']) ? sanitize_text_field(wp_unslash($_GET['difficulty'])) : '';
+
+  if (!$bank) {
+    return '<p>' . esc_html__('No quiz selected.', 'hmquiz') . '</p>';
+  }
+
+  if (!empty($atts['title'])) {
+    $title = sanitize_text_field($atts['title']);
+  } elseif ($categories) {
+    $title = $categories;
+  } elseif ($topics) {
+    $title = $topics;
+  } else {
+    $title = $bank;
+  }
+
+  $topic_label = $topics ?: __('Playing HMQUIZ', 'hmquiz');
+
+  $logo_url = defined('HMQZ_PLUGIN_URL') ? HMQZ_PLUGIN_URL . 'assets/img/hmquiz-logo.png' : '';
+  $inner = do_shortcode('[hmquiz bank="' . esc_attr($bank) . '" title="' . esc_attr($title) . '"]');
+
+  $chip_values = array_filter(array_map('trim', preg_split('/[,|]/', $topics . ',' . $categories)));
+  $chip_values = array_slice(array_unique($chip_values), 0, 4);
+  $lead_parts = [];
+  if ($per > 0) {
+    $lead_parts[] = sprintf(esc_html__('%d questions per level', 'hmquiz'), $per);
+  }
+  if ($levels > 1) {
+    $lead_parts[] = sprintf(esc_html__('%d levels to clear', 'hmquiz'), $levels);
+  }
+  if ($difficulty) {
+    $lead_parts[] = sprintf(esc_html__('Difficulty: %s', 'hmquiz'), $difficulty);
+  }
+  $hero_lead = $lead_parts ? implode(' • ', $lead_parts) : esc_html__('Answer questions, climb through the levels, and keep your streak alive.', 'hmquiz');
+
+  ob_start();
+  ?>
+  <section class="hmqz-play-page">
+    <div class="hmqz-play-card">
+      <div class="hmqz-play-card-inner">
+        <div class="hmqz-card-hero">
+          <div class="hmqz-card-head">
+            <div class="hmqz-card-title-wrap">
+              <div class="hmqz-card-eyebrow"><?php esc_html_e('Live quiz', 'hmquiz'); ?></div>
+              <h1 class="hmqz-card-title"><?php echo esc_html($title); ?></h1>
+              <p class="hmqz-card-lead"><?php echo esc_html($hero_lead); ?></p>
+              <?php if ($chip_values) : ?>
+                <div class="hmqz-card-tags">
+                  <?php foreach ($chip_values as $chip) : ?>
+                    <span class="hmqz-chip"><?php echo esc_html($chip); ?></span>
+                  <?php endforeach; ?>
+                </div>
+              <?php endif; ?>
+            </div>
+            <dl class="hmqz-card-meta-stack">
+              <div class="hmqz-card-meta">
+                <dt class="hmqz-card-meta-label"><?php esc_html_e('Level', 'hmquiz'); ?></dt>
+                <dd class="hmqz-card-meta-value js-hmqz-level">
+                  <?php printf(esc_html__('Level %1$d/%2$d', 'hmquiz'), max(1, $level), max(1, $levels)); ?>
+                </dd>
+              </div>
+              <div class="hmqz-card-meta">
+                <dt class="hmqz-card-meta-label"><?php esc_html_e('Time', 'hmquiz'); ?></dt>
+                <dd class="hmqz-card-meta-value js-hmqz-timer">00:00</dd>
+              </div>
+              <div class="hmqz-card-meta">
+                <dt class="hmqz-card-meta-label"><?php esc_html_e('Progress', 'hmquiz'); ?></dt>
+                <dd class="hmqz-card-meta-value js-hmqz-qmeta">
+                  <?php printf(esc_html__('Q %1$d/%2$d', 'hmquiz'), 1, max(1, $per)); ?>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hmqz-card-progress">
+            <div class="hmqz-card-progress-fill js-hmqz-progress"></div>
+          </div>
+        </div>
+
+        <div class="hmqz-play-body">
+          <div class="hmqz-runner-shell">
+            <?php echo $inner; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php
+  return ob_get_clean();
+}
+
+add_shortcode('hmqz_play', 'hmqz_render_play_shortcode');

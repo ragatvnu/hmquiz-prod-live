@@ -1,0 +1,17 @@
+RewriteEngine On
+# Allow ONLY staging.hmquiz.com
+RewriteCond %{HTTP_HOST} !^staging\.hmquiz\.com$ [NC]
+RewriteRule ^ - [F]
+
+# Staging should not be indexed
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive"
+  Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+</IfModule>
+
+# (If WordPress runs inside /staging)
+#RewriteBase /staging/
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /staging/index.php [L]

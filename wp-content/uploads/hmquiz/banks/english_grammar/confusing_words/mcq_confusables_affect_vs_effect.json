@@ -1,0 +1,426 @@
+{
+  "title": "Affect vs Effect – Confusing Words Quiz",
+  "created_at": "2025-12-03T19:29:14Z",
+  "items": [
+    {
+      "q": "The loud noise did not ___ him much.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Use 'affect' because we need a verb meaning 'to influence'. The sentence is about how the noise influences him, not about a result."
+      }
+    },
+    {
+      "q": "The movie had a strong emotional ___.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "We are naming the result the movie had on people, so we need the noun 'effect', which means result or outcome."
+      }
+    },
+    {
+      "q": "Climate can ___ your mood.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Climate influences your mood, so we use the verb 'affect' for an action, not the noun 'effect'."
+      }
+    },
+    {
+      "q": "What will be the ___ of this rule?",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The sentence asks for the result of the rule, so we need the noun 'effect', not the verb 'affect'."
+      }
+    },
+    {
+      "q": "The teacher's words did not ___ her attitude.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Her attitude might change or not change. That change is an action, so we use the verb 'affect'."
+      }
+    },
+    {
+      "q": "The medicine had no side ___.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Side effects are results produced by a medicine. We are naming those results, so we use the noun 'effect'."
+      }
+    },
+    {
+      "q": "Does sunlight ___ plant growth?",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Sunlight influences how plants grow, so we need the verb 'affect', meaning 'to influence'."
+      }
+    },
+    {
+      "q": "We are studying the ___ of pollution.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Scientists study the results of pollution, which are its 'effects'. That makes 'effect' (noun) the right choice."
+      }
+    },
+    {
+      "q": "The delay will not ___ our schedule.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The delay might change or influence the schedule, and that is an action. Use the verb 'affect'."
+      }
+    },
+    {
+      "q": "Her smile had a calming ___.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Here we are talking about the calming result produced by her smile, so we need the noun 'effect'."
+      }
+    },
+    {
+      "q": "The new policy may ___ productivity.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The policy will influence productivity, so we need the verb 'affect', which means 'to influence'."
+      }
+    },
+    {
+      "q": "Researchers measured the ___ of temperature on growth.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Researchers measure results, not actions. 'Effect' is the noun that means result, so 'the effect of temperature' is correct."
+      }
+    },
+    {
+      "q": "How will pollution ___ marine life?",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Pollution influences marine life, so we need the verb 'affect', not the noun 'effect'."
+      }
+    },
+    {
+      "q": "The CEO discussed the ___ of the recession.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The CEO is talking about what the recession caused—its results. Those are 'effects', so we use the noun 'effect'."
+      }
+    },
+    {
+      "q": "The warning did not ___ his decision.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The warning might influence his decision, so we use the verb 'affect'. 'Effect' as a noun would not fit here."
+      }
+    },
+    {
+      "q": "We must calculate the long-term ___.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "'Long-term effects' means long-term results. We are naming those results, so the noun 'effect' is correct."
+      }
+    },
+    {
+      "q": "Does screen time ___ your sleep?",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Screen time influences how well you sleep, so we need the action word 'affect' (verb), not 'effect'."
+      }
+    },
+    {
+      "q": "The therapy had a positive ___.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "We are naming the positive result of the therapy, so we use the noun 'effect'."
+      }
+    },
+    {
+      "q": "Heat waves can ___ crop production.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Heat waves influence crop production, so we use the verb 'affect', which shows influence or change."
+      }
+    },
+    {
+      "q": "They studied the drug's side ___.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Side 'effects' are the results caused by a drug. We are naming those results, so 'effect' is the correct noun."
+      }
+    },
+    {
+      "q": "Climate change will ___ global food availability.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Climate change will influence how much food is available, so we use the verb 'affect' for this action."
+      }
+    },
+    {
+      "q": "The new treatment showed significant ___.",
+      "options": [
+        "effects",
+        "affects"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "'Effects' is the plural noun meaning 'results'. We are talking about several results of the treatment."
+      }
+    },
+    {
+      "q": "His calm attitude did not ___ negotiations.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "His calm attitude did not influence the negotiations, so we choose the verb 'affect'."
+      }
+    },
+    {
+      "q": "We still don't know the long-term ___.",
+      "options": [
+        "affects",
+        "effects"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Long-term 'effects' are long-term results. We need the plural noun 'effects', not the verb form 'affects'."
+      }
+    },
+    {
+      "q": "Economic shifts can ___ employment trends.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Economic shifts influence employment trends, so the verb 'affect' is correct."
+      }
+    },
+    {
+      "q": "The policy had a measurable ___.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "The measurable thing is the result of the policy. That result is its 'effect', a noun."
+      }
+    },
+    {
+      "q": "Does heat ___ chemical reactions?",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Heat changes how fast a reaction happens. That is an influence, so we use the verb 'affect'."
+      }
+    },
+    {
+      "q": "The documentary had a lasting ___.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "We are talking about the lasting result on viewers, so 'effect' (noun) is correct."
+      }
+    },
+    {
+      "q": "Stress can deeply ___ decision-making.",
+      "options": [
+        "effect",
+        "affect"
+      ],
+      "answer": 1,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "Stress influences how people make decisions, so the action word (verb) 'affect' is needed."
+      }
+    },
+    {
+      "q": "New evidence may ___ the trial's outcome.",
+      "options": [
+        "affect",
+        "effect"
+      ],
+      "answer": 0,
+      "topic": "Confusing Words",
+      "category": "Affect vs Effect",
+      "meta": {
+        "category": "Affect vs Effect",
+        "explain": "New evidence might influence the trial's outcome, so we use the verb 'affect', not the noun 'effect'."
+      }
+    }
+  ]
+}

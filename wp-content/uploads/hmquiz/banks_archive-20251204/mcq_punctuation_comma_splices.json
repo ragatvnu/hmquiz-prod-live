@@ -1,0 +1,156 @@
+{
+  "title": "Comma Splices – Punctuation Quiz",
+  "created_at": "2025-11-19T17:56:14Z",
+  "items": [
+    {
+      "q": "Which sentence correctly fixes the comma splice: The clock struck midnight, it was time for the party to end.",
+      "options": [
+        "The clock struck midnight; it was time for the party to end.",
+        "The clock struck midnight, and it was time for the party to end.",
+        "The clock struck midnight. It was time for the party to end.",
+        "All of the above."
+      ],
+      "answer": 3,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Identify the sentence that contains a comma splice.",
+      "options": [
+        "I prefer tea, but he prefers coffee.",
+        "The rain stopped, the sun came out.",
+        "Although she was late, she didn't miss the meeting.",
+        "Since I was tired, I went home early."
+      ],
+      "answer": 1,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Which option correctly replaces the comma in: The movie ended, we all stood up.",
+      "options": [
+        "The movie ended; then we all stood up.",
+        "The movie ended and we all stood up.",
+        "The movie ended so we all stood up.",
+        "The movie ended, and we all stood up."
+      ],
+      "answer": 3,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "The recipe calls for six eggs, however, I only have four. This sentence contains a comma splice because:",
+      "options": [
+        "\"however\" is a coordinating conjunction.",
+        "\"however\" must be preceded by a period.",
+        "\"however\" is a conjunctive adverb, not a coordinating conjunction.",
+        "the sentence is too long."
+      ],
+      "answer": 2,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Which punctuation mark can separate two independent clauses without using a coordinating conjunction?",
+      "options": [
+        "Comma",
+        "Colon",
+        "Semicolon",
+        "Hyphen"
+      ],
+      "answer": 2,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Fix the comma splice: She studied hard for the test, therefore she earned an A.",
+      "options": [
+        "She studied hard for the test. Therefore, she earned an A.",
+        "She studied hard for the test; therefore, she earned an A.",
+        "She studied hard for the test, and therefore she earned an A.",
+        "Both A and B."
+      ],
+      "answer": 3,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "The student finished her essay, then she submitted it to the professor. Is this correct?",
+      "options": [
+        "Yes, because \"then\" is a conjunction.",
+        "No, it is a run-on sentence.",
+        "Yes, because the clauses are related.",
+        "No, it is a comma splice."
+      ],
+      "answer": 3,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Which is the best way to fix: He loves to travel, he goes somewhere new every year.",
+      "options": [
+        "He loves to travel; he goes somewhere new every year.",
+        "He loves to travel, so he goes somewhere new every year.",
+        "He loves to travel. He goes somewhere new every year.",
+        "All are acceptable, but B shows the cause/effect relationship."
+      ],
+      "answer": 3,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "A comma splice results from using a comma to separate:",
+      "options": [
+        "a dependent clause and an independent clause.",
+        "two phrases.",
+        "two independent clauses.",
+        "two compound subjects."
+      ],
+      "answer": 2,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    },
+    {
+      "q": "Which fix is incorrect: The food was delicious, we ate every bite.",
+      "options": [
+        "The food was delicious. We ate every bite.",
+        "The food was delicious; we ate every bite.",
+        "The food was delicious so we ate every bite.",
+        "The food was delicious, and we ate every bite."
+      ],
+      "answer": 2,
+      "topic": "mcq_punctuation_comma_splices",
+      "category": "Punctuation",
+      "meta": {
+        "category": "Punctuation"
+      }
+    }
+  ]
+}

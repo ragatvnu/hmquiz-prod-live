@@ -1,0 +1,306 @@
+{
+  "title": "Modal Verbs",
+  "created_at": "2025-11-21T06:38:27Z",
+  "items": [
+    {
+      "q": "Fill in the blank: I ___ swim when I was five years old.",
+      "options": [
+        "can",
+        "could",
+        "must",
+        "should"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: You ___ wear a helmet when riding a bike; it's safer.",
+      "options": [
+        "can",
+        "must",
+        "may",
+        "could"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that uses 'should' correctly.",
+      "options": [
+        "You should to study for the test.",
+        "You should study for the test.",
+        "You are should study for the test.",
+        "You should studying for the test."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that expresses permission.",
+      "options": [
+        "You must finish this today.",
+        "You may leave early today.",
+        "You should leave early today.",
+        "You would leave early today."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: He ___ be at home; I can see his car outside.",
+      "options": [
+        "must",
+        "might",
+        "can't",
+        "should"
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: She ___ be tired; she has been working all day, but I'm not sure.",
+      "options": [
+        "must",
+        "will",
+        "might",
+        "mustn't"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence with a modal of ability.",
+      "options": [
+        "I can speak three languages.",
+        "I must speak three languages.",
+        "I should speak three languages.",
+        "I may speak three languages."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that correctly uses 'have to'.",
+      "options": [
+        "I have to goes now.",
+        "I having to go now.",
+        "I have to go now.",
+        "I has to go now."
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: You ___ smoke in this area; it's against the rules.",
+      "options": [
+        "could",
+        "should",
+        "must not",
+        "might"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the best option: 'If you feel unwell, you ___ see a doctor.'",
+      "options": [
+        "mustn't",
+        "should",
+        "can to",
+        "would to"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: She ___ play the piano very well when she was younger.",
+      "options": [
+        "can",
+        "could",
+        "must",
+        "should"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that correctly uses 'ought to'.",
+      "options": [
+        "You ought to study harder.",
+        "You ought study harder.",
+        "You are ought to study harder.",
+        "You ought to studying harder."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: ___ I borrow your pen for a moment?",
+      "options": [
+        "Must",
+        "Should",
+        "May",
+        "Ought"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: We ___ leave now if we want to catch the bus.",
+      "options": [
+        "have to",
+        "ought",
+        "may to",
+        "mustn't"
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence with the correct form of 'be able to'.",
+      "options": [
+        "She will able to help you tomorrow.",
+        "She will be able to help you tomorrow.",
+        "She will being able to help you tomorrow.",
+        "She will be able helping you tomorrow."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: They ___ arrive late because of the traffic; I'm not sure.",
+      "options": [
+        "must",
+        "might",
+        "have to",
+        "mustn't"
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the sentence that expresses deduction (logical guess).",
+      "options": [
+        "He must be at home; the lights are on.",
+        "He can be at home; the lights are on.",
+        "He may be at home; the lights are on.",
+        "He should be at home; the lights are on."
+      ],
+      "answer": 0,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Fill in the blank: You ___ have seen him; he was abroad all year.",
+      "options": [
+        "must",
+        "might",
+        "can't",
+        "should"
+      ],
+      "answer": 2,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "Choose the best completion: 'She ___ to call us, but she forgot.'",
+      "options": [
+        "must",
+        "had to",
+        "was supposed",
+        "was supposed to"
+      ],
+      "answer": 3,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    },
+    {
+      "q": "In the sentence 'You don't have to come if you're busy', what does 'don't have to' mean?",
+      "options": [
+        "It is forbidden.",
+        "It is not necessary.",
+        "It is absolutely required.",
+        "It is impossible."
+      ],
+      "answer": 1,
+      "topic": "mcq_verbs_modal_verbs",
+      "category": "Verbs",
+      "meta": {
+        "category": "Verbs"
+      }
+    }
+  ]
+}

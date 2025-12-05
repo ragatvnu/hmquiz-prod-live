@@ -1,0 +1,3006 @@
+{
+  "title": "General Knowledge — MCQ",
+  "created_at": "2025-11-07T22:48:39Z",
+  "items": [
+    {
+      "q": "What is the capital of France?",
+      "options": [
+        "Paris",
+        "Lyon",
+        "Marseille",
+        "Nice"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Japan?",
+      "options": [
+        "Tokyo",
+        "Osaka",
+        "Kyoto",
+        "Nagoya"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Australia?",
+      "options": [
+        "Canberra",
+        "Sydney",
+        "Melbourne",
+        "Perth"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Canada?",
+      "options": [
+        "Ottawa",
+        "Toronto",
+        "Vancouver",
+        "Montreal"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "Which city is the capital of Brazil?",
+      "options": [
+        "Brasilia",
+        "Rio de Janeiro",
+        "São Paulo",
+        "Salvador"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of India?",
+      "options": [
+        "New Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Bengaluru"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Spain?",
+      "options": [
+        "Madrid",
+        "Barcelona",
+        "Seville",
+        "Valencia"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Germany?",
+      "options": [
+        "Berlin",
+        "Munich",
+        "Hamburg",
+        "Frankfurt"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Italy?",
+      "options": [
+        "Rome",
+        "Milan",
+        "Florence",
+        "Naples"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Mexico?",
+      "options": [
+        "Mexico City",
+        "Guadalajara",
+        "Cancún",
+        "Monterrey"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Russia?",
+      "options": [
+        "Moscow",
+        "St. Petersburg",
+        "Novosibirsk",
+        "Kazan"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of China?",
+      "options": [
+        "Beijing",
+        "Shanghai",
+        "Shenzhen",
+        "Guangzhou"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of South Korea?",
+      "options": [
+        "Seoul",
+        "Busan",
+        "Incheon",
+        "Daegu"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Egypt?",
+      "options": [
+        "Cairo",
+        "Alexandria",
+        "Luxor",
+        "Giza"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Kenya?",
+      "options": [
+        "Nairobi",
+        "Mombasa",
+        "Kisumu",
+        "Eldoret"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Argentina?",
+      "options": [
+        "Buenos Aires",
+        "Cordoba",
+        "Rosario",
+        "Mendoza"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Turkey?",
+      "options": [
+        "Ankara",
+        "Istanbul",
+        "Izmir",
+        "Antalya"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Greece?",
+      "options": [
+        "Athens",
+        "Thessaloniki",
+        "Patras",
+        "Heraklion"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Sweden?",
+      "options": [
+        "Stockholm",
+        "Gothenburg",
+        "Malmo",
+        "Uppsala"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "What is the capital of Thailand?",
+      "options": [
+        "Bangkok",
+        "Chiang Mai",
+        "Phuket",
+        "Pattaya"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Capitals",
+      "meta": {
+        "category": "Capitals"
+      }
+    },
+    {
+      "q": "Which country is home to the Great Barrier Reef?",
+      "options": [
+        "Australia",
+        "New Zealand",
+        "Fiji",
+        "Indonesia"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country has the world's longest coastline?",
+      "options": [
+        "Canada",
+        "Russia",
+        "Australia",
+        "USA"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country is known as the Land of the Rising Sun?",
+      "options": [
+        "Japan",
+        "China",
+        "South Korea",
+        "Philippines"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Where is Machu Picchu located?",
+      "options": [
+        "Peru",
+        "Ecuador",
+        "Bolivia",
+        "Chile"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country hosts the Atacama Desert?",
+      "options": [
+        "Chile",
+        "Argentina",
+        "Peru",
+        "Bolivia"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country contains the Serengeti?",
+      "options": [
+        "Tanzania",
+        "Kenya",
+        "Namibia",
+        "Botswana"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "In which country can you visit Petra?",
+      "options": [
+        "Jordan",
+        "Israel",
+        "Lebanon",
+        "Syria"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country administers Greenland?",
+      "options": [
+        "Denmark",
+        "Norway",
+        "Iceland",
+        "Canada"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Reykjavik is the capital of which country?",
+      "options": [
+        "Iceland",
+        "Ireland",
+        "Norway",
+        "Greenland"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country spans Europe and Asia?",
+      "options": [
+        "Turkey",
+        "Greece",
+        "Ukraine",
+        "Kazakhstan"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country contains Timbuktu?",
+      "options": [
+        "Mali",
+        "Niger",
+        "Ghana",
+        "Sudan"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country is famous for its fjords like Sognefjord?",
+      "options": [
+        "Norway",
+        "Sweden",
+        "Iceland",
+        "Scotland"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country is home to Mount Kilimanjaro?",
+      "options": [
+        "Tanzania",
+        "Kenya",
+        "Uganda",
+        "Ethiopia"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country shares Patagonia with Argentina?",
+      "options": [
+        "Chile",
+        "Brazil",
+        "Peru",
+        "Uruguay"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "In which country is the Loire Valley?",
+      "options": [
+        "France",
+        "Spain",
+        "Italy",
+        "Belgium"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country hosts the Okavango Delta?",
+      "options": [
+        "Botswana",
+        "Zambia",
+        "South Africa",
+        "Zimbabwe"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country contains the city of Marrakesh?",
+      "options": [
+        "Morocco",
+        "Algeria",
+        "Portugal",
+        "Egypt"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country is home to Angkor Wat?",
+      "options": [
+        "Cambodia",
+        "Thailand",
+        "Vietnam",
+        "Laos"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country owns the island of Sicily?",
+      "options": [
+        "Italy",
+        "Spain",
+        "Greece",
+        "Malta"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which country includes the Amazon River's mouth?",
+      "options": [
+        "Brazil",
+        "Colombia",
+        "Peru",
+        "Venezuela"
+      ],
+      "answer": 0,
+      "topic": "Geography",
+      "category": "Countries",
+      "meta": {
+        "category": "Countries"
+      }
+    },
+    {
+      "q": "Which civilization built the pyramids at Giza?",
+      "options": [
+        "Ancient Egyptians",
+        "Sumerians",
+        "Romans",
+        "Mayans"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which general crossed the Alps with elephants to attack Rome?",
+      "options": [
+        "Hannibal Barca",
+        "Scipio Africanus",
+        "Xerxes",
+        "Alexander"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which epic poem recounts Achilles' wrath during the Trojan War?",
+      "options": [
+        "The Iliad",
+        "The Odyssey",
+        "Aeneid",
+        "Metamorphoses"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which ancient legal code declared 'an eye for an eye'?",
+      "options": [
+        "Code of Hammurabi",
+        "Twelve Tables",
+        "Magna Carta",
+        "Napoleonic Code"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which empire built the Royal Road linking Susa to Sardis?",
+      "options": [
+        "Persian Empire",
+        "Roman Empire",
+        "Gupta Empire",
+        "Mali Empire"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "What writing system was used on Mesopotamian clay tablets?",
+      "options": [
+        "Cuneiform",
+        "Hieroglyphics",
+        "Linear B",
+        "Runes"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which dynasty created the Terracotta Army?",
+      "options": [
+        "Qin Dynasty",
+        "Han",
+        "Zhou",
+        "Tang"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which philosopher tutored Alexander the Great?",
+      "options": [
+        "Aristotle",
+        "Plato",
+        "Socrates",
+        "Zeno"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which wonder of the ancient world stood in Babylon?",
+      "options": [
+        "Hanging Gardens",
+        "Colossus",
+        "Lighthouse of Alexandria",
+        "Mausoleum at Halicarnassus"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which ancient city was buried by the eruption of Mount Vesuvius?",
+      "options": [
+        "Pompeii",
+        "Athens",
+        "Tikal",
+        "Nineveh"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which queen of Egypt allied with Julius Caesar?",
+      "options": [
+        "Cleopatra VII",
+        "Hatshepsut",
+        "Nefertiti",
+        "Zenobia"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which civilization built the city of Chichen Itza?",
+      "options": [
+        "Maya",
+        "Aztec",
+        "Olmec",
+        "Toltec"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which ancient culture carved massive moai statues on Easter Island?",
+      "options": [
+        "Rapa Nui",
+        "Maori",
+        "Inca",
+        "Aztec"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which river supported the Indus Valley Civilization?",
+      "options": [
+        "Indus River",
+        "Ganges",
+        "Tigris",
+        "Nile"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which structure served as Athens' treasury and temple to Athena?",
+      "options": [
+        "Parthenon",
+        "Pantheon",
+        "Colosseum",
+        "Acropolis"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which civilization built Angkor Wat?",
+      "options": [
+        "Khmer Empire",
+        "Srivijaya",
+        "Mongol Empire",
+        "Ayutthaya"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which mathematician wrote 'Elements'?",
+      "options": [
+        "Euclid",
+        "Archimedes",
+        "Pythagoras",
+        "Aristarchus"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which city housed the famed Library destroyed by fire?",
+      "options": [
+        "Alexandria",
+        "Babylon",
+        "Carthage",
+        "Memphis"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which empire used quipus—knotted cords—for record-keeping?",
+      "options": [
+        "Inca Empire",
+        "Aztec",
+        "Maya",
+        "Zapotec"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "Which seafaring people developed the alphabet adopted by the Greeks?",
+      "options": [
+        "Phoenicians",
+        "Hittites",
+        "Etruscans",
+        "Celts"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Ancient History",
+      "meta": {
+        "category": "Ancient History"
+      }
+    },
+    {
+      "q": "In which year did World War I begin?",
+      "options": [
+        "1914",
+        "1912",
+        "1916",
+        "1918"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who was the first president of the United States?",
+      "options": [
+        "George Washington",
+        "Thomas Jefferson",
+        "John Adams",
+        "James Madison"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which revolution toppled King Louis XVI?",
+      "options": [
+        "French Revolution",
+        "American Revolution",
+        "Russian Revolution",
+        "Mexican Revolution"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who led India's nonviolent independence movement?",
+      "options": [
+        "Mahatma Gandhi",
+        "Subhas Chandra Bose",
+        "Jawaharlal Nehru",
+        "B. R. Ambedkar"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which amendment abolished slavery in the United States?",
+      "options": [
+        "Thirteenth Amendment",
+        "Fourteenth",
+        "Fifteenth",
+        "Twelfth"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which battle marked a turning point on the Eastern Front during WWII?",
+      "options": [
+        "Battle of Stalingrad",
+        "Battle of the Bulge",
+        "Battle of Midway",
+        "Battle of El Alamein"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who authored the Communist Manifesto?",
+      "options": [
+        "Karl Marx and Friedrich Engels",
+        "Vladimir Lenin",
+        "Leon Trotsky",
+        "Josef Stalin"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which peninsula was divided along the 38th parallel after WWII?",
+      "options": [
+        "Korean Peninsula",
+        "Italian Peninsula",
+        "Iberian Peninsula",
+        "Balkan Peninsula"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which wall fell in 1989, symbolizing the end of the Cold War?",
+      "options": [
+        "Berlin Wall",
+        "Great Wall",
+        "Hadrian's Wall",
+        "Maginot Line"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who was British Prime Minister during most of WWII?",
+      "options": [
+        "Winston Churchill",
+        "Neville Chamberlain",
+        "Clement Attlee",
+        "Harold Macmillan"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which country launched the first artificial satellite, Sputnik?",
+      "options": [
+        "Soviet Union",
+        "United States",
+        "China",
+        "France"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which event triggered World War I?",
+      "options": [
+        "Assassination of Archduke Franz Ferdinand",
+        "Sinking of the Lusitania",
+        "Zimmermann Telegram",
+        "Russian Revolution"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who became South Africa's first black president in 1994?",
+      "options": [
+        "Nelson Mandela",
+        "Thabo Mbeki",
+        "Desmond Tutu",
+        "Jacob Zuma"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which treaty formally ended World War I?",
+      "options": [
+        "Treaty of Versailles",
+        "Treaty of Paris",
+        "Treaty of Trianon",
+        "Treaty of Utrecht"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which country experienced the Meiji Restoration?",
+      "options": [
+        "Japan",
+        "China",
+        "Thailand",
+        "Korea"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which movement campaigned for women's voting rights in the UK and US?",
+      "options": [
+        "Suffrage movement",
+        "Temperance",
+        "Chartism",
+        "Zionism"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Who delivered the 'I Have a Dream' speech?",
+      "options": [
+        "Martin Luther King Jr.",
+        "Malcolm X",
+        "John F. Kennedy",
+        "Lyndon Johnson"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which 1962 crisis nearly led to nuclear war?",
+      "options": [
+        "Cuban Missile Crisis",
+        "Suez Crisis",
+        "Berlin Crisis",
+        "Iran Hostage Crisis"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which nation was created during the 1947 Partition of British India?",
+      "options": [
+        "Pakistan",
+        "Nepal",
+        "Sri Lanka",
+        "Bhutan"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which treaty created the modern European Union in 1993?",
+      "options": [
+        "Maastricht Treaty",
+        "Lisbon Treaty",
+        "Treaty of Rome",
+        "Paris Agreement"
+      ],
+      "answer": 0,
+      "topic": "History",
+      "category": "Modern History",
+      "meta": {
+        "category": "Modern History"
+      }
+    },
+    {
+      "q": "Which national team has won the most FIFA World Cups?",
+      "options": [
+        "Brazil",
+        "Germany",
+        "Italy",
+        "Argentina"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which club has won the most UEFA Champions League titles?",
+      "options": [
+        "Real Madrid",
+        "Barcelona",
+        "AC Milan",
+        "Liverpool"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Who scored the 'Hand of God' goal in 1986?",
+      "options": [
+        "Diego Maradona",
+        "Gary Lineker",
+        "Michel Platini",
+        "Zico"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which player holds the record for most Ballon d'Or awards?",
+      "options": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Johan Cruyff",
+        "Michel Platini"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which country hosted and won the 1966 World Cup?",
+      "options": [
+        "England",
+        "Mexico",
+        "Chile",
+        "Sweden"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which player is the all-time World Cup top scorer?",
+      "options": [
+        "Miroslav Klose",
+        "Ronaldo Nazário",
+        "Pelé",
+        "Just Fontaine"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which club plays its home matches at Camp Nou?",
+      "options": [
+        "Barcelona",
+        "Real Madrid",
+        "Atlético Madrid",
+        "Sevilla"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which African team reached the 2010 World Cup quarterfinals?",
+      "options": [
+        "Ghana",
+        "Nigeria",
+        "Cameroon",
+        "Algeria"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which trophy is awarded to Europe's top national team every four years?",
+      "options": [
+        "UEFA European Championship",
+        "Copa América",
+        "CONCACAF Gold Cup",
+        "African Cup"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which club is nicknamed 'The Red Devils'?",
+      "options": [
+        "Manchester United",
+        "Liverpool",
+        "Arsenal",
+        "Chelsea"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Who managed Arsenal's unbeaten 'Invincibles' in 2003-04?",
+      "options": [
+        "Arsène Wenger",
+        "Alex Ferguson",
+        "Jose Mourinho",
+        "Pep Guardiola"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which country won UEFA Euro 2016?",
+      "options": [
+        "Portugal",
+        "France",
+        "Germany",
+        "Spain"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which country hosted Copa América 2021?",
+      "options": [
+        "Brazil",
+        "Argentina",
+        "Colombia",
+        "Chile"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which club is famous for the anthem 'You'll Never Walk Alone'?",
+      "options": [
+        "Liverpool",
+        "Celtic",
+        "Manchester City",
+        "Everton"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which nation won the first Women's World Cup in 1991?",
+      "options": [
+        "United States",
+        "Norway",
+        "Germany",
+        "China"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which goalkeeper captained Spain during their 2010 World Cup win?",
+      "options": [
+        "Iker Casillas",
+        "Andrés Iniesta",
+        "Carles Puyol",
+        "David Villa"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which tournament awards the Golden Boot to its top scorer?",
+      "options": [
+        "FIFA World Cup",
+        "Copa América",
+        "Confederations Cup",
+        "FA Cup"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which Dutch coach pioneered 'Total Football'?",
+      "options": [
+        "Rinus Michels",
+        "Johan Cruyff",
+        "Louis van Gaal",
+        "Guus Hiddink"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which club signed Cristiano Ronaldo from Sporting CP in 2003?",
+      "options": [
+        "Manchester United",
+        "Real Madrid",
+        "Juventus",
+        "Inter Milan"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Which national team won Euro 2020 (played in 2021)?",
+      "options": [
+        "Italy",
+        "England",
+        "Spain",
+        "Belgium"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Football",
+      "meta": {
+        "category": "Football"
+      }
+    },
+    {
+      "q": "Who holds the record for most men's Grand Slam singles titles as of 2024?",
+      "options": [
+        "Novak Djokovic",
+        "Rafael Nadal",
+        "Roger Federer",
+        "Pete Sampras"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which woman has the most Grand Slam singles titles?",
+      "options": [
+        "Margaret Court",
+        "Serena Williams",
+        "Steffi Graf",
+        "Martina Navratilova"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which surface is used at Wimbledon?",
+      "options": [
+        "Grass",
+        "Clay",
+        "Hard",
+        "Carpet"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which tournament completes the Career Grand Slam when added to the other three?",
+      "options": [
+        "US Open",
+        "Davis Cup",
+        "Laver Cup",
+        "Hopman Cup"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Who won the 'Golden Slam' (all four majors plus Olympic gold) in 1988?",
+      "options": [
+        "Steffi Graf",
+        "Serena Williams",
+        "Chris Evert",
+        "Justine Henin"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which player is nicknamed 'King of Clay'?",
+      "options": [
+        "Rafael Nadal",
+        "Bjorn Borg",
+        "Gustavo Kuerten",
+        "Jim Courier"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which major tournament is played on red clay?",
+      "options": [
+        "French Open",
+        "Australian Open",
+        "US Open",
+        "Wimbledon"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Who was the first Asian player to win a Grand Slam singles title?",
+      "options": [
+        "Li Na",
+        "Naomi Osaka",
+        "Kimiko Date",
+        "Peng Shuai"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which duo holds the record for most men's doubles Grand Slams?",
+      "options": [
+        "The Bryan brothers",
+        "Woodies",
+        "Nalbandian-Canas",
+        "Fleming-McEnroe"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which Serbian player completed a non-calendar Grand Slam in 2021?",
+      "options": [
+        "Novak Djokovic",
+        "Rafael Nadal",
+        "Andy Murray",
+        "Stan Wawrinka"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which Swiss player won 20 Grand Slam singles titles?",
+      "options": [
+        "Roger Federer",
+        "Stan Wawrinka",
+        "Boris Becker",
+        "Andy Roddick"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which women's player is famous for her powerful serve and 23 majors?",
+      "options": [
+        "Serena Williams",
+        "Venus Williams",
+        "Maria Sharapova",
+        "Simona Halep"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "What scoring term means zero in tennis?",
+      "options": [
+        "Love",
+        "Nil",
+        "Duck",
+        "Blank"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which tournament is nicknamed 'The Happy Slam'?",
+      "options": [
+        "Australian Open",
+        "French Open",
+        "US Open",
+        "Madrid Open"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which player completed the Career Golden Slam in doubles with Nicolas Mahut?",
+      "options": [
+        "Pierre-Hugues Herbert",
+        "Jamie Murray",
+        "Marc López",
+        "Feliciano López"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which British player ended a 77-year home singles drought at Wimbledon in 2013?",
+      "options": [
+        "Andy Murray",
+        "Tim Henman",
+        "Greg Rusedski",
+        "Cameron Norrie"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which rivalry is nicknamed 'Fedal'?",
+      "options": [
+        "Federer vs. Nadal",
+        "Djokovic vs. Nadal",
+        "Federer vs. Djokovic",
+        "Sampras vs. Agassi"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which Mixed Doubles pairing famously married after repeated titles?",
+      "options": [
+        "Andre Agassi & Steffi Graf",
+        "Martina Hingis & Leander Paes",
+        "Jamie Murray & Bethanie Mattek-Sands",
+        "Jack Sock & Coco Vandeweghe"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which national team competition did Billie Jean King champion?",
+      "options": [
+        "Billie Jean King Cup",
+        "Hopman Cup",
+        "Davis Cup",
+        "United Cup"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "Which tournament features the 'Arthur Ashe Stadium'?",
+      "options": [
+        "US Open",
+        "Australian Open",
+        "French Open",
+        "Wimbledon"
+      ],
+      "answer": 0,
+      "topic": "Sports",
+      "category": "Tennis",
+      "meta": {
+        "category": "Tennis"
+      }
+    },
+    {
+      "q": "What is the acceleration due to gravity on Earth (approx.)?",
+      "options": [
+        "9.8 m/s^2",
+        "3.7 m/s^2",
+        "1.6 m/s^2",
+        "15 m/s^2"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which scientist formulated the three laws of motion?",
+      "options": [
+        "Isaac Newton",
+        "Albert Einstein",
+        "Galileo Galilei",
+        "James Clerk Maxwell"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What does E=mc^2 describe?",
+      "options": [
+        "Mass-energy equivalence",
+        "Hooke's law",
+        "Ohm's law",
+        "Snell's law"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is the SI unit of force?",
+      "options": [
+        "Newton",
+        "Joule",
+        "Pascal",
+        "Watt"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which wave phenomenon explains blue skies and red sunsets?",
+      "options": [
+        "Rayleigh scattering",
+        "Doppler effect",
+        "Refraction",
+        "Diffraction"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What kind of lens converges parallel light rays?",
+      "options": [
+        "Convex lens",
+        "Concave lens",
+        "Plano lens",
+        "Cylindrical lens"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which particle has a negative electric charge?",
+      "options": [
+        "Electron",
+        "Proton",
+        "Neutron",
+        "Photon"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is the speed of light in vacuum?",
+      "options": [
+        "3.0 × 10^8 m/s",
+        "3.0 × 10^6 m/s",
+        "3.0 × 10^5 m/s",
+        "3.0 × 10^7 m/s"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which physicist developed the uncertainty principle?",
+      "options": [
+        "Werner Heisenberg",
+        "Niels Bohr",
+        "Erwin Schrödinger",
+        "Max Planck"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which law states that V=IR?",
+      "options": [
+        "Ohm's law",
+        "Faraday's law",
+        "Gauss's law",
+        "Coulomb's law"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is the SI unit of power?",
+      "options": [
+        "Watt",
+        "Volt",
+        "Ampere",
+        "Tesla"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which force keeps planets in orbit?",
+      "options": [
+        "Gravitational force",
+        "Electromagnetic",
+        "Strong nuclear",
+        "Friction"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What phenomenon causes a bend in water when a straw is inserted?",
+      "options": [
+        "Refraction",
+        "Reflection",
+        "Diffusion",
+        "Dispersion"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which field equation describes electricity and magnetism together?",
+      "options": [
+        "Maxwell's equations",
+        "Navier-Stokes",
+        "Einstein field equations",
+        "Schrödinger equation"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is measured in decibels?",
+      "options": [
+        "Sound intensity",
+        "Temperature",
+        "Electric charge",
+        "Luminosity"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which device converts mechanical energy into electrical energy?",
+      "options": [
+        "Generator",
+        "Motor",
+        "Transformer",
+        "Rectifier"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What property of a wave is measured in hertz?",
+      "options": [
+        "Frequency",
+        "Amplitude",
+        "Wavelength",
+        "Speed"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which scientist explained planetary motion with ellipses?",
+      "options": [
+        "Johannes Kepler",
+        "Tycho Brahe",
+        "Galileo",
+        "Copernicus"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is the resistance in ohms if 10 V causes 2 A of current?",
+      "options": [
+        "5 Ω",
+        "0.2 Ω",
+        "12 Ω",
+        "20 Ω"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "Which phenomenon describes the apparent change in pitch of a passing siren?",
+      "options": [
+        "Doppler effect",
+        "Photoelectric effect",
+        "Compton effect",
+        "Tyndall effect"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Physics",
+      "meta": {
+        "category": "Physics"
+      }
+    },
+    {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+        "Au",
+        "Ag",
+        "Gd",
+        "Go"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which acid is found in car batteries?",
+      "options": [
+        "Sulfuric acid",
+        "Hydrochloric acid",
+        "Nitric acid",
+        "Acetic acid"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the most abundant gas in Earth's atmosphere?",
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is NaCl commonly known as?",
+      "options": [
+        "Table salt",
+        "Baking soda",
+        "Bleaching powder",
+        "Epsom salt"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which element has atomic number 6?",
+      "options": [
+        "Carbon",
+        "Nitrogen",
+        "Oxygen",
+        "Boron"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the pH of pure water at room temperature?",
+      "options": [
+        "7",
+        "5",
+        "9",
+        "12"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which bond involves the sharing of electrons?",
+      "options": [
+        "Covalent bond",
+        "Ionic bond",
+        "Metallic bond",
+        "Hydrogen bond"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What gas is released when vinegar reacts with baking soda?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which law states that volume is inversely proportional to pressure at constant temperature?",
+      "options": [
+        "Boyle's law",
+        "Charles's law",
+        "Avogadro's law",
+        "Dalton's law"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the chemical formula for ozone?",
+      "options": [
+        "O₃",
+        "O₂",
+        "CO₂",
+        "N₂O"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which element is liquid at room temperature besides mercury?",
+      "options": [
+        "Bromine",
+        "Gallium",
+        "Cesium",
+        "Chlorine"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which process separates crude oil into fractions?",
+      "options": [
+        "Fractional distillation",
+        "Electrolysis",
+        "Chromatography",
+        "Filtration"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the term for a substance that speeds up a reaction without being consumed?",
+      "options": [
+        "Catalyst",
+        "Solute",
+        "Buffer",
+        "Reactant"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which element's isotope is commonly used for medical PET scans?",
+      "options": [
+        "Fluorine-18",
+        "Carbon-14",
+        "Uranium-235",
+        "Iodine-131"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the main gas in natural gas?",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Propane",
+        "Butane"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which branch of chemistry studies carbon-based compounds?",
+      "options": [
+        "Organic chemistry",
+        "Inorganic chemistry",
+        "Physical chemistry",
+        "Analytical chemistry"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the molar mass of water (H₂O)?",
+      "options": [
+        "18 g/mol",
+        "8 g/mol",
+        "32 g/mol",
+        "12 g/mol"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which acid is present in citrus fruits?",
+      "options": [
+        "Citric acid",
+        "Lactic acid",
+        "Formic acid",
+        "Benzoic acid"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "What is the common name for CaCO₃?",
+      "options": [
+        "Calcium carbonate",
+        "Calcium chloride",
+        "Calcium oxide",
+        "Calcium nitrate"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Which color does universal indicator show in a strong acid?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Purple"
+      ],
+      "answer": 0,
+      "topic": "Science",
+      "category": "Chemistry",
+      "meta": {
+        "category": "Chemistry"
+      }
+    },
+    {
+      "q": "Who wrote 'Pride and Prejudice'?",
+      "options": [
+        "Jane Austen",
+        "Charlotte Brontë",
+        "Mary Shelley",
+        "George Eliot"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who authored 'Moby-Dick'?",
+      "options": [
+        "Herman Melville",
+        "Mark Twain",
+        "Nathaniel Hawthorne",
+        "Jack London"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who is the author of '1984'?",
+      "options": [
+        "George Orwell",
+        "Aldous Huxley",
+        "J.D. Salinger",
+        "Ray Bradbury"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Great Expectations'?",
+      "options": [
+        "Charles Dickens",
+        "Thomas Hardy",
+        "Anthony Trollope",
+        "Wilkie Collins"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who created 'Don Quixote'?",
+      "options": [
+        "Miguel de Cervantes",
+        "Gabriel García Márquez",
+        "Federico García Lorca",
+        "Pablo Neruda"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who authored 'The Odyssey'?",
+      "options": [
+        "Homer",
+        "Virgil",
+        "Sophocles",
+        "Euripides"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Crime and Punishment'?",
+      "options": [
+        "Fyodor Dostoevsky",
+        "Leo Tolstoy",
+        "Anton Chekhov",
+        "Ivan Turgenev"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who penned 'The Scarlet Letter'?",
+      "options": [
+        "Nathaniel Hawthorne",
+        "Herman Melville",
+        "Edgar Allan Poe",
+        "Louisa May Alcott"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Les Misérables'?",
+      "options": [
+        "Victor Hugo",
+        "Alexandre Dumas",
+        "Émile Zola",
+        "Gustave Flaubert"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who is the author of 'War and Peace'?",
+      "options": [
+        "Leo Tolstoy",
+        "Boris Pasternak",
+        "Vladimir Nabokov",
+        "Mikhail Bulgakov"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who created 'The Count of Monte Cristo'?",
+      "options": [
+        "Alexandre Dumas",
+        "Victor Hugo",
+        "Jules Verne",
+        "Honoré de Balzac"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Jane Eyre'?",
+      "options": [
+        "Charlotte Brontë",
+        "Emily Brontë",
+        "Anne Brontë",
+        "Elizabeth Gaskell"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who authored 'The Picture of Dorian Gray'?",
+      "options": [
+        "Oscar Wilde",
+        "Bram Stoker",
+        "Henry James",
+        "H.G. Wells"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'The Divine Comedy'?",
+      "options": [
+        "Dante Alighieri",
+        "Giovanni Boccaccio",
+        "Petrarch",
+        "Ludovico Ariosto"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Wuthering Heights'?",
+      "options": [
+        "Emily Brontë",
+        "Charlotte Brontë",
+        "George Eliot",
+        "Thomas Hardy"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who authored 'The Catcher in the Rye'?",
+      "options": [
+        "J.D. Salinger",
+        "F. Scott Fitzgerald",
+        "Ernest Hemingway",
+        "John Steinbeck"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'Middlemarch'?",
+      "options": [
+        "George Eliot",
+        "Thomas Hardy",
+        "Elizabeth Gaskell",
+        "Anthony Trollope"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who is credited with 'One Hundred Years of Solitude'?",
+      "options": [
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Isabel Allende",
+        "Carlos Fuentes"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who wrote 'The Hobbit'?",
+      "options": [
+        "J.R.R. Tolkien",
+        "C.S. Lewis",
+        "Philip Pullman",
+        "Ursula Le Guin"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Who authored 'Invisible Man' (1952)?",
+      "options": [
+        "Ralph Ellison",
+        "Richard Wright",
+        "James Baldwin",
+        "Langston Hughes"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Classics",
+      "meta": {
+        "category": "Classics"
+      }
+    },
+    {
+      "q": "Which author created Sherlock Holmes?",
+      "options": [
+        "Arthur Conan Doyle",
+        "Agatha Christie",
+        "Dorothy L. Sayers",
+        "Wilkie Collins"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'The Lord of the Rings'?",
+      "options": [
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "Terry Pratchett",
+        "Frank Herbert"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Which author created Harry Potter?",
+      "options": [
+        "J.K. Rowling",
+        "Philip Pullman",
+        "Rick Riordan",
+        "Christopher Paolini"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'The Fault in Our Stars'?",
+      "options": [
+        "John Green",
+        "Rainbow Rowell",
+        "Stephen Chbosky",
+        "Veronica Roth"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who authored 'The Da Vinci Code'?",
+      "options": [
+        "Dan Brown",
+        "Tom Clancy",
+        "Michael Crichton",
+        "David Baldacci"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Which author created 'The Chronicles of Narnia'?",
+      "options": [
+        "C.S. Lewis",
+        "J.M. Barrie",
+        "E.B. White",
+        "Roald Dahl"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'The Hunger Games'?",
+      "options": [
+        "Suzanne Collins",
+        "Veronica Roth",
+        "Kiera Cass",
+        "Marie Lu"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'The Girl with the Dragon Tattoo'?",
+      "options": [
+        "Stieg Larsson",
+        "Jo Nesbø",
+        "Henning Mankell",
+        "Camilla Läckberg"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Which author created Hercule Poirot?",
+      "options": [
+        "Agatha Christie",
+        "Dorothy L. Sayers",
+        "P.D. James",
+        "Ngaio Marsh"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'Beloved'?",
+      "options": [
+        "Toni Morrison",
+        "Alice Walker",
+        "Zora Neale Hurston",
+        "Maya Angelou"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who authored 'A Game of Thrones'?",
+      "options": [
+        "George R.R. Martin",
+        "Robert Jordan",
+        "Patrick Rothfuss",
+        "Joe Abercrombie"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'Life of Pi'?",
+      "options": [
+        "Yann Martel",
+        "Aravind Adiga",
+        "Jhumpa Lahiri",
+        "Vikram Seth"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who created the character Katniss Everdeen?",
+      "options": [
+        "Suzanne Collins",
+        "Stephenie Meyer",
+        "Richelle Mead",
+        "Ally Condie"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'Gone Girl'?",
+      "options": [
+        "Gillian Flynn",
+        "Paula Hawkins",
+        "Tana French",
+        "Lisa Jewell"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'Think Like a Monk'?",
+      "options": [
+        "Jay Shetty",
+        "Robin Sharma",
+        "Deepak Chopra",
+        "James Clear"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Which author published 'Sapiens: A Brief History of Humankind'?",
+      "options": [
+        "Yuval Noah Harari",
+        "Steven Pinker",
+        "Jared Diamond",
+        "Noam Chomsky"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'Educated', a memoir about growing up off the grid?",
+      "options": [
+        "Tara Westover",
+        "Jeannette Walls",
+        "Cheryl Strayed",
+        "Elizabeth Gilbert"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who created the character Lisbeth Salander?",
+      "options": [
+        "Stieg Larsson",
+        "Camilla Läckberg",
+        "Sara Blaedel",
+        "Håkan Nesser"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who wrote 'To Kill a Mockingbird'?",
+      "options": [
+        "Harper Lee",
+        "Truman Capote",
+        "Carson McCullers",
+        "Flannery O'Connor"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    },
+    {
+      "q": "Who authored 'The Kite Runner'?",
+      "options": [
+        "Khaled Hosseini",
+        "Elif Shafak",
+        "Mohsin Hamid",
+        "Kamila Shamsie"
+      ],
+      "answer": 0,
+      "topic": "Literature",
+      "category": "Authors",
+      "meta": {
+        "category": "Authors"
+      }
+    }
+  ]
+}
