@@ -1,0 +1,15 @@
+# Caches
+wp-content/cache/
+wp-content/litespeed/
+wp-content/uploads/cache/
+wp-content/uploads/wc-logs/
+wp-content/uploads/et-cache/
+wp-content/uploads/elementor/tmp/
+
+# Backups
+backup-*.zip
+*.tar.gz
+*.sql
+
+# Real config (we'll keep a sample later)
+wp-config.php
