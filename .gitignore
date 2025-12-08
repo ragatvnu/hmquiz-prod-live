@@ -13,3 +13,8 @@ backup-*.zip
 
 # Real config (we'll keep a sample later)
 wp-config.php
+
+# Local-only stuff
+ops/
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
