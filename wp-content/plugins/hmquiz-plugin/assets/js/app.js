@@ -46,8 +46,22 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
   const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChild); };
 
   const topicsHref = (window.HMQZCFG && window.HMQZCFG.topicsUrl) || '/quiz/general-knowledge/';
+  const normalizeLegacyBankSlug = (bank = '') => {
+    const trimmed = String(bank || '').trim().replace(/^\/+/, '');
+    // Keep this in sync with the PHP normalizer (hmqz_normalize_bank_slug).
+    if (trimmed.includes('/')) return trimmed;
+    if (trimmed.startsWith('mcq_confusing_words_')) {
+      const suffix = trimmed.slice('mcq_confusing_words_'.length);
+      return `english_grammar/confusing_words/mcq_confusables_${suffix}`;
+    }
+    if (/^mcq_confusables_.*\.json$/i.test(trimmed)) {
+      return `english_grammar/confusing_words/${trimmed}`;
+    }
+    return trimmed;
+  };
   const sanitizeBankName = (name = '') => {
-    return String(name)
+    const normalized = normalizeLegacyBankSlug(name);
+    return String(normalized)
       .split('/')
       .map(part => part.trim())
       .filter(Boolean)

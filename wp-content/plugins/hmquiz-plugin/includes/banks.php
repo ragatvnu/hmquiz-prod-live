@@ -2,6 +2,37 @@
 if (!defined('ABSPATH')) exit;
 
 /**
+ * Normalize incoming bank slugs so legacy query params still resolve.
+ *
+ * Keeps old-style ?bank=mcq_confusables_*.json links working after the banks
+ * were moved under english_grammar/confusing_words/. Extend this if new
+ * legacy patterns appear.
+ */
+function hmqz_normalize_bank_slug($bank) {
+  $bank = trim((string) $bank);
+  $bank = ltrim($bank, '/');
+  if ($bank === '') return '';
+
+  // Already a nested path → leave as-is.
+  if (strpos($bank, '/') !== false) {
+    return $bank;
+  }
+
+  // Older prefix variant that was renamed alongside the move.
+  if (strpos($bank, 'mcq_confusing_words_') === 0) {
+    $suffix = substr($bank, strlen('mcq_confusing_words_'));
+    return 'english_grammar/confusing_words/mcq_confusables_' . $suffix;
+  }
+
+  // Legacy flat confusables filename → new folder path.
+  if (preg_match('/^mcq_confusables_.*\\.json$/', $bank)) {
+    return 'english_grammar/confusing_words/' . $bank;
+  }
+
+  return $bank;
+}
+
+/**
  * Normalize incoming bank filenames into the correct folder structure.
  *
  * Handles:
@@ -14,26 +45,15 @@ function hmqz_sanitize_bank_relpath($filename) {
   $rel = trim($rel);
   $rel = ltrim($rel, '/');
 
+  // Backward-compat layer for legacy bank slugs.
+  $rel = hmqz_normalize_bank_slug($rel);
+
   // Allow only safe characters: letters, numbers, underscore, dash, dot, slash
   $rel = preg_replace('~[^a-zA-Z0-9_\-./]+~', '', $rel);
 
   // Block directory traversal
   if (strpos($rel, '..') !== false) {
     return '';
-  }
-
-  // Legacy prefix: mcq_confusing_words_affect_vs_effect.json
-  // → english_grammar/confusing_words/mcq_confusables_affect_vs_effect.json
-  if (strpos($rel, 'mcq_confusing_words_') === 0) {
-    $suffix = substr($rel, strlen('mcq_confusing_words_'));
-    $rel = 'english_grammar/confusing_words/mcq_confusables_' . $suffix;
-  }
-
-  // Flat confusables file in root:
-  // mcq_confusables_affect_vs_effect.json
-  // → english_grammar/confusing_words/mcq_confusables_affect_vs_effect.json
-  if (strpos($rel, 'mcq_confusables_') === 0 && strpos($rel, '/') === false) {
-    $rel = 'english_grammar/confusing_words/' . $rel;
   }
 
   return $rel;
@@ -245,4 +265,3 @@ function hmqz_load_with_options(string $filename, array $opts = []): array {
 
   return $bank;
 }
-

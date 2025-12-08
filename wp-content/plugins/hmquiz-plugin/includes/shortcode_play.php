@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) exit;
 
 // Ensure bank normalizer is available (safety for CLI / edge cases)
-if (!function_exists('hmqz_normalize_bank_rel')) {
+if (!function_exists('hmqz_normalize_bank_slug')) {
     $banks_file = dirname(__DIR__) . '/includes/banks.php';
     if (file_exists($banks_file)) {
         require_once $banks_file;
@@ -38,8 +38,8 @@ if (!function_exists('hmqz_render_play_shortcode')) {
         }
 
         // Resolve into normalized / sanitized relpath
-        if (function_exists('hmqz_resolve_bank_rel')) {
-            $bank = hmqz_resolve_bank_rel($bank_raw);
+        if (function_exists('hmqz_normalize_bank_slug')) {
+            $bank = hmqz_normalize_bank_slug($bank_raw);
         } else {
             $bank = $bank_raw;
         }
@@ -221,4 +221,3 @@ if (!function_exists('hmqz_render_play_shortcode')) {
         return ob_get_clean();
     }
 }
-

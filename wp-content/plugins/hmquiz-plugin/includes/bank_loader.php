@@ -14,6 +14,10 @@ if (!defined('ABSPATH')) exit;
 function hmqz_normalize_bank_rel($rel) {
   $rel = ltrim(trim((string) $rel), '/');
 
+  if (function_exists('hmqz_normalize_bank_slug')) {
+    return hmqz_normalize_bank_slug($rel);
+  }
+
   // 1) Old "mcq_confusing_words_*" names → new confusables path
   $old_prefix = 'mcq_confusing_words_';
   if (strpos($rel, $old_prefix) === 0) {
