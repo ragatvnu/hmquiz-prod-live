@@ -51,6 +51,21 @@ if (!function_exists('hmqz_render_play_shortcode')) {
             return '<p>' . esc_html__('No quiz selected.', 'hmquiz') . '</p>';
         }
 
+        // HMQUIZ: capture return/hub destinations for "Play another quiz".
+        $return_url = '';
+        if (isset($_GET['return'])) {
+            $raw_return = (string) wp_unslash($_GET['return']);
+            $raw_return = trim($raw_return);
+            if ($raw_return !== '' && strpos($raw_return, '/') === 0 && strpos($raw_return, '://') === false) {
+                $return_url = home_url($raw_return);
+            }
+        }
+
+        $hub_url = '';
+        if (!empty($bank) && function_exists('hmqz_get_hub_url_for_bank')) {
+            $hub_url = hmqz_get_hub_url_for_bank($bank);
+        }
+
         // -----------------------------
         // 2) Read meta from query string
         // -----------------------------
@@ -84,14 +99,48 @@ if (!function_exists('hmqz_render_play_shortcode')) {
         // -----------------------------
         // 3) Decide display title
         // -----------------------------
-        if (isset($atts['title']) && $atts['title'] !== '') {
+        // Prefer explicit title passed via query string.
+        if (isset($_GET['title']) && $_GET['title'] !== '') {
+            $title = sanitize_text_field(wp_unslash($_GET['title']));
+        } elseif (isset($atts['title']) && $atts['title'] !== '') {
             $title = sanitize_text_field($atts['title']);
         } elseif ($category) {
             $title = $category;
         } elseif ($topic) {
             $title = $topic;
         } else {
-            $title = $bank;
+            // Fallback: humanize the bank slug into a readable label.
+            $title_slug = basename((string) $bank);
+            $title_slug = preg_replace('/\.json$/', '', $title_slug);
+            $title_slug = str_replace(['_', '-'], ' ', $title_slug);
+            $title = ucwords(trim($title_slug));
+        }
+
+        $config = [
+            'bank'       => $bank,
+            'title'      => $title,
+            'topics'     => $topic,
+            'categories' => $category,
+            'level'      => max(1, $level_cur),
+            'levels'     => max(1, $level_max),
+            'difficulty' => $difficulty,
+            'per'        => $total_q,
+        ];
+        $config_json = wp_json_encode($config);
+        if (!is_string($config_json)) {
+            $config_json = '{}';
+        }
+        $hmqz_play_cfg = [
+            'returnUrl' => $return_url,
+            'hubUrl'    => $hub_url,
+        ];
+        $hmqz_play_cfg_json = wp_json_encode($hmqz_play_cfg);
+        if (is_string($hmqz_play_cfg_json)) {
+            wp_add_inline_script(
+                'hmqz-app',
+                'window.HMQZCFG = Object.assign(window.HMQZCFG || {}, ' . $hmqz_play_cfg_json . ');',
+                'before'
+            );
         }
 
         // -----------------------------
@@ -116,7 +165,7 @@ if (!function_exists('hmqz_render_play_shortcode')) {
         // -----------------------------
         ob_start();
         ?>
-        <div class="hmqz-play-page-inner">
+        <div class="hmqz-play-shell">
           <div class="hmqz-play-card">
             <div class="hmqz-play-card-inner">
 
@@ -141,9 +190,21 @@ if (!function_exists('hmqz_render_play_shortcode')) {
                       <?php echo esc_html($topic); ?>
                     </div>
                   <?php endif; ?>
+                  <?php
+                  // Prefer human-friendly title → category → bank for header display.
+                  $hmqz_display_title = '';
+                  if (!empty($config['title'])) {
+                      $hmqz_display_title = $config['title'];
+                  } elseif (!empty($config['categories'])) {
+                      $hmqz_display_title = $config['categories'];
+                  } elseif (!empty($config['bank'])) {
+                      $hmqz_display_title = $config['bank'];
+                  }
+                  ?>
                   <div class="hmqz-play-title">
-                    <?php echo esc_html($title); ?>
+                    <?php echo esc_html($hmqz_display_title); ?>
                   </div>
+                  <div class="hmqz-level-pill js-hmqz-level" aria-live="polite"></div>
                 </div>
 
                 <div class="hmqz-play-header-right">
@@ -180,7 +241,11 @@ if (!function_exists('hmqz_render_play_shortcode')) {
               </div>
 
               <!-- BODY: existing [hmquiz] output lives here -->
-              <div class="hmqz-play-body">
+              <div
+                class="hmqz-play-body"
+                id="hmqz-play-root"
+                data-hmqz-config="<?php echo esc_attr($config_json); ?>"
+              >
                 <?php echo $inner; ?>
               </div>
 

@@ -1,0 +1,232 @@
+{
+    "title": "Punctuation - Commas Quiz 1",
+    "topic": "english_grammar",
+    "subtopic": "punctuation",
+    "per": 10,
+    "levels": 1,
+    "questions": [
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "After dinner we went for a walk.",
+                "After dinner, we went for a walk.",
+                "After, dinner we went for a walk.",
+                "After dinner we, went for a walk."
+            ],
+            "a": 1,
+            "explain": "Use a comma after an introductory phrase."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "My brother who lives in Delhi is visiting.",
+                "My brother, who lives in Delhi, is visiting.",
+                "My brother who, lives in Delhi is visiting.",
+                "My brother who lives in Delhi, is visiting."
+            ],
+            "a": 1,
+            "explain": "Nonessential clause needs commas."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "I bought apples oranges and bananas.",
+                "I bought apples, oranges, and bananas.",
+                "I bought apples oranges, and bananas.",
+                "I bought apples, oranges and, bananas."
+            ],
+            "a": 1,
+            "explain": "Use commas in a list."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "If you can, call me tonight.",
+                "If you can call me, tonight.",
+                "If, you can call me tonight.",
+                "If you can call me tonight,"
+            ],
+            "a": 0,
+            "explain": "Comma after an introductory dependent clause."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "Let's eat Grandma!",
+                "Let's eat, Grandma!",
+                "Lets eat, Grandma!",
+                "Lets, eat Grandma!"
+            ],
+            "a": 1,
+            "explain": "Comma is needed for direct address."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "She said, that she was tired.",
+                "She said that she was tired.",
+                "She, said that she was tired.",
+                "She said that, she was tired."
+            ],
+            "a": 1,
+            "explain": "No comma is needed before a that-clause here."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "However, I disagree.",
+                "However I, disagree.",
+                "However I disagree,",
+                "However I disagree."
+            ],
+            "a": 0,
+            "explain": "Comma after however at sentence start is standard."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "We need bread, milk and eggs.",
+                "We need bread milk, and eggs.",
+                "We need, bread milk and eggs.",
+                "We need bread, milk, and eggs."
+            ],
+            "a": 3,
+            "explain": "Commas separate list items."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "In 2025, HMQUIZ launched new hubs.",
+                "In 2025 HMQUIZ, launched new hubs.",
+                "In, 2025 HMQUIZ launched new hubs.",
+                "In 2025 HMQUIZ launched, new hubs."
+            ],
+            "a": 0,
+            "explain": "The comma after an introductory year is acceptable and clear."
+        },
+        {
+            "q": "Choose the correct sentence.",
+            "options": [
+                "Yes I can help.",
+                "Yes, I can help.",
+                "Yes I, can help.",
+                "Yes, I, can help."
+            ],
+            "a": 1,
+            "explain": "Comma after yes is standard in short responses."
+        }
+    ],
+    "items": [
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "After dinner we went for a walk.",
+                "After dinner, we went for a walk.",
+                "After, dinner we went for a walk.",
+                "After dinner we, went for a walk."
+            ],
+            "answer": 1,
+            "explain": "Use a comma after an introductory phrase."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "My brother who lives in Delhi is visiting.",
+                "My brother, who lives in Delhi, is visiting.",
+                "My brother who, lives in Delhi is visiting.",
+                "My brother who lives in Delhi, is visiting."
+            ],
+            "answer": 1,
+            "explain": "Nonessential clause needs commas."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "I bought apples oranges and bananas.",
+                "I bought apples, oranges, and bananas.",
+                "I bought apples oranges, and bananas.",
+                "I bought apples, oranges and, bananas."
+            ],
+            "answer": 1,
+            "explain": "Use commas in a list."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "If you can, call me tonight.",
+                "If you can call me, tonight.",
+                "If, you can call me tonight.",
+                "If you can call me tonight,"
+            ],
+            "answer": 0,
+            "explain": "Comma after an introductory dependent clause."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "Let's eat Grandma!",
+                "Let's eat, Grandma!",
+                "Lets eat, Grandma!",
+                "Lets, eat Grandma!"
+            ],
+            "answer": 1,
+            "explain": "Comma is needed for direct address."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "She said, that she was tired.",
+                "She said that she was tired.",
+                "She, said that she was tired.",
+                "She said that, she was tired."
+            ],
+            "answer": 1,
+            "explain": "No comma is needed before a that-clause here."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "However, I disagree.",
+                "However I, disagree.",
+                "However I disagree,",
+                "However I disagree."
+            ],
+            "answer": 0,
+            "explain": "Comma after however at sentence start is standard."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "We need bread, milk and eggs.",
+                "We need bread milk, and eggs.",
+                "We need, bread milk and eggs.",
+                "We need bread, milk, and eggs."
+            ],
+            "answer": 3,
+            "explain": "Commas separate list items."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "In 2025, HMQUIZ launched new hubs.",
+                "In 2025 HMQUIZ, launched new hubs.",
+                "In, 2025 HMQUIZ launched new hubs.",
+                "In 2025 HMQUIZ launched, new hubs."
+            ],
+            "answer": 0,
+            "explain": "The comma after an introductory year is acceptable and clear."
+        },
+        {
+            "question": "Choose the correct sentence.",
+            "options": [
+                "Yes I can help.",
+                "Yes, I can help.",
+                "Yes I, can help.",
+                "Yes, I, can help."
+            ],
+            "answer": 1,
+            "explain": "Comma after yes is standard in short responses."
+        }
+    ],
+    "questions_count": 10
+}

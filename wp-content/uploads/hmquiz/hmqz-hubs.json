@@ -1,0 +1,34 @@
+{
+    "english_grammar": {
+        "slug": "english-grammar",
+        "path": "/quiz/english-grammar/",
+        "title": "English Grammar Hub",
+        "subtopics": {
+            "affect_vs_effect": {
+                "slug": "affect-vs-effect",
+                "path": "/quiz/affect-vs-effect/",
+                "title": "Affect vs Effect \u2013 Quiz Hub"
+            }
+        }
+    },
+    "general_knowledge": {
+        "slug": "general-knowledge",
+        "path": "/quiz/general-knowledge/",
+        "title": "General Knowledge Hub"
+    },
+    "confusing_words": {
+        "slug": "confusing-words",
+        "path": "/quiz/confusing-words/",
+        "title": "Confusing Words Hub"
+    },
+    "emoji_fun": {
+        "slug": "emoji-fun",
+        "path": "/quiz/emoji-fun/",
+        "title": "Emoji & Fun Hub"
+    },
+    "brain_teasers": {
+        "slug": "brain-teasers",
+        "path": "/quiz/brain-teasers/",
+        "title": "Brain Teasers Hub"
+    }
+}

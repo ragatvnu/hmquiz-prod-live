@@ -45,7 +45,23 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
   };
   const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChild); };
 
-  const topicsHref = (window.HMQZCFG && window.HMQZCFG.topicsUrl) || '/quiz/general-knowledge/';
+  function hmqzGetNextHubUrl(cfg) {
+    const config = cfg || window.HMQZCFG || {};
+    const ret = (config && typeof config.returnUrl === 'string') ? config.returnUrl.trim() : '';
+    if (ret) return ret;
+
+    const hub = (config && typeof config.hubUrl === 'string') ? config.hubUrl.trim() : '';
+    if (hub) return hub;
+
+    const topics = (config && typeof config.topicsUrl === 'string') ? config.topicsUrl.trim() : '';
+    if (topics) return topics;
+
+    return '/';
+  }
+  if (!window.hmqzGetNextHubUrl) {
+    window.hmqzGetNextHubUrl = hmqzGetNextHubUrl;
+  }
+
   const normalizeLegacyBankSlug = (bank = '') => {
     const trimmed = String(bank || '').trim().replace(/^\/+/, '');
     // Keep this in sync with the PHP normalizer (hmqz_normalize_bank_slug).
@@ -137,10 +153,13 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
         .map((label) => String(label || '').trim())
         .filter(Boolean);
 
+      const explanation = String(item.explanation ?? item.explain ?? item.meta?.explanation ?? item.meta?.explain ?? '').trim();
+
       return {
         text,
         choices,
         correct,
+        explanation,
         meta: {
           topics: normalizedTopics,
           categories: normalizedCategories,
@@ -791,6 +810,8 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
   }
 
   function renderLegacyTimer(root, payload) {
+    // Reset completion flag when (re)starting play
+    document.body.classList.remove('hmqz-quiz-done', 'hmqz-review-mode');
     clear(root);
     const title = payload.title || 'Quiz';
     const levelData = (Array.isArray(payload.levels) ? payload.levels : []).filter(
@@ -811,6 +832,10 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
     const headerTimerEl = document.querySelector('.js-hmqz-timer');
     const headerProgressEl = document.querySelector('.js-hmqz-progress');
     const headerMetaEl = document.querySelector('.js-hmqz-qmeta');
+    const nextBtn = document.querySelector('.js-hmqz-next');
+    let inlineReviewPanel = null;
+    const topicsHref = hmqzGetNextHubUrl(window.HMQZCFG);
+    let modalStep = 'rate'; // 'rate' | 'score'
     const defaultPerLevel = Math.max(1, Number(payload.rules?.per_level) || 5);
     const levelQuestionCounts = levelData.map((lvl) => {
       const len = Array.isArray(lvl.questions) ? lvl.questions.length : 0;
@@ -833,6 +858,17 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
       return `${mm}:${ss}`;
     };
 
+    const updateNextButton = (label, disabled = false) => {
+      if (!nextBtn) return;
+      const labelSpan = nextBtn.querySelector('span');
+      if (labelSpan) {
+        labelSpan.textContent = label;
+      } else {
+        nextBtn.textContent = label;
+      }
+      nextBtn.disabled = !!disabled;
+    };
+
     const updateHeaderProgress = (levelIdx, localIdx) => {
       if (!headerMetaEl && !headerProgressEl) return;
       const levelTotal = levelQuestionCounts[levelIdx] || defaultPerLevel;
@@ -843,6 +879,39 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
       if (headerProgressEl) {
         const pct = (current / levelTotal) * 100;
         headerProgressEl.style.width = `${Math.min(100, Math.max(0, pct))}%`;
+      }
+    };
+
+    const setCompletionCTA = () => {
+      if (!nextBtn) return;
+      const labelSpan = nextBtn.querySelector('span');
+      if (labelSpan) {
+        labelSpan.textContent = 'Play another quiz';
+      } else {
+        nextBtn.textContent = 'Play another quiz';
+      }
+      nextBtn.disabled = false;
+      nextBtn.onclick = () => {
+        window.location.href = topicsHref;
+      };
+    };
+
+    const sendQuickRating = (value) => {
+      if (!window.hmqzRating || !hmqzRating.restUrl || !hmqzRating.postId) return;
+      try {
+        const params = new URLSearchParams();
+        params.append('post_id', hmqzRating.postId);
+        params.append('rating', value);
+        fetch(hmqzRating.restUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            ...(hmqzRating.nonce ? { 'X-WP-Nonce': hmqzRating.nonce } : {})
+          },
+          body: params.toString()
+        }).catch((err) => console.error('[HMQUIZ rating]', err));
+      } catch (err) {
+        console.error('[HMQUIZ rating]', err);
       }
     };
 
@@ -897,6 +966,7 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
     }
 
     function playLevel(levelIdx) {
+      document.body.classList.remove('hmqz-quiz-done', 'hmqz-review-mode');
       const level = levelData[levelIdx];
       const questions = (level.questions || []).map(normalizeQuestion);
       if (headerLevelEl) {
@@ -913,10 +983,23 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
       let timerId = null;
       let advanceTimeout = null;
       let remaining = perQuestionTime;
+      let hasAnswered = false;
+      let currentQuestion = null;
 
       clear(root);
       const card = el("div", { className: "hmqz-legacy-card" });
       root.append(card);
+      // Inline review panel lives under the play card; hidden until requested post-quiz.
+      inlineReviewPanel = document.querySelector('.hmqz-review-panel-inline');
+      if (!inlineReviewPanel) {
+        inlineReviewPanel = el("div", { className: "hmqz-review-panel hmqz-review-panel-inline", hidden: true });
+        root.append(inlineReviewPanel);
+      } else {
+        inlineReviewPanel.innerHTML = '';
+        inlineReviewPanel.hidden = true;
+        inlineReviewPanel.classList.remove('hmqz-review-open');
+        inlineReviewPanel.dataset.ready = "0";
+      }
       updateHeaderProgress(levelIdx, qIndex);
       if (headerTimerEl) {
         headerTimerEl.textContent = formatDuration(perQuestionTime);
@@ -961,6 +1044,17 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
         }, 900);
       }
 
+      function advanceImmediately() {
+        clearAdvance();
+        stopTimer();
+        if (qIndex + 1 >= questions.length) {
+          showLevelSummary();
+        } else {
+          qIndex += 1;
+          renderQuestion();
+        }
+      }
+
       function startTimer(onExpire) {
         remaining = perQuestionTime;
         updateTimer();
@@ -983,6 +1077,8 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
         if (isCorrect) correct += 1;
         stats.total += 1;
         if (isCorrect) stats.correct += 1;
+        hasAnswered = true;
+        updateNextButton('Next question', false);
         $$(".hmqz-choice-btn", card).forEach((btn, i) => {
           btn.disabled = true;
           btn.classList.toggle('is-correct', i === Number(question.correct_index));
@@ -993,7 +1089,12 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
           text: question.text || '',
           choices: Array.isArray(question.choices) ? question.choices.slice() : [],
           correct: Number(question.correct_index),
-          selected: Number.isFinite(selectedIndex) ? Number(selectedIndex) : -1
+          selected: Number.isFinite(selectedIndex) ? Number(selectedIndex) : -1,
+          explanation:
+            question.explanation ||
+            question.explain ||
+            (question.meta && (question.meta.explanation || question.meta.explain)) ||
+            ''
         });
       }
 
@@ -1003,35 +1104,72 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
           showLevelSummary();
           return;
         }
-        card.classList.remove('hmqz-card-low', 'hmqz-card-timeup');
-        card.innerHTML = '';
-        clearAdvance();
-        updateHeaderProgress(levelIdx, qIndex);
-        const qTitle = el("div", { className: "hmqz-qtext" }, `${qIndex + 1}. ${q.text || ''}`);
-        const grid = el("div", { className: "hmqz-grid-choices" });
-        const footer = el("div", { className: "hmqz-next-hint", hidden: true }, "Next question…");
-        card.append(qTitle, grid, footer);
+        currentQuestion = q;
+        hasAnswered = false;
+        const performRender = () => {
+          card.classList.remove('hmqz-card-low', 'hmqz-card-timeup', 'hmqz-q-exit');
+          card.innerHTML = '';
+          clearAdvance();
+          updateHeaderProgress(levelIdx, qIndex);
+          const qTitle = el("div", { className: "hmqz-qtext" }, `${qIndex + 1}. ${q.text || ''}`);
+          const grid = el("div", { className: "hmqz-grid-choices" });
+          const footer = el("div", { className: "hmqz-next-hint", hidden: true }, "Next question…");
+          card.append(qTitle, grid, footer);
 
-        q.choices.forEach((choice, idx) => {
-          const btn = el("button", { className: "hmqz-choice-btn", type: "button" }, choice);
-          btn.addEventListener('click', () => {
-            handleAnswer(q, idx);
+          updateNextButton('Skip question', false);
+
+          q.choices.forEach((choice, idx) => {
+            const btn = el("button", { className: "hmqz-choice-btn", type: "button" }, choice);
+            btn.addEventListener('click', () => {
+              handleAnswer(q, idx);
+              footer.hidden = false;
+              queueAdvance();
+            });
+            grid.append(btn);
+          });
+
+          startTimer(() => {
+            updateTimer(true);
+            handleAnswer(q, -1);
             footer.hidden = false;
             queueAdvance();
           });
-          grid.append(btn);
-        });
 
-        startTimer(() => {
-          updateTimer(true);
-          handleAnswer(q, -1);
-          footer.hidden = false;
-          queueAdvance();
-        });
+          requestAnimationFrame(() => {
+            card.classList.add('hmqz-q-enter');
+            setTimeout(() => {
+              card.classList.remove('hmqz-q-enter');
+            }, 240);
+          });
+        };
+
+        if (card.childElementCount) {
+          card.classList.add('hmqz-q-exit');
+          setTimeout(performRender, 140);
+        } else {
+          performRender();
+        }
+      }
+
+      if (nextBtn) {
+        nextBtn.onclick = () => {
+          if (!currentQuestion) return;
+          if (!hasAnswered) {
+            // Skip current question immediately
+            handleAnswer(currentQuestion, -1);
+            advanceImmediately();
+          } else {
+            advanceImmediately();
+          }
+        };
       }
 
       function showLevelSummary() {
         clearAdvance();
+        document.body.classList.add('hmqz-quiz-done');
+        document.body.classList.add('hmqz-modal-open');
+        updateNextButton('Next question', true);
+        setCompletionCTA();
         const pct = questions.length ? Math.round((correct / questions.length) * 100) : 0;
         const passed = correct >= passCountTarget;
         const levelMetaTotals = questions.reduce((acc, question) => {
@@ -1049,10 +1187,93 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
           topics: Array.from(levelMetaTotals.topics),
           categories: Array.from(levelMetaTotals.categories),
         });
+
+        const buildReview = () => {
+          if (!inlineReviewPanel || inlineReviewPanel.dataset.ready === "1") return;
+          inlineReviewPanel.innerHTML = '';
+          answeredLog.forEach((entry) => {
+            const item = el("div", { className: "hmqz-review-item" });
+            item.append(el("div", { className: "hmqz-review-q" }, `${entry.idx}. ${entry.text || 'Untitled question'}`));
+            const choiceWrap = el("div", { className: "hmqz-review-choices" });
+            entry.choices.forEach((choice, cIdx) => {
+              const classes = ["hmqz-review-choice"];
+              if (cIdx === entry.correct) classes.push("is-correct");
+              if (entry.selected === cIdx && cIdx !== entry.correct) classes.push("is-picked");
+              if (entry.selected === cIdx && cIdx === entry.correct) classes.push("is-picked-correct");
+              choiceWrap.append(el("div", { className: classes.join(" ") }, choice));
+            });
+            if (entry.selected === -1) {
+              choiceWrap.append(el("div", { className: "hmqz-review-miss" }, "Skipped / timed out"));
+            }
+            item.append(choiceWrap);
+            if (entry.explanation) {
+              const expl = el("div", { className: "hmqz-review-expl" }, entry.explanation);
+              item.append(expl);
+            }
+            inlineReviewPanel.append(item);
+          });
+          const panelCta = el("div", { className: "hmqz-review-cta" });
+          const panelBtn = el("button", { className: "hmqz-btn secondary" }, "Play another quiz");
+          panelBtn.addEventListener('click', () => {
+            window.location.href = topicsHref;
+          });
+          panelCta.append(panelBtn);
+          inlineReviewPanel.append(panelCta);
+
+          inlineReviewPanel.dataset.ready = "1";
+        };
+
         const { modal, close } = createModal();
         modal.innerHTML = '';
-        modal.classList.toggle('hmqz-pass', !!passed);
-        modal.classList.toggle('hmqz-fail', !passed);
+
+        const setStep = (step) => {
+          modalStep = step;
+          modal.dataset.hmqzStep = step;
+          modal.classList.toggle('hmqz-step-rate', step === 'rate');
+          modal.classList.toggle('hmqz-step-score', step === 'score');
+          document.body.classList.add('hmqz-modal-open');
+        };
+
+        // Step 1: rating
+        let pickedRating = 0;
+        const rateStep = el("div", { className: "hmqz-modal-step hmqz-modal-step-rate" });
+        rateStep.append(
+          el("div", { className: "hmqz-modal-head" },
+            el("div", { className: "hmqz-modal-emoji" }, "⭐"),
+            el("div", {},
+              el("h3", {}, "How was this quiz?"),
+              el("p", { className: "hmqz-modal-sub" }, "Please rate this quiz before seeing your score.")
+            )
+          )
+        );
+        const starsWrap = el("div", { className: "hmqz-modal-rating js-hmqz-modal-rating" });
+        const starButtons = [];
+        for (let i = 1; i <= 5; i++) {
+          const btn = el("button", { type: "button", className: "hmqz-modal-star", "data-value": i }, "★");
+          btn.addEventListener('click', () => {
+            pickedRating = i;
+            starButtons.forEach((b, idx) => b.classList.toggle('is-selected', idx < i));
+            continueBtn.disabled = false;
+          });
+          starsWrap.append(btn);
+          starButtons.push(btn);
+        }
+        rateStep.append(starsWrap);
+        const rateActions = el("div", { className: "hmqz-cta modal-actions" });
+        const continueBtn = el("button", { className: "hmqz-btn primary", type: "button", disabled: true }, "Continue");
+        const skipBtn = el("button", { className: "hmqz-btn ghost", type: "button" }, "Skip for now");
+        continueBtn.addEventListener('click', () => {
+          if (pickedRating > 0) sendQuickRating(pickedRating);
+          setStep('score');
+        });
+        skipBtn.addEventListener('click', () => setStep('score'));
+        rateActions.append(continueBtn, skipBtn);
+        rateStep.append(rateActions);
+
+        // Step 2: score
+        const scoreStep = el("div", { className: "hmqz-modal-step hmqz-modal-step-score" });
+        scoreStep.classList.toggle('hmqz-pass', !!passed);
+        scoreStep.classList.toggle('hmqz-fail', !passed);
         const headBlock = el("div", { className: "hmqz-modal-head" },
           el("div", { className: "hmqz-modal-emoji" }, passed ? "🎉" : "⚡"),
           el("div", {},
@@ -1060,8 +1281,8 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
             el("p", { className: "hmqz-modal-sub" }, `Score: ${correct}/${questions.length} (${pct}%). Need ${passCountTarget} correct to pass.`)
           )
         );
-        modal.append(headBlock);
-        if (passed) launchConfetti(modal);
+        scoreStep.append(headBlock);
+        if (passed) launchConfetti(scoreStep);
 
         const shareWrap = el("div", { className: "hmqz-sharewrap" });
         const primaryTopic = levelMetaTotals.topics[0]
@@ -1078,67 +1299,49 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
           rules: stats.rules,
           shareTopic: primaryTopic,
         });
-        modal.append(shareWrap);
+        scoreStep.append(shareWrap);
+
+        const reviewNote = el("div", { className: "hmqz-review-note" }, "Want to see your answers? Open the review below.");
+        const reviewToggle = el("button", { className: "hmqz-review-toggle js-hmqz-toggle-review", type: "button" }, "Review answers below");
+        reviewToggle.addEventListener('click', () => {
+          if (!inlineReviewPanel) return;
+          buildReview();
+          inlineReviewPanel.hidden = false;
+          inlineReviewPanel.classList.add('hmqz-review-open');
+          document.body.classList.add('hmqz-review-mode');
+          document.body.classList.remove('hmqz-modal-open');
+          close();
+          setCompletionCTA();
+          inlineReviewPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        scoreStep.append(reviewNote, reviewToggle);
 
         const actions = el("div", { className: "hmqz-cta modal-actions" });
         const retryBtn = el("button", { className: "hmqz-btn" }, passed ? "Replay this level" : "Retry this level");
-        retryBtn.addEventListener('click', () => { close(); playLevel(levelIdx); });
+        retryBtn.addEventListener('click', () => { document.body.classList.remove('hmqz-modal-open'); close(); playLevel(levelIdx); });
         actions.append(retryBtn);
 
         if (passed && levelIdx + 1 < levelData.length) {
           const nextBtn = el("button", { className: "hmqz-btn primary" }, "Continue to next level");
-          nextBtn.addEventListener('click', () => { close(); playLevel(levelIdx + 1); });
+          nextBtn.addEventListener('click', () => { document.body.classList.remove('hmqz-modal-open'); close(); playLevel(levelIdx + 1); });
           actions.append(nextBtn);
         } else if (passed) {
           const finishBtn = el("button", { className: "hmqz-btn primary" }, "View final results");
-          finishBtn.addEventListener('click', () => { close(); showFinalSummary(); });
+          finishBtn.addEventListener('click', () => { document.body.classList.remove('hmqz-modal-open'); close(); showFinalSummary(); });
           actions.append(finishBtn);
         }
 
-        if (!passed) {
-          const topicsBtn = el("a", { className: "hmqz-btn secondary" }, "New set of topics");
-          topicsBtn.href = topicsHref;
-          actions.append(topicsBtn);
-        } else {
-          const topicsLink = el("a", {
-            className: "hmqz-btn secondary",
-            href: topicsHref,
-            target: "_blank",
-            rel: "noopener"
-          }, "Pick new topics");
-          actions.append(topicsLink);
-        }
-        modal.append(actions);
-
-        const reviewToggle = el("button", { className: "hmqz-btn tertiary" }, "Review answers");
-        const reviewPanel = el("div", { className: "hmqz-review-panel", hidden: true });
-        const buildReview = () => {
-          if (reviewPanel.dataset.ready === "1") return;
-          answeredLog.forEach((entry) => {
-            const item = el("div", { className: "hmqz-review-item" });
-            item.append(el("div", { className: "hmqz-review-q" }, `${entry.idx}. ${entry.text || 'Untitled question'}`));
-            const choiceWrap = el("div", { className: "hmqz-review-choices" });
-            entry.choices.forEach((choice, cIdx) => {
-              const classes = ["hmqz-review-choice"];
-              if (cIdx === entry.correct) classes.push("is-correct");
-              if (entry.selected === cIdx && cIdx !== entry.correct) classes.push("is-picked");
-              if (entry.selected === cIdx && cIdx === entry.correct) classes.push("is-picked-correct");
-              choiceWrap.append(el("div", { className: classes.join(" ") }, choice));
-            });
-            if (entry.selected === -1) {
-              choiceWrap.append(el("div", { className: "hmqz-review-miss" }, "Skipped / timed out"));
-            }
-            item.append(choiceWrap);
-            reviewPanel.append(item);
-          });
-          reviewPanel.dataset.ready = "1";
-        };
-        reviewToggle.addEventListener('click', () => {
-          if (reviewPanel.hidden) buildReview();
-          reviewPanel.hidden = !reviewPanel.hidden;
-          reviewToggle.textContent = reviewPanel.hidden ? "Review answers" : "Hide review";
+        const topicsBtn = el("button", { className: "hmqz-btn secondary" }, "Play another quiz");
+        topicsBtn.addEventListener('click', () => {
+          document.body.classList.remove('hmqz-modal-open');
+          close();
+          window.location.href = topicsHref;
         });
-        modal.append(reviewToggle, reviewPanel);
+        actions.append(topicsBtn);
+        scoreStep.append(actions);
+
+        modal.append(rateStep, scoreStep);
+        setStep('rate');
       }
 
       renderQuestion();
@@ -1173,6 +1376,7 @@ const HMQZ_LOGO_URL = window.HMQZCFG && window.HMQZCFG.logo ? window.HMQZCFG.log
         || (stats.history.length && Array.isArray(stats.history[stats.history.length - 1].topics) && stats.history[stats.history.length - 1].topics[0])
         || '';
       addEmailBox(wrap, { ...stats, history: stats.history.slice(), shareTopic: summaryTopic });
+      document.body.classList.add('hmqz-quiz-done');
     }
 
     playLevel(0);

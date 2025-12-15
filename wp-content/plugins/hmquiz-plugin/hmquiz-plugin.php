@@ -13,9 +13,10 @@ define('HMQZ_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 require_once __DIR__ . '/includes/db.php';
 
+require_once __DIR__ . '/includes/hmqz-hubs-registry.php';
+require_once HMQZ_PLUGIN_DIR . 'includes/banks.php';
 require_once __DIR__ . '/includes/shortcode_play.php'; // Play shortcode/page
 require_once __DIR__ . '/includes/shortcode_hub.php';
-require_once HMQZ_PLUGIN_DIR . 'includes/banks.php';
 require_once HMQZ_PLUGIN_DIR . 'includes/cpt.php';
 require_once HMQZ_PLUGIN_DIR . 'includes/shortcodes.php'; // core [hmquiz]
 require_once HMQZ_PLUGIN_DIR . 'includes/admin.php';

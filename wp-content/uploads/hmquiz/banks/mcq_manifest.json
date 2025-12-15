@@ -1,0 +1,42 @@
+{
+    "version": "1",
+    "generated_at": "2025-12-15 17:19:37",
+    "banks": [
+        {
+            "bank": "general_knowledge/mixed/mcq_gk_mixed_01.json",
+            "title": "General Knowledge - Mixed Quiz 1",
+            "topic_key": "general_knowledge",
+            "subtopic_key": "mixed",
+            "topic": "general_knowledge",
+            "subtopic": "mixed",
+            "per": 10,
+            "per_play_default": 10,
+            "levels": 1,
+            "questions": 10
+        },
+        {
+            "bank": "english_grammar/confusing_words/mcq_confusables_affect_vs_effect.json",
+            "title": "Affect vs Effect \u2013 Confusing Words Quiz",
+            "topic_key": "english_grammar",
+            "subtopic_key": "confusing_words",
+            "topic": "english_grammar",
+            "subtopic": "confusing_words",
+            "per": 10,
+            "per_play_default": 10,
+            "levels": 3,
+            "questions": 30
+        },
+        {
+            "bank": "english_grammar/punctuation/mcq_punctuation_commas_01.json",
+            "title": "Punctuation - Commas Quiz 1",
+            "topic_key": "english_grammar",
+            "subtopic_key": "punctuation",
+            "topic": "english_grammar",
+            "subtopic": "punctuation",
+            "per": 10,
+            "per_play_default": 10,
+            "levels": 1,
+            "questions": 10
+        }
+    ]
+}

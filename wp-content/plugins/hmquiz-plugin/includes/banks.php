@@ -33,6 +33,205 @@ function hmqz_normalize_bank_slug($bank) {
 }
 
 /**
+ * Infer a quiz hub URL from a normalized bank slug/path.
+ *
+ * Examples:
+ * - english_grammar/confusing_words/mcq_confusables_affect_vs_effect.json
+ *   => /quiz/confusing-words/
+ *
+ * @param string $bank Normalized bank path (no base dir).
+ * @return string Hub URL (absolute) or empty string if unknown.
+ */
+function hmqz_get_hub_url_for_bank($bank) {
+  $bank = (string) $bank;
+  if ($bank === '') return '';
+
+  $parts = explode('/', ltrim($bank, '/'));
+  $topic = isset($parts[0]) ? $parts[0] : '';
+  $subtopic = isset($parts[1]) ? $parts[1] : '';
+
+  if ($topic && $subtopic && function_exists('hmqz_get_hub_url_for_topic_and_subtopic')) {
+    $registry_url = hmqz_get_hub_url_for_topic_and_subtopic($topic, $subtopic);
+    if (!empty($registry_url)) {
+      return $registry_url;
+    }
+  }
+
+  // Legacy fallback mapping (kept for backward compatibility).
+  $hub_slug = '';
+  if ($topic === 'english_grammar') {
+    switch ($subtopic) {
+      case 'confusing_words':
+        $hub_slug = 'confusing-words';
+        break;
+      case 'punctuation':
+        $hub_slug = 'punctuation';
+        break;
+      case 'tenses':
+        $hub_slug = 'tenses';
+        break;
+    }
+  }
+
+  if ($hub_slug === '') return '';
+
+  $path = '/quiz/' . $hub_slug . '/';
+
+  return home_url($path);
+}
+
+/**
+ * Path to the banks manifest (mcq_manifest.json) inside uploads/hmquiz/banks/.
+ *
+ * @return string
+ */
+function hmqz_get_bank_manifest_path() {
+  if (function_exists('hmqz_bank_dir')) {
+    $dir = trailingslashit(hmqz_bank_dir());
+  } else {
+    $dir = WP_CONTENT_DIR . '/uploads/hmquiz/banks/';
+    if (!is_dir($dir)) {
+      wp_mkdir_p($dir);
+    }
+  }
+
+  return $dir . 'mcq_manifest.json';
+}
+
+/**
+ * Return the full banks index manifest as an array.
+ *
+ * Structure example:
+ * [ 'version' => '...', 'updated_at' => '...', 'banks' => [ ... ] ]
+ *
+ * @return array
+ */
+function hmqz_get_banks_index() {
+  static $manifest_cache = null;
+  if (is_array($manifest_cache)) {
+    return $manifest_cache;
+  }
+
+  $default = ['banks' => []];
+  $path = hmqz_get_bank_manifest_path();
+  if (!file_exists($path)) {
+    $manifest_cache = $default;
+    return $manifest_cache;
+  }
+
+  $json = file_get_contents($path);
+  if ($json === false) {
+    $manifest_cache = $default;
+    return $manifest_cache;
+  }
+
+  $data = json_decode($json, true);
+  if (!is_array($data)) {
+    $manifest_cache = $default;
+    return $manifest_cache;
+  }
+
+  if (!isset($data['banks']) || !is_array($data['banks'])) {
+    $data['banks'] = [];
+  }
+
+  $manifest_cache = $data;
+  return $manifest_cache;
+}
+
+/**
+ * Extract topic/subtopic keys from a bank record.
+ *
+ * @param array $bank
+ * @return array{topic:string,subtopic:string}
+ */
+function hmqz_bank_topic_keys(array $bank) {
+  $topic = '';
+  $subtopic = '';
+
+  if (!empty($bank['topic_key'])) {
+    $topic = (string) $bank['topic_key'];
+  } elseif (!empty($bank['topic'])) {
+    $topic = (string) $bank['topic'];
+  }
+
+  if (!empty($bank['subtopic_key'])) {
+    $subtopic = (string) $bank['subtopic_key'];
+  } elseif (!empty($bank['subtopic'])) {
+    $subtopic = (string) $bank['subtopic'];
+  }
+
+  if ((!$topic || !$subtopic) && !empty($bank['bank'])) {
+    $rel = ltrim((string) $bank['bank'], '/');
+    $parts = explode('/', $rel);
+    if (!$topic && isset($parts[0])) $topic = $parts[0];
+    if (!$subtopic && isset($parts[1])) $subtopic = $parts[1];
+  }
+
+  return [
+    'topic'    => $topic,
+    'subtopic' => $subtopic,
+  ];
+}
+
+/**
+ * Return all banks for a given topic key.
+ *
+ * @param string $topic_key
+ * @return array
+ */
+function hmqz_get_banks_for_topic($topic_key) {
+  $topic_key = trim((string) $topic_key);
+  if ($topic_key === '') return [];
+
+  $index = hmqz_get_banks_index();
+  $banks = isset($index['banks']) && is_array($index['banks']) ? $index['banks'] : [];
+
+  $filtered = array_filter($banks, function($bank) use ($topic_key) {
+    $keys = hmqz_bank_topic_keys(is_array($bank) ? $bank : []);
+    return !empty($keys['topic']) && $keys['topic'] === $topic_key;
+  });
+
+
+  // fallback: allow virtual hubs by subtopic_key (e.g. confusing_words)
+  if (empty($filtered)) {
+    $filtered = array_filter($banks, function($bank) use ($topic_key) {
+      if (!is_array($bank)) return false;
+      $sk = isset($bank["subtopic_key"]) ? trim((string)$bank["subtopic_key"]) : "";
+      $s  = isset($bank["subtopic"]) ? trim((string)$bank["subtopic"]) : "";
+      return ($sk !== "" && $sk === $topic_key) || ($s !== "" && $s === $topic_key);
+    });
+  }
+
+  return array_values($filtered);
+}
+
+/**
+ * Return banks for a given topic + subtopic combination.
+ *
+ * @param string $topic_key
+ * @param string $subtopic_key
+ * @return array
+ */
+function hmqz_get_banks_for_topic_and_subtopic($topic_key, $subtopic_key) {
+  $topic_key = trim((string) $topic_key);
+  $subtopic_key = trim((string) $subtopic_key);
+  if ($topic_key === '' || $subtopic_key === '') return [];
+
+  $index = hmqz_get_banks_index();
+  $banks = isset($index['banks']) && is_array($index['banks']) ? $index['banks'] : [];
+
+  $filtered = array_filter($banks, function($bank) use ($topic_key, $subtopic_key) {
+    $keys = hmqz_bank_topic_keys(is_array($bank) ? $bank : []);
+    return !empty($keys['topic']) && !empty($keys['subtopic'])
+      && $keys['topic'] === $topic_key
+      && $keys['subtopic'] === $subtopic_key;
+  });
+
+  return array_values($filtered);
+}
+
+/**
  * Normalize incoming bank filenames into the correct folder structure.
  *
  * Handles:

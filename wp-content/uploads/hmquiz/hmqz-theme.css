@@ -408,7 +408,40 @@ body.hmqz-modal-open {
   margin-bottom: 1.25rem;
 }
 
-.hmqz-review-panel {
+/* Modal multi-step (rate -> score) */
+.hmqz-modal[data-hmqz-step="rate"] .hmqz-modal-step-score { display: none; }
+.hmqz-modal[data-hmqz-step="score"] .hmqz-modal-step-rate { display: none; }
+
+.hmqz-modal-rating {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.hmqz-modal-star {
+  font-size: 1.6rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease, border-color 0.15s ease;
+}
+
+.hmqz-modal-star:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  transform: translateY(-1px);
+}
+
+.hmqz-modal-star.is-selected {
+  background: #1d4ed8;
+  color: #fff;
+  border-color: #1d4ed8;
+}
+
+body.hmqz-play-active .hmqz-review-panel {
   margin-top: 1rem;
   border-radius: 18px;
   border: 1px solid rgba(148,163,184,0.3);
@@ -416,6 +449,80 @@ body.hmqz-modal-open {
   background: #f8fafc;
   max-height: 340px;
   overflow-y: auto;
+}
+
+body.hmqz-play-active .hmqz-review-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #7b7b8a;
+  text-align: left;
+}
+
+body.hmqz-play-active .hmqz-review-toggle {
+  margin-top: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: #1e73be;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 0;
+  text-decoration: underline;
+}
+
+body.hmqz-play-active .hmqz-review-toggle:hover,
+body.hmqz-play-active .hmqz-review-toggle:focus-visible {
+  text-decoration: none;
+}
+
+body.hmqz-play-active .hmqz-review-panel-inline {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 37, 64, 0.08);
+  max-height: 440px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+body.hmqz-play-active .hmqz-review-panel-inline.hmqz-review-open {
+  display: block;
+}
+
+/* Live card vs review panel toggling */
+body.hmqz-play-active.hmqz-review-mode #hmqz-app .hmqz-legacy-card,
+body.hmqz-play-active.hmqz-review-mode #hmqz-app .hmqz-play-body,
+body.hmqz-play-active.hmqz-review-mode #hmqz-app .hmqz-play-footer {
+  display: none !important;
+}
+
+body.hmqz-play-active.hmqz-review-mode #hmqz-app .hmqz-review-panel-inline {
+  display: block !important;
+}
+
+/* Make review items full width, stacked */
+body.hmqz-play-active .hmqz-review-panel-inline .hmqz-review-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+body.hmqz-play-active .hmqz-review-expl {
+  margin-top: 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #0f172a;
+  border: 1px solid rgba(148,163,184,0.35);
+  font-size: 0.95rem;
+}
+
+body.hmqz-play-active .hmqz-review-cta {
+  margin-top: 1.25rem;
+  text-align: left;
 }
 
 .hmqz-review-item + .hmqz-review-item {
@@ -2677,3 +2784,771 @@ body.page-id-8 .site-footer {
   }
 }
 
+/* ===== HMQUIZ /play layout ===== */
+
+.hmqz-play-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+/* Main card */
+.hmqz-play-card {
+  width: 100%;
+  max-width: 960px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.1);
+  padding: 20px 24px 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Header row: logo | title | timer */
+.hmqz-play-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo thumbnail */
+.hmqz-play-header-logo {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hmqz-play-header-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* Title in two lines: topic + category */
+.hmqz-play-header-title {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hmqz-play-header-title-topic {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.hmqz-play-header-title-category {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Timer pill on the right */
+.hmqz-play-header-timer {
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Question block */
+.hmqz-question-block {
+  margin-top: 4px;
+}
+
+.hmqz-question-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+/* Options as 2×2 grid on desktop, stacked on mobile */
+.hmqz-options-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .hmqz-play-card {
+    padding: 16px 16px 18px;
+    border-radius: 14px;
+  }
+
+  .hmqz-play-header {
+    align-items: flex-start;
+  }
+
+  .hmqz-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual option buttons */
+.hmqz-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+}
+
+.hmqz-option-label {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.hmqz-option-text {
+  flex: 1 1 auto;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* Hover/focus */
+.hmqz-option:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  transform: translateY(-1px);
+}
+
+/* Selected / correct / wrong states – hook into your JS classes */
+.hmqz-option.is-selected {
+  border-color: #6366f1;
+  background: #eef2ff;
+}
+
+.hmqz-option.is-correct {
+  border-color: #22c55e;
+  background: #ecfdf3;
+}
+
+.hmqz-option.is-wrong {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+/* Footer / level / progress row if you need it */
+.hmqz-play-footer {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ---------- Play page full-width shell ---------- */
+body.page-id-8 {
+  background: #f5f7fb !important;
+}
+
+body.page-id-8 .site-header,
+body.page-id-8 .site-footer,
+body.page-id-8 .main-navigation,
+body.page-id-8 .inside-header,
+body.page-id-8 .footer-widgets {
+  display: none !important;
+}
+
+body.page-id-8 .site-content,
+body.page-id-8 .site-main {
+  margin: 0;
+  padding: 0;
+}
+
+body.page-id-8 .hmqz-play-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+body.page-id-8 .hmqz-play-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+/* === HMQUIZ /play global layout =================================== */
+
+/* Use the body class your plugin already adds */
+body.hmqz-play-active {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef2f7 55%, #f9fafb 100%);
+}
+
+/* Remove GP chrome on /play (for visitors, not wp-admin) */
+body.hmqz-play-active .site-header,
+body.hmqz-play-active .site-footer,
+body.hmqz-play-active .main-navigation,
+body.hmqz-play-active .top-bar,
+body.hmqz-play-active .footer-widgets {
+  display: none !important;
+}
+
+/* Let the content area be our canvas */
+body.hmqz-play-active .site.grid-container.container,
+body.hmqz-play-active .site-content,
+body.hmqz-play-active .content-area,
+body.hmqz-play-active .site-main,
+body.hmqz-play-active .inside-article,
+body.hmqz-play-active .entry-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 12px 40px;
+  box-sizing: border-box;
+}
+
+/* Trim excess top spacing between rating and play card */
+body.hmqz-play-active .site-content,
+body.hmqz-play-active .content-area,
+body.hmqz-play-active .inside-article,
+body.hmqz-play-active .entry-content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Remove the “boxed” white container from GeneratePress */
+body.hmqz-play-active.separate-containers .inside-article {
+  background: transparent;
+  padding: 0;
+}
+
+/* === Rating card at top =========================================== */
+
+body.hmqz-play-active .hmqz-rating {
+  margin: 0 auto 12px;
+  padding: 14px 18px;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Hide rating until quiz completion */
+body.hmqz-play-active .hmqz-rating { display: none; }
+body.hmqz-play-active.hmqz-quiz-done:not(.hmqz-modal-open) .hmqz-rating { display: flex; }
+body.hmqz-play-active.hmqz-quiz-done.hmqz-modal-open .hmqz-rating { display: none; }
+
+body.hmqz-play-active .hmqz-rating-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+body.hmqz-play-active .hmqz-rating-summary {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* === Main play card =============================================== */
+
+body.hmqz-play-active .hmqz-play-shell {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body.hmqz-play-active .hmqz-play-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  padding: 24px 26px 26px;
+  box-sizing: border-box;
+}
+
+body.hmqz-play-active .hmqz-play-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Header: logo | title | timer/Q meta */
+body.hmqz-play-active .hmqz-play-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 6px 0 8px;
+  background: linear-gradient(180deg, #ffffff 60%, rgba(255,255,255,0.88) 100%);
+  backdrop-filter: blur(2px);
+}
+
+body.hmqz-play-active .hmqz-play-header-left {
+  flex: 0 0 auto;
+}
+
+body.hmqz-play-active .hmqz-play-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #eef2ff;
+  padding: 8px;
+  object-fit: contain;
+}
+
+body.hmqz-play-active .hmqz-play-header-center {
+  flex: 1 1 auto;
+}
+
+body.hmqz-play-active .hmqz-play-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+body.hmqz-play-active .hmqz-level-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #1d4ed8;
+  font-size: 0.82rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* Timer + Q meta on right */
+body.hmqz-play-active .hmqz-play-header-right {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 0.85rem;
+}
+
+body.hmqz-play-active .hmqz-play-timer {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+body.hmqz-play-active .hmqz-play-qmeta {
+  color: #64748b;
+}
+
+/* Progress bar */
+body.hmqz-play-active .hmqz-play-progress {
+  margin-top: 6px;
+}
+
+body.hmqz-play-active .hmqz-play-progress-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+body.hmqz-play-active .hmqz-play-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #60a5fa, #22c55e);
+  transition: width 0.25s ease-out, background 0.2s ease;
+}
+
+/* Question + answers */
+body.hmqz-play-active .hmqz-play-body {
+  margin-top: 6px;
+}
+
+body.hmqz-play-active .hmqz-legacy-card {
+  border-radius: 20px;
+  padding: 20px 22px;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+}
+
+body.hmqz-play-active .hmqz-legacy-card.hmqz-q-enter {
+  animation: hmqzQEnter 220ms ease;
+}
+
+body.hmqz-play-active .hmqz-legacy-card.hmqz-q-exit {
+  animation: hmqzQExit 160ms ease;
+}
+
+body.hmqz-play-active .hmqz-qtext {
+  font-size: 1.06rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+/* Turn choice buttons into nicer pills; 2-column on desktop */
+body.hmqz-play-active .hmqz-grid-choices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  body.hmqz-play-active .hmqz-play-card {
+    padding: 18px 16px 20px;
+    border-radius: 18px;
+  }
+
+  body.hmqz-play-active .hmqz-play-header {
+    align-items: flex-start;
+  }
+
+  body.hmqz-play-active .hmqz-grid-choices {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.hmqz-play-active .hmqz-choice-btn {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fbff;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  text-align: left;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+body.hmqz-play-active .hmqz-choice-btn:hover:not([disabled]):not(.is-correct):not(.is-wrong) {
+  background: #eef2ff;
+  border-color: #9db5ff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(59, 130, 246, 0.12);
+}
+
+body.hmqz-play-active .hmqz-choice-btn.is-correct {
+  animation: hmqzChoiceCorrect 260ms ease;
+}
+
+body.hmqz-play-active .hmqz-choice-btn.is-wrong {
+  animation: hmqzChoiceWrong 260ms ease;
+}
+
+/* Footer (Level + Next button) */
+body.hmqz-play-active .hmqz-play-footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+body.hmqz-play-active .hmqz-btn-primary.hmqz-btn-next {
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 0.9rem;
+}
+
+@keyframes hmqzQEnter {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hmqzQExit {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-6px); }
+}
+
+@keyframes hmqzChoiceCorrect {
+  0% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.35); }
+  60% { transform: scale(1.02); box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+@keyframes hmqzChoiceWrong {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hmqz-play-active .hmqz-play-header,
+  body.hmqz-play-active .hmqz-legacy-card,
+  body.hmqz-play-active .hmqz-choice-btn {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* Soft gradient for /play */
+body.hmqz-play-active {
+    background: linear-gradient(180deg, #f9fbff 0%, #eef3ff 100%) !important;
+}
+body.hmqz-play-active .hmqz-play-card {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07) !important;
+    border-radius: 18px;
+    padding-top: 10px;
+}
+
+body.hmqz-play-active .hmqz-play-card-inner {
+    padding: 28px;
+}
+body.hmqz-play-active .hmqz-question-card {
+    border-radius: 14px !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06) !important;
+    padding: 20px 26px !important;
+}
+
+body.hmqz-play-active .hmqz-question-card .question-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333;
+}
+body.hmqz-play-active .hmqz-choice-btn {
+    transition: all 0.2s ease;
+    border-radius: 12px;
+    border: 1px solid #d6dee8;
+}
+
+body.hmqz-play-active .hmqz-choice-btn:hover:not(.is-correct):not(.is-wrong):not([disabled]) {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border-color: #aab7ff;
+    background: #f7f9ff;
+}
+body.hmqz-play-active .hmqz-rating-card {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important;
+    border-radius: 16px !important;
+}
+body.hmqz-play-active .hmqz-next-btn {
+    padding: 10px 26px !important;
+    border-radius: 28px !important;
+    font-weight: 600;
+}
+
+/* ---------- Hub pages & hubs index ---------- */
+.hmqz-hub,
+.hmqz-hubs-index {
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.hmqz-hub-header,
+.hmqz-hubs-index-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hmqz-hub-breadcrumb {
+  margin: 0 0 0.5rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+.hmqz-hub-title,
+.hmqz-hubs-index-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--hmqz-slate, #0f172a);
+}
+
+.hmqz-hub-description,
+.hmqz-hubs-index-description {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.hmqz-hub-quizzes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.hmqz-hub-subtopic {
+  padding: 1rem 0 0.5rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.hmqz-hub-subtopic-header {
+  margin-bottom: 0.9rem;
+}
+
+.hmqz-hub-subtopic-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.3rem;
+  color: var(--hmqz-slate, #0f172a);
+}
+
+.hmqz-hub-subtopic-description {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.hmqz-hub-grid,
+.hmqz-hubs-index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .hmqz-hub-grid,
+  .hmqz-hubs-index-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hmqz-hub-card,
+.hmqz-hub .hmqz-quiz-card,
+.hmqz-hubs-index .hmqz-quiz-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.hmqz-hub-card:hover,
+.hmqz-hub .hmqz-quiz-card:hover,
+.hmqz-hubs-index .hmqz-quiz-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.hmqz-hub-card-title,
+.hmqz-hub .hmqz-quiz-card-title,
+.hmqz-hubs-index .hmqz-hub-card-title {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: var(--hmqz-slate, #0f172a);
+}
+
+.hmqz-hub-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hmqz-hub-card-title a:hover {
+  color: #2563eb;
+}
+
+.hmqz-hub-card-description,
+.hmqz-hub .hmqz-quiz-description,
+.hmqz-hubs-index .hmqz-hub-card-description {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.hmqz-hub-card-meta,
+.hmqz-hub .hmqz-quiz-meta,
+.hmqz-hubs-index .hmqz-hub-card-meta {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.hmqz-hub-card-cta,
+.hmqz-hub .hmqz-quiz-cta,
+.hmqz-hubs-index .hmqz-hub-card-cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1.05rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--hmqz-blue, #2563eb);
+  color: #ffffff;
+  border: 1px solid var(--hmqz-blue, #2563eb);
+}
+
+.hmqz-hub-card-cta:hover,
+.hmqz-hub .hmqz-quiz-cta:hover,
+.hmqz-hubs-index .hmqz-hub-card-cta:hover {
+  background: var(--hmqz-blue-dark, #1d4ed8);
+  border-color: var(--hmqz-blue-dark, #1d4ed8);
+  color: #ffffff;
+}
+
+.hmqz-hubs-index-body {
+  display: block;
+}
+
+.hmqz-hub-empty {
+  text-align: center;
+  color: #6b7280;
+  margin: 1rem 0 0;
+}
+
+@media (max-width: 640px) {
+  .hmqz-hub,
+  .hmqz-hubs-index {
+    padding: 1.25rem 1rem 2.25rem;
+  }
+
+  .hmqz-hub-title,
+  .hmqz-hubs-index-title {
+    font-size: 1.6rem;
+  }
+}
